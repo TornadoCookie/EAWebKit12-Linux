@@ -1,20 +1,19 @@
 
-project('EAAssert', 'cpp', version : 'local_1.05.11')
+project('EAAssertEAWebKit', 'cpp', version : 'local')
 
 # EAAssert.vcxproj
 
 includes = include_directories(
-    '../../../../EAWebKitSupportPackages/EAAssert/local_1.05.11/include',
-    '../../../../EAWebKitSupportPackages/EAAssert/local_1.05.11/source',
-    '../../../../EAWebKitSupportPackages/EABase/local_2.10.01/include/Common'
+    '../../../../EAWebKitSupportPackages/EAAssertEAWebKit/local/include',
+    '../../../../EAWebKitSupportPackages/EABaseEAWebKit/local/include/Common'
 )
 
 headers = include_directories(
-    '../../../../EAWebKitSupportPackages/EAAssert/local_1.05.11/include'
+    '../../../../EAWebKitSupportPackages/EAAssertEAWebKit/local/include'
 )
 
 sources = [ 
-    '../../../../EAWebKitSupportPackages/EAAssert/local_1.05.11/source/eaassert.cpp'
+    '../../../../EAWebKitSupportPackages/EAAssertEAWebKit/local/source/eaassert.cpp'
     
 ]
 
