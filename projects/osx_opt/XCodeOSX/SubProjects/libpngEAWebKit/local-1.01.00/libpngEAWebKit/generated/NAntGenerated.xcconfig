@@ -1,0 +1,11 @@
+GENERATED_CC_FLAGS_CLibraryMod_Release = -D _CRT_SECURE_NO_WARNINGS -D EA_PLATFORM_OSX=1 -D EA_USE_XCEEDZIP=0 -D NDEBUG -D PNG_IMPEXP= -D PNG_NO_MMX_CODE -w -Wno-error -O2 -fno-strict-aliasing -g3 -c -fno-common -fmessage-length=0 -fshort-wchar -I ../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/include/libpng -I ../../../../../../../EAWebKitSupportPackages/EABaseEAWebKit/local/include/Common -I ../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/install -I ../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/include
+GENERATED_LDFLAGS_Release = 
+INFOPLIST_OUTPUT_FORMAT = same-as-input
+SKIP_INSTALL = YES 
+DEPLOYMENT_POSTPROCESSING = YES 
+STRIP_INSTALLED_PRODUCT = YES 
+GCC_TREAT_WARNINGS_AS_ERRORS = NO 
+GCC_ENABLE_CPP_RTTI = NO 
+INFOPLIST_FILE = ../../../../OSX-common-xcode.template/Info.plist 
+GCC_VERSION = com.apple.compilers.llvmgcc42 
+ARCHS = i386 

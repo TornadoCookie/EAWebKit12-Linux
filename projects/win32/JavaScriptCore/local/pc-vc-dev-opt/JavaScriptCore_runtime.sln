@@ -1,0 +1,16 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JavaScriptCore", "..\JavaScriptCore.vcproj", "{542B5B54-052E-85D6-49DA-280D6D6A90D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		pc-vc-dev-opt|Win32 = pc-vc-dev-opt|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{542B5B54-052E-85D6-49DA-280D6D6A90D1}.pc-vc-dev-opt|Win32.ActiveCfg = pc-vc-dev-opt|Win32
+		{542B5B54-052E-85D6-49DA-280D6D6A90D1}.pc-vc-dev-opt|Win32.Build.0 = pc-vc-dev-opt|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,3 @@
+NANT_MODULENAME = libjpegEAWebKit
+NANT_EXENAME = liblibjpegEAWebKit.a
+NANT_SYMROOT = build 

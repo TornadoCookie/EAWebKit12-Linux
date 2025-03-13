@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioProject ProjectGUID="{7F9D3E4A-2E6F-F5E7-8CCA-F346214AD919}" Name="cairo" Keyword="Win32Proj" Version="9.00" ProjectType="Visual C++" TargetFrameworkVersion="196613">
+  <Platforms>
+    <Platform Name="Win32" />
+  </Platforms>
+  <ToolFiles>
+    <DefaultToolFile FileName="masm.rules" />
+  </ToolFiles>
+  <Configurations>
+    <Configuration Name="pc-vc-dev-debug|Win32" OutputDirectory="pc-vc-dev-debug\build\cairo" IntermediateDirectory="pc-vc-dev-debug\build\cairo\vcproj" CharacterSet="2" ConfigurationType="4">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="MASM" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" PreprocessorDefinitions="_DEBUG;_SECURE_SCL=1;_WIN32_IE=0x0501;_WIN32_WINNT=0x0501;_WINDOWS;CAIRO_DISABLE_TMPFILE;CAIRO_NO_MUTEX=1;CAIRO_WIN32_STATIC_BUILD;DISABLE_SOME_FLOATING_POINT;EA_DEBUG;WIN32;WIN32;WINVER=0x0501" BufferSecurityCheck="FALSE" ProgramDataBaseFileName="pc-vc-dev-debug\lib\cairo.pdb" UsePrecompiledHeader="0" DebugInformationFormat="3" CompileOnly="TRUE" DisableSpecificWarnings="4295; 4702; 4204; 4132; 4146; 4245; 4701; 4706; 4244; 4242; 4255; 4127; 4626; 4625; 4061; 4062; 4100; 4324; 4619; 4514; 4640; 4668; 4710; 4711; 4738; 4820; 4826; 4819; 4826; 4692; 4996; " CompileAs="0" MinimalRebuild="FALSE" ForceConformanceInForLoopScope="TRUE" WarnAsError="FALSE" RuntimeTypeInfo="FALSE" ExceptionHandling="0" SuppressStartupBanner="TRUE" RuntimeLibrary="3" BasicRuntimeChecks="3" AdditionalIncludeDirectories="&quot;..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\include\cairo&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local-1.2.5-7\install&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local-1.2.5-7\include&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local-1.01.00\include\libpng&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\pixman\local\include&quot;;&quot;$(VSInstallDir)\VC\ATLMFC\INCLUDE&quot;;&quot;$(VSInstallDir)\VC\INCLUDE&quot;;&quot;$(WindowsSDKDir)\include&quot;;&quot;$(VSInstallDir)\SDK\v2.0\include&quot;;&quot;$(VSInstallDir)\INCLUDE&quot;" Optimization="0" AdditionalOptions="/MP -MP8 -Wall " />
+      <Tool Name="VCLibrarianTool" OutputFile="pc-vc-dev-debug\lib\cairo.lib" SuppressStartupBanner="TRUE" AdditionalDependencies="" />
+      <Tool Name="VCManifestTool" OutputManifestFile="&quot;pc-vc-dev-debug\cairo.embed.manifest&quot;" ManifestResourceFile="&quot;pc-vc-dev-debug\cairo.embed.manifest.res&quot;" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="&quot;$(VSInstallDir)\VC\atlmfc\include&quot;;&quot;$(WindowsSDKDir)\Include&quot;;&quot;$(VSInstallDir)\VC\Include&quot;" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+    <Configuration Name="pc-vc-dev-opt|Win32" OutputDirectory="pc-vc-dev-opt\build\cairo" IntermediateDirectory="pc-vc-dev-opt\build\cairo\vcproj" CharacterSet="2" ConfigurationType="4">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="MASM" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" PreprocessorDefinitions="_SECURE_SCL=0;_WIN32_IE=0x0501;_WIN32_WINNT=0x0501;_WINDOWS;CAIRO_DISABLE_TMPFILE;CAIRO_NO_MUTEX=1;CAIRO_WIN32_STATIC_BUILD;DISABLE_SOME_FLOATING_POINT;NDEBUG;WIN32;WIN32;WINVER=0x0501" BufferSecurityCheck="FALSE" ProgramDataBaseFileName="pc-vc-dev-opt\lib\cairo.pdb" UsePrecompiledHeader="0" DebugInformationFormat="3" CompileOnly="TRUE" DisableSpecificWarnings="4295; 4702; 4204; 4132; 4146; 4245; 4701; 4706; 4244; 4242; 4255; 4127; 4626; 4625; 4061; 4062; 4100; 4324; 4619; 4514; 4640; 4668; 4710; 4711; 4738; 4820; 4826; 4819; 4826; 4692; 4996; " CompileAs="0" MinimalRebuild="FALSE" ForceConformanceInForLoopScope="TRUE" WarnAsError="FALSE" RuntimeTypeInfo="FALSE" ExceptionHandling="0" SuppressStartupBanner="TRUE" RuntimeLibrary="2" AdditionalIncludeDirectories="&quot;..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\include\cairo&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local-1.2.5-7\install&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local-1.2.5-7\include&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local-1.01.00\include\libpng&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\pixman\local\include&quot;;&quot;$(VSInstallDir)\VC\ATLMFC\INCLUDE&quot;;&quot;$(VSInstallDir)\VC\INCLUDE&quot;;&quot;$(WindowsSDKDir)\include&quot;;&quot;$(VSInstallDir)\SDK\v2.0\include&quot;;&quot;$(VSInstallDir)\INCLUDE&quot;" Optimization="2" AdditionalOptions="/MP -MP8 -Wall " />
+      <Tool Name="VCLibrarianTool" OutputFile="pc-vc-dev-opt\lib\cairo.lib" SuppressStartupBanner="TRUE" AdditionalDependencies="" />
+      <Tool Name="VCManifestTool" OutputManifestFile="&quot;pc-vc-dev-opt\cairo.embed.manifest&quot;" ManifestResourceFile="&quot;pc-vc-dev-opt\cairo.embed.manifest.res&quot;" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="&quot;$(VSInstallDir)\VC\atlmfc\include&quot;;&quot;$(WindowsSDKDir)\Include&quot;;&quot;$(VSInstallDir)\VC\Include&quot;" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+  </Configurations>
+  <References>
+  </References>
+  <Files>
+    <Filter Name="include" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\include\cairo-version.h">
+      </File>
+      <Filter Name="cairo" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\include\cairo\cairo.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\include\cairo\cairo-deprecated.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\include\cairo\cairo-features.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\include\cairo\cairo-malloc.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\include\cairo\cairo-version.h">
+        </File>
+      </Filter>
+    </Filter>
+    <Filter Name="source" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-analysis-surface.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-analysis-surface-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-arc.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-arc-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-array.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-atomic.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-atomic-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-base85-stream.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-bentley-ottmann.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-cache.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-cache-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-clip.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-clip-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-color.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-compiler-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-debug.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-fixed.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-fixed-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-fixed-type-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-font-face.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-font-face-twin.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-font-face-twin-data.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-font-options.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-freelist.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-freelist-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-gstate.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-gstate-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-hash.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-hash-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-hull.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-image-surface.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairoint.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-lzw.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-malloc-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-matrix.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-meta-surface.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-meta-surface-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-misc.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-mutex.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-mutex-impl-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-mutex-list-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-mutex-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-mutex-type-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-output-stream.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-output-stream-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-paginated-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-paginated-surface.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-paginated-surface-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-path.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-path-bounds.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-path-fill.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-path-fixed.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-path-fixed-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-path-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-path-stroke.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-pattern.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-pen.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-png.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-polygon.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-rectangle.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-reference-count-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-region.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-region-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-scaled-font.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-scaled-font-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-skiplist.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-skiplist-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-slope.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-spline.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-stroke-style.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-surface.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-surface-fallback.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-surface-fallback-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-surface-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-system.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-traps.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-types-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-unicode.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-user-font.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-user-font-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-version.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-wideint.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\cairo\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-wideint-private.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\cairo\local-1.8.10\source\cairo-wideint-type-private.h">
+      </File>
+    </Filter>
+  </Files>
+  <Globals>
+    <Global Name="$(DXSDK_DIR)" Value="C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)" />
+    <Global Name="$(VSInstallDir)" Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0" />
+    <Global Name="$(WindowsSDKDir)" Value="C:\packages\WindowsSDK\6.1.6001.18000\installed" />
+    <Global Name="build.env.PATH" Value="$(VSInstallDir)\Common7\IDE" />
+    <Global Name="platform" Value="vc" />
+    <Global Name="platform_pc-vc-dev-debug_Win32" Value="vc" />
+    <Global Name="platform_pc-vc-dev-opt_Win32" Value="vc" />
+    <Global Name="vc-asm" Value="$(VSInstallDir)\VC\BIN\ml.exe" />
+    <Global Name="vc-compiler" Value="$(VSInstallDir)\VC\BIN\cl.exe" />
+    <Global Name="vc-compiler_clang" Value="" />
+    <Global Name="vc-librarian" Value="$(VSInstallDir)\VC\BIN\lib.exe" />
+    <Global Name="vc-linker" Value="$(VSInstallDir)\VC\BIN\link.exe" />
+    <Global Name="vc-postlink.program" Value="$(WindowsSDKDir)\BIN\mt.exe" />
+    <Global Name="vc-rccompiler" Value="$(WindowsSDKDir)\BIN\rc.exe" />
+  </Globals>
+</VisualStudioProject>

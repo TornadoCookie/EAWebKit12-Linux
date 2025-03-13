@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+        2BEA1BDC12A40B1C007E53C3 = {
+            isa = PBXFileReference;
+            lastKnownFileType = wrapper.framework;
+            name = "CoreFoundation.framework";
+            path = "System/Library/Frameworks/CoreFoundation.framework";
+            sourceTree = SDKROOT;
+        };
+        1D530ECE1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Project.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ECF1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Release.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ED01214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Target.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D6058910D05DD3D006BFB54 = {
+            isa = PBXFileReference;
+            includeInIndex = 0;
+            path = "../../../../OSX-common-xcode.template/EASTLEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            name = "EASTLEAWebKit";
+        };
+        1D60588F0D05DD3D006BFB54 = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D73A7FE12124384005BEE8D = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000202BBA5E1018,
+            );
+            name = "Packages";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        29B97314FDCFA39411CA2CEA = {
+            isa = PBXGroup;
+            children = (
+                1D73A7FE12124384005BEE8D,
+                2B96D4A71282D3C600ECF477,
+                1D6058910D05DD3D006BFB54,
+                2B96D4A81282D3D700ECF477,
+            );
+            name = "CustomTemplate";
+            sourceTree = "<group>";
+        };
+        2B96D4A71282D3C600ECF477 = {
+            isa = PBXGroup;
+            children = (
+                2BEA1BDB12A40B1C007E53C3,
+            );
+            name = "Frameworks";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        2B96D4A81282D3D700ECF477 = {
+            isa = PBXGroup;
+            children = (
+                1D530ECD1214958100E23731,
+                1D530ECE1214958100E23731,
+                1D530ECF1214958100E23731,
+                1D530ED01214958100E23731,
+                BA5E10180000235CBA5E1018,
+                BA5E10180000235EBA5E1018,
+            );
+            name = "Configs";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        1D6058900D05DD3D006BFB54 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 1D6058960D05DD3E006BFB54;
+            buildPhases = (
+                1D60588D0D05DD3D006BFB54,
+                1D60588E0D05DD3D006BFB54,
+                1D60588F0D05DD3D006BFB54,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "EASTLEAWebKit";
+            productName = "EASTLEAWebKit";
+            productReference = 1D6058910D05DD3D006BFB54;
+            productType = "com.apple.product-type.library.static";
+        };
+        29B97313FDCFA39411CA2CEA = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 0420;
+                ORGANIZATIONNAME = "Electronic Arts";
+            };
+            buildConfigurationList = C01FCF4E08A954540054247B;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = English;
+            hasScannedForEncodings = 1;
+            knownRegions = (
+                English,
+                Japanese,
+                French,
+                German,
+            );
+            mainGroup = 29B97314FDCFA39411CA2CEA;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                1D6058900D05DD3D006BFB54,
+            );
+        };
+        1D60588D0D05DD3D006BFB54 = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2BF7EB841236332B00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt postbuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh postbuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        2BF7EB861236336C00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt prebuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh prebuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        1D60588E0D05DD3D006BFB54 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                BA5E10180000205ABA5E1018,
+                BA5E10180000205CBA5E1018,
+                BA5E10180000205EBA5E1018,
+                BA5E101800002060BA5E1018,
+                BA5E101800002062BA5E1018,
+                BA5E101800002064BA5E1018,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D6058950D05DD3E006BFB54 = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ED01214958100E23731;
+            buildSettings = {
+                MACOSX_DEPLOYMENT_TARGET = 10.6;
+                MACH_O_TYPE = staticlib;
+                OBJROOT = "../../../../../EASTLEAWebKit/local/osx-gcc-dev-opt/build/EASTLEAWebKit";
+                SYMROOT = "../../../../../EASTLEAWebKit/local/osx-gcc-dev-opt/lib";
+                CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+                GENERATED_CC_FLAGS_LibraryExtra = "$(GENERATED_CC_FLAGS_LibraryExtra_Release)";
+                GENERATED_LDFLAGS = "$(GENERATED_LDFLAGS_Release)";
+            };
+            name = "Release";
+        };
+        C01FCF5008A954540054247B = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ECF1214958100E23731;
+            buildSettings = {
+                SDKROOT = macosx10.7;
+            };
+            name = "Release";
+        };
+        1D6058960D05DD3E006BFB54 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                1D6058950D05DD3E006BFB54,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        C01FCF4E08A954540054247B = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C01FCF5008A954540054247B,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        BA5E10180000202BBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000202CBA5E1018,
+                BA5E101800002058BA5E1018,
+            );
+            name = "EASTLEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local";
+        };
+        BA5E10180000202CBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000202DBA5E1018,
+            );
+            name = "include";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include";
+        };
+        BA5E10180000202DBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000204ABA5E1018,
+                BA5E10180000204CBA5E1018,
+                BA5E10180000202EBA5E1018,
+                BA5E10180000202FBA5E1018,
+                BA5E101800002030BA5E1018,
+                BA5E101800002031BA5E1018,
+                BA5E101800002032BA5E1018,
+                BA5E101800002033BA5E1018,
+                BA5E101800002034BA5E1018,
+                BA5E101800002035BA5E1018,
+                BA5E101800002036BA5E1018,
+                BA5E101800002037BA5E1018,
+                BA5E101800002038BA5E1018,
+                BA5E101800002039BA5E1018,
+                BA5E10180000203ABA5E1018,
+                BA5E10180000203BBA5E1018,
+                BA5E10180000203CBA5E1018,
+                BA5E10180000203DBA5E1018,
+                BA5E10180000203EBA5E1018,
+                BA5E10180000203FBA5E1018,
+                BA5E101800002040BA5E1018,
+                BA5E101800002041BA5E1018,
+                BA5E101800002042BA5E1018,
+                BA5E101800002043BA5E1018,
+                BA5E101800002044BA5E1018,
+                BA5E101800002045BA5E1018,
+                BA5E101800002046BA5E1018,
+                BA5E101800002047BA5E1018,
+                BA5E101800002048BA5E1018,
+                BA5E101800002049BA5E1018,
+            );
+            name = "EASTL";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL";
+        };
+        BA5E10180000202EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "algorithm.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/algorithm.h";
+        };
+        BA5E10180000202FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "allocator.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/allocator.h";
+        };
+        BA5E101800002030BA5E1018 = {
+            isa = PBXFileReference;
+            name = "bitset.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/bitset.h";
+        };
+        BA5E101800002031BA5E1018 = {
+            isa = PBXFileReference;
+            name = "bitvector.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/bitvector.h";
+        };
+        BA5E101800002032BA5E1018 = {
+            isa = PBXFileReference;
+            name = "core_allocator_adapter.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/core_allocator_adapter.h";
+        };
+        BA5E101800002033BA5E1018 = {
+            isa = PBXFileReference;
+            name = "fixed_allocator.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/fixed_allocator.h";
+        };
+        BA5E101800002034BA5E1018 = {
+            isa = PBXFileReference;
+            name = "fixed_hash_map.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/fixed_hash_map.h";
+        };
+        BA5E101800002035BA5E1018 = {
+            isa = PBXFileReference;
+            name = "fixed_hash_set.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/fixed_hash_set.h";
+        };
+        BA5E101800002036BA5E1018 = {
+            isa = PBXFileReference;
+            name = "fixed_list.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/fixed_list.h";
+        };
+        BA5E101800002037BA5E1018 = {
+            isa = PBXFileReference;
+            name = "fixed_map.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/fixed_map.h";
+        };
+        BA5E101800002038BA5E1018 = {
+            isa = PBXFileReference;
+            name = "fixed_set.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/fixed_set.h";
+        };
+        BA5E101800002039BA5E1018 = {
+            isa = PBXFileReference;
+            name = "fixed_string.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/fixed_string.h";
+        };
+        BA5E10180000203ABA5E1018 = {
+            isa = PBXFileReference;
+            name = "fixed_substring.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/fixed_substring.h";
+        };
+        BA5E10180000203BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "fixed_vector.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/fixed_vector.h";
+        };
+        BA5E10180000203CBA5E1018 = {
+            isa = PBXFileReference;
+            name = "functional.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/functional.h";
+        };
+        BA5E10180000203DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "hash_map.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/hash_map.h";
+        };
+        BA5E10180000203EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "hash_set.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/hash_set.h";
+        };
+        BA5E10180000203FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "heap.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/heap.h";
+        };
+        BA5E101800002040BA5E1018 = {
+            isa = PBXFileReference;
+            name = "iterator.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/iterator.h";
+        };
+        BA5E101800002041BA5E1018 = {
+            isa = PBXFileReference;
+            name = "list.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/list.h";
+        };
+        BA5E101800002042BA5E1018 = {
+            isa = PBXFileReference;
+            name = "map.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/map.h";
+        };
+        BA5E101800002043BA5E1018 = {
+            isa = PBXFileReference;
+            name = "memory.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/memory.h";
+        };
+        BA5E101800002044BA5E1018 = {
+            isa = PBXFileReference;
+            name = "set.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/set.h";
+        };
+        BA5E101800002045BA5E1018 = {
+            isa = PBXFileReference;
+            name = "sort.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/sort.h";
+        };
+        BA5E101800002046BA5E1018 = {
+            isa = PBXFileReference;
+            name = "string.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/string.h";
+        };
+        BA5E101800002047BA5E1018 = {
+            isa = PBXFileReference;
+            name = "type_traits.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/type_traits.h";
+        };
+        BA5E101800002048BA5E1018 = {
+            isa = PBXFileReference;
+            name = "utility.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/utility.h";
+        };
+        BA5E101800002049BA5E1018 = {
+            isa = PBXFileReference;
+            name = "vector.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/vector.h";
+        };
+        BA5E10180000204ABA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000204BBA5E1018,
+            );
+            name = "bonus";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/bonus";
+        };
+        BA5E10180000204BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "sort_extra.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/bonus/sort_extra.h";
+        };
+        BA5E10180000204CBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000204DBA5E1018,
+                BA5E10180000204EBA5E1018,
+                BA5E10180000204FBA5E1018,
+                BA5E101800002050BA5E1018,
+                BA5E101800002051BA5E1018,
+                BA5E101800002052BA5E1018,
+                BA5E101800002053BA5E1018,
+                BA5E101800002054BA5E1018,
+                BA5E101800002055BA5E1018,
+                BA5E101800002056BA5E1018,
+                BA5E101800002057BA5E1018,
+            );
+            name = "internal";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/internal";
+        };
+        BA5E10180000204DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "config.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/internal/config.h";
+        };
+        BA5E10180000204EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "eastl_rw.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/internal/eastl_rw.h";
+        };
+        BA5E10180000204FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "fixed_pool.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/internal/fixed_pool.h";
+        };
+        BA5E101800002050BA5E1018 = {
+            isa = PBXFileReference;
+            name = "generic_iterator.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/internal/generic_iterator.h";
+        };
+        BA5E101800002051BA5E1018 = {
+            isa = PBXFileReference;
+            name = "hashtable.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/internal/hashtable.h";
+        };
+        BA5E101800002052BA5E1018 = {
+            isa = PBXFileReference;
+            name = "red_black_tree.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/internal/red_black_tree.h";
+        };
+        BA5E101800002053BA5E1018 = {
+            isa = PBXFileReference;
+            name = "type_compound.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/internal/type_compound.h";
+        };
+        BA5E101800002054BA5E1018 = {
+            isa = PBXFileReference;
+            name = "type_fundamental.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/internal/type_fundamental.h";
+        };
+        BA5E101800002055BA5E1018 = {
+            isa = PBXFileReference;
+            name = "type_pod.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/internal/type_pod.h";
+        };
+        BA5E101800002056BA5E1018 = {
+            isa = PBXFileReference;
+            name = "type_properties.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/internal/type_properties.h";
+        };
+        BA5E101800002057BA5E1018 = {
+            isa = PBXFileReference;
+            name = "type_transformations.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include/EASTL/internal/type_transformations.h";
+        };
+        BA5E101800002058BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002059BA5E1018,
+                BA5E10180000205BBA5E1018,
+                BA5E10180000205DBA5E1018,
+                BA5E10180000205FBA5E1018,
+                BA5E101800002061BA5E1018,
+                BA5E101800002063BA5E1018,
+            );
+            name = "source";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/source";
+        };
+        BA5E101800002059BA5E1018 = {
+            isa = PBXFileReference;
+            name = "allocator.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/source/allocator.cpp";
+        };
+        BA5E10180000205ABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002059BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E10180000205BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "assert.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/source/assert.cpp";
+        };
+        BA5E10180000205CBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000205BBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E10180000205DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "fixed_pool.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/source/fixed_pool.cpp";
+        };
+        BA5E10180000205EBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000205DBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E10180000205FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "hashtable.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/source/hashtable.cpp";
+        };
+        BA5E101800002060BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000205FBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002061BA5E1018 = {
+            isa = PBXFileReference;
+            name = "red_black_tree.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/source/red_black_tree.cpp";
+        };
+        BA5E101800002062BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002061BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002063BA5E1018 = {
+            isa = PBXFileReference;
+            name = "string.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/source/string.cpp";
+        };
+        BA5E101800002064BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002063BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E10180000235CBA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntGenerated.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntGenerated.xcconfig";
+        };
+        BA5E10180000235EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntTarget.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntTarget.xcconfig";
+        };
+    };
+    rootObject = 29B97313FDCFA39411CA2CEA;
+}

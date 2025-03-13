@@ -1,0 +1,3 @@
+NANT_MODULENAME = JavaScriptCore
+NANT_EXENAME = libJavaScriptCore.a
+NANT_SYMROOT = build 

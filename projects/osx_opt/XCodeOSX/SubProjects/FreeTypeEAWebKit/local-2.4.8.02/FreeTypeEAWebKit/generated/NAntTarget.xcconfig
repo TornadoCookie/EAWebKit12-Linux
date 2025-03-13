@@ -1,0 +1,3 @@
+NANT_MODULENAME = FreeTypeEAWebKit
+NANT_EXENAME = libFreeTypeEAWebKit.a
+NANT_SYMROOT = build 

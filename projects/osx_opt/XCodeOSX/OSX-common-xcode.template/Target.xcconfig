@@ -1,0 +1,5 @@
+#include "generated/NAntTarget.xcconfig"
+
+PRODUCT_NAME = ${NANT_MODULENAME}
+EXECUTABLE_NAME = ${NANT_EXENAME}
+SYMROOT = ${NANT_SYMROOT}

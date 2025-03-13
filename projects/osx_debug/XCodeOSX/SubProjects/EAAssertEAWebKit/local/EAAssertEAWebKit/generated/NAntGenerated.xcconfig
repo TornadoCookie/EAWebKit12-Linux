@@ -1,0 +1,10 @@
+GENERATED_CC_FLAGS_StdLibrary_Debug = -D _DEBUG -D EA_DEBUG -D EA_PLATFORM_OSX=1 -Wall -Wno-deprecated-declarations -fno-rtti -fno-exceptions -Wno-error -O0 -fno-strict-aliasing -g3 -c -fno-common -fmessage-length=0 -fshort-wchar -I ../../../../../../../EAWebKitSupportPackages/EAAssertEAWebKit/local/include -I ../../../../../../../EAWebKitSupportPackages/EABaseEAWebKit/local/include/Common
+GENERATED_LDFLAGS_Debug = 
+INFOPLIST_OUTPUT_FORMAT = same-as-input
+SKIP_INSTALL = YES 
+DEPLOYMENT_POSTPROCESSING = NO 
+GCC_TREAT_WARNINGS_AS_ERRORS = NO 
+GCC_ENABLE_CPP_RTTI = NO 
+INFOPLIST_FILE = ../../../../OSX-common-xcode.template/Info.plist 
+GCC_VERSION = com.apple.compilers.llvmgcc42 
+ARCHS = i386 

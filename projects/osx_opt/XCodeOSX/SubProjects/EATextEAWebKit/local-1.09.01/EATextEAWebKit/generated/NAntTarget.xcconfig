@@ -1,0 +1,3 @@
+NANT_MODULENAME = EATextEAWebKit
+NANT_EXENAME = libEATextEAWebKit.a
+NANT_SYMROOT = build 

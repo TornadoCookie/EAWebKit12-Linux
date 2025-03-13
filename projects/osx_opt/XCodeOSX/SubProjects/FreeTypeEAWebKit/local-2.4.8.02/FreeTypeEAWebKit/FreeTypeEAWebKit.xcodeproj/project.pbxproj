@@ -1,0 +1,925 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+        2BEA1BDC12A40B1C007E53C3 = {
+            isa = PBXFileReference;
+            lastKnownFileType = wrapper.framework;
+            name = "CoreFoundation.framework";
+            path = "System/Library/Frameworks/CoreFoundation.framework";
+            sourceTree = SDKROOT;
+        };
+        1D530ECE1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Project.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ECF1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Release.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ED01214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Target.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D6058910D05DD3D006BFB54 = {
+            isa = PBXFileReference;
+            includeInIndex = 0;
+            path = "../../../../OSX-common-xcode.template/FreeTypeEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            name = "FreeTypeEAWebKit";
+        };
+        1D60588F0D05DD3D006BFB54 = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D73A7FE12124384005BEE8D = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000022CDBA5E1018,
+            );
+            name = "Packages";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        29B97314FDCFA39411CA2CEA = {
+            isa = PBXGroup;
+            children = (
+                1D73A7FE12124384005BEE8D,
+                2B96D4A71282D3C600ECF477,
+                1D6058910D05DD3D006BFB54,
+                2B96D4A81282D3D700ECF477,
+            );
+            name = "CustomTemplate";
+            sourceTree = "<group>";
+        };
+        2B96D4A71282D3C600ECF477 = {
+            isa = PBXGroup;
+            children = (
+                2BEA1BDB12A40B1C007E53C3,
+            );
+            name = "Frameworks";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        2B96D4A81282D3D700ECF477 = {
+            isa = PBXGroup;
+            children = (
+                1D530ECD1214958100E23731,
+                1D530ECE1214958100E23731,
+                1D530ECF1214958100E23731,
+                1D530ED01214958100E23731,
+                BA5E10180000236EBA5E1018,
+                BA5E101800002370BA5E1018,
+            );
+            name = "Configs";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        1D6058900D05DD3D006BFB54 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 1D6058960D05DD3E006BFB54;
+            buildPhases = (
+                1D60588D0D05DD3D006BFB54,
+                1D60588E0D05DD3D006BFB54,
+                1D60588F0D05DD3D006BFB54,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "FreeTypeEAWebKit";
+            productName = "FreeTypeEAWebKit";
+            productReference = 1D6058910D05DD3D006BFB54;
+            productType = "com.apple.product-type.library.static";
+        };
+        29B97313FDCFA39411CA2CEA = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 0420;
+                ORGANIZATIONNAME = "Electronic Arts";
+            };
+            buildConfigurationList = C01FCF4E08A954540054247B;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = English;
+            hasScannedForEncodings = 1;
+            knownRegions = (
+                English,
+                Japanese,
+                French,
+                German,
+            );
+            mainGroup = 29B97314FDCFA39411CA2CEA;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                1D6058900D05DD3D006BFB54,
+            );
+        };
+        1D60588D0D05DD3D006BFB54 = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2BF7EB841236332B00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt postbuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh postbuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        2BF7EB861236336C00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt prebuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh prebuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        1D60588E0D05DD3D006BFB54 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                BA5E1018000022D0BA5E1018,
+                BA5E1018000022F2BA5E1018,
+                BA5E1018000022F8BA5E1018,
+                BA5E1018000022D3BA5E1018,
+                BA5E1018000022D5BA5E1018,
+                BA5E1018000022D7BA5E1018,
+                BA5E1018000022F5BA5E1018,
+                BA5E1018000022D9BA5E1018,
+                BA5E1018000022DBBA5E1018,
+                BA5E1018000022DDBA5E1018,
+                BA5E1018000022DFBA5E1018,
+                BA5E1018000022FEBA5E1018,
+                BA5E1018000022E1BA5E1018,
+                BA5E101800002301BA5E1018,
+                BA5E1018000022E3BA5E1018,
+                BA5E1018000022E5BA5E1018,
+                BA5E1018000022E7BA5E1018,
+                BA5E1018000022E9BA5E1018,
+                BA5E1018000022EBBA5E1018,
+                BA5E1018000022EDBA5E1018,
+                BA5E1018000022EFBA5E1018,
+                BA5E101800002304BA5E1018,
+                BA5E101800002307BA5E1018,
+                BA5E10180000230ABA5E1018,
+                BA5E10180000230DBA5E1018,
+                BA5E101800002310BA5E1018,
+                BA5E101800002313BA5E1018,
+                BA5E101800002316BA5E1018,
+                BA5E101800002319BA5E1018,
+                BA5E10180000231CBA5E1018,
+                BA5E10180000231FBA5E1018,
+                BA5E1018000022FBBA5E1018,
+                BA5E101800002322BA5E1018,
+                BA5E101800002325BA5E1018,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D6058950D05DD3E006BFB54 = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ED01214958100E23731;
+            buildSettings = {
+                MACOSX_DEPLOYMENT_TARGET = 10.6;
+                MACH_O_TYPE = staticlib;
+                OBJROOT = "../../../../../FreeTypeEAWebKit/local-2.4.8.02/osx-gcc-dev-opt/build/FreeTypeEAWebKit";
+                SYMROOT = "../../../../../FreeTypeEAWebKit/local-2.4.8.02/osx-gcc-dev-opt/lib";
+                CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+                GENERATED_CC_FLAGS_CLibrary = "$(GENERATED_CC_FLAGS_CLibrary_Release)";
+                GENERATED_LDFLAGS = "$(GENERATED_LDFLAGS_Release)";
+            };
+            name = "Release";
+        };
+        C01FCF5008A954540054247B = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ECF1214958100E23731;
+            buildSettings = {
+                SDKROOT = macosx10.7;
+            };
+            name = "Release";
+        };
+        1D6058960D05DD3E006BFB54 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                1D6058950D05DD3E006BFB54,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        C01FCF4E08A954540054247B = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C01FCF5008A954540054247B,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        BA5E1018000022CDBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000022CEBA5E1018,
+                BA5E1018000022D1BA5E1018,
+                BA5E1018000022F0BA5E1018,
+                BA5E1018000022F3BA5E1018,
+                BA5E1018000022F6BA5E1018,
+                BA5E1018000022F9BA5E1018,
+                BA5E1018000022FCBA5E1018,
+                BA5E1018000022FFBA5E1018,
+                BA5E101800002302BA5E1018,
+                BA5E101800002305BA5E1018,
+                BA5E101800002308BA5E1018,
+                BA5E10180000230BBA5E1018,
+                BA5E10180000230EBA5E1018,
+                BA5E101800002311BA5E1018,
+                BA5E101800002314BA5E1018,
+                BA5E101800002317BA5E1018,
+                BA5E10180000231ABA5E1018,
+                BA5E10180000231DBA5E1018,
+                BA5E101800002320BA5E1018,
+                BA5E101800002323BA5E1018,
+            );
+            name = "FreeTypeEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02";
+        };
+        BA5E1018000022CEBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000022CFBA5E1018,
+            );
+            name = "autofit";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/autofit";
+        };
+        BA5E1018000022CFBA5E1018 = {
+            isa = PBXFileReference;
+            name = "autofit.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/autofit/autofit.c";
+        };
+        BA5E1018000022D0BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022CFBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022D1BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000022D2BA5E1018,
+                BA5E1018000022D4BA5E1018,
+                BA5E1018000022D6BA5E1018,
+                BA5E1018000022D8BA5E1018,
+                BA5E1018000022DABA5E1018,
+                BA5E1018000022DCBA5E1018,
+                BA5E1018000022DEBA5E1018,
+                BA5E1018000022E0BA5E1018,
+                BA5E1018000022E2BA5E1018,
+                BA5E1018000022E4BA5E1018,
+                BA5E1018000022E6BA5E1018,
+                BA5E1018000022E8BA5E1018,
+                BA5E1018000022EABA5E1018,
+                BA5E1018000022ECBA5E1018,
+                BA5E1018000022EEBA5E1018,
+            );
+            name = "base";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base";
+        };
+        BA5E1018000022D2BA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftbase.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftbase.c";
+        };
+        BA5E1018000022D3BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022D2BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022D4BA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftbbox.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftbbox.c";
+        };
+        BA5E1018000022D5BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022D4BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022D6BA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftbitmap.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftbitmap.c";
+        };
+        BA5E1018000022D7BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022D6BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022D8BA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftdebug.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftdebug.c";
+        };
+        BA5E1018000022D9BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022D8BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022DABA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftfstype.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftfstype.c";
+        };
+        BA5E1018000022DBBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022DABA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022DCBA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftgasp.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftgasp.c";
+        };
+        BA5E1018000022DDBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022DCBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022DEBA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftglyph.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftglyph.c";
+        };
+        BA5E1018000022DFBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022DEBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022E0BA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftinit.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftinit.c";
+        };
+        BA5E1018000022E1BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022E0BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022E2BA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftmm.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftmm.c";
+        };
+        BA5E1018000022E3BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022E2BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022E4BA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftpfr.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftpfr.c";
+        };
+        BA5E1018000022E5BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022E4BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022E6BA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftstroke.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftstroke.c";
+        };
+        BA5E1018000022E7BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022E6BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022E8BA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftsynth.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftsynth.c";
+        };
+        BA5E1018000022E9BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022E8BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022EABA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftsystem.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftsystem.c";
+        };
+        BA5E1018000022EBBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022EABA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022ECBA5E1018 = {
+            isa = PBXFileReference;
+            name = "fttype1.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/fttype1.c";
+        };
+        BA5E1018000022EDBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022ECBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022EEBA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftwinfnt.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/base/ftwinfnt.c";
+        };
+        BA5E1018000022EFBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022EEBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022F0BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000022F1BA5E1018,
+            );
+            name = "bdf";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/bdf";
+        };
+        BA5E1018000022F1BA5E1018 = {
+            isa = PBXFileReference;
+            name = "bdf.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/bdf/bdf.c";
+        };
+        BA5E1018000022F2BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022F1BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022F3BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000022F4BA5E1018,
+            );
+            name = "cache";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/cache";
+        };
+        BA5E1018000022F4BA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftcache.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/cache/ftcache.c";
+        };
+        BA5E1018000022F5BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022F4BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022F6BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000022F7BA5E1018,
+            );
+            name = "cff";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/cff";
+        };
+        BA5E1018000022F7BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cff.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/cff/cff.c";
+        };
+        BA5E1018000022F8BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022F7BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022F9BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000022FABA5E1018,
+            );
+            name = "cid";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/cid";
+        };
+        BA5E1018000022FABA5E1018 = {
+            isa = PBXFileReference;
+            name = "type1cid.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/cid/type1cid.c";
+        };
+        BA5E1018000022FBBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022FABA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022FCBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000022FDBA5E1018,
+            );
+            name = "gzip";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/gzip";
+        };
+        BA5E1018000022FDBA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftgzip.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/gzip/ftgzip.c";
+        };
+        BA5E1018000022FEBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000022FDBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E1018000022FFBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002300BA5E1018,
+            );
+            name = "lzw";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/lzw";
+        };
+        BA5E101800002300BA5E1018 = {
+            isa = PBXFileReference;
+            name = "ftlzw.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/lzw/ftlzw.c";
+        };
+        BA5E101800002301BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002300BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002302BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002303BA5E1018,
+            );
+            name = "pcf";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/pcf";
+        };
+        BA5E101800002303BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pcf.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/pcf/pcf.c";
+        };
+        BA5E101800002304BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002303BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002305BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002306BA5E1018,
+            );
+            name = "pfr";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/pfr";
+        };
+        BA5E101800002306BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pfr.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/pfr/pfr.c";
+        };
+        BA5E101800002307BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002306BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002308BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002309BA5E1018,
+            );
+            name = "psaux";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/psaux";
+        };
+        BA5E101800002309BA5E1018 = {
+            isa = PBXFileReference;
+            name = "psaux.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/psaux/psaux.c";
+        };
+        BA5E10180000230ABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002309BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000230BBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000230CBA5E1018,
+            );
+            name = "pshinter";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/pshinter";
+        };
+        BA5E10180000230CBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pshinter.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/pshinter/pshinter.c";
+        };
+        BA5E10180000230DBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000230CBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000230EBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000230FBA5E1018,
+            );
+            name = "psnames";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/psnames";
+        };
+        BA5E10180000230FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "psnames.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/psnames/psnames.c";
+        };
+        BA5E101800002310BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000230FBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002311BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002312BA5E1018,
+            );
+            name = "raster";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/raster";
+        };
+        BA5E101800002312BA5E1018 = {
+            isa = PBXFileReference;
+            name = "raster.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/raster/raster.c";
+        };
+        BA5E101800002313BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002312BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002314BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002315BA5E1018,
+            );
+            name = "sfnt";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/sfnt";
+        };
+        BA5E101800002315BA5E1018 = {
+            isa = PBXFileReference;
+            name = "sfnt.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/sfnt/sfnt.c";
+        };
+        BA5E101800002316BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002315BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002317BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002318BA5E1018,
+            );
+            name = "smooth";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/smooth";
+        };
+        BA5E101800002318BA5E1018 = {
+            isa = PBXFileReference;
+            name = "smooth.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/smooth/smooth.c";
+        };
+        BA5E101800002319BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002318BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000231ABA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000231BBA5E1018,
+            );
+            name = "truetype";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/truetype";
+        };
+        BA5E10180000231BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "truetype.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/truetype/truetype.c";
+        };
+        BA5E10180000231CBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000231BBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000231DBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000231EBA5E1018,
+            );
+            name = "type1";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/type1";
+        };
+        BA5E10180000231EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "type1.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/type1/type1.c";
+        };
+        BA5E10180000231FBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000231EBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002320BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002321BA5E1018,
+            );
+            name = "type42";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/type42";
+        };
+        BA5E101800002321BA5E1018 = {
+            isa = PBXFileReference;
+            name = "type42.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/type42/type42.c";
+        };
+        BA5E101800002322BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002321BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002323BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002324BA5E1018,
+            );
+            name = "winfonts";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/winfonts";
+        };
+        BA5E101800002324BA5E1018 = {
+            isa = PBXFileReference;
+            name = "winfnt.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/src/winfonts/winfnt.c";
+        };
+        BA5E101800002325BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002324BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000236EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntGenerated.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntGenerated.xcconfig";
+        };
+        BA5E101800002370BA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntTarget.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntTarget.xcconfig";
+        };
+    };
+    rootObject = 29B97313FDCFA39411CA2CEA;
+}

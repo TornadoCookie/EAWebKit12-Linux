@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Package Changes</title>
+  <meta content="text/html; charset=us-ascii" http-equiv="Content-Type">
+  <meta name="author" content="Paul Pedriana">
+  <meta name="description" content="Describes changes between package versions.">
+</head>
+<body>
+
+<font size="+3">Package Changes</font><br>
+
+<br>
+
+<hr style="width: 100%; height: 2px;">
+<span style="font-weight: bold;"></span>
+<p><span style="font-weight: bold;">Version 1.01.00</span> (May 7, 2012)</p>
+<ul>
+  <li>Updated to libpng 1.5.10 from previous version 1.5.2. 1.5.10 offers ARM Neon Support. Note that between v1.5.2 and v1.5.10 libpng introduced some breaking API and data struct changes. We have attempted to minimize them to the extent possible, but you could still be affected by them. On the other hand, they are mostly small changes (e.g. rename of png_jmpbuf to longjump_buffer).  EAGimex-3.03.02 has adopted this api change.</li>  
+</ul>
+<hr style="width: 100%; height: 2px;">
+<span style="font-weight: bold;"></span>
+<p><span style="font-weight: bold;">Version 1.00.08</span> (February 29th, 2012)</p>
+<ul>
+  <li>Added Vita Support.</li>
+  <li>Updated EA modification to allow it to work on all platforms.</li>
+</ul>
+<hr style="width: 100%; height: 2px;">
+<span style="font-weight: bold;"></span>
+<p><span style="font-weight: bold;">Version 1.00.07</span> (February 6th, 2012)</p>
+<ul>
+  <li>Updated EA modification to allow it to work on all platforms.</li>
+  <li>Fixed compiler warnings on Marmalade.</li>
+  <li>Fixed compiler warnings for EDG-based compilers.</li>
+  <li>Added PNG_IMPEXP support to libpng.build</li>
+</ul>
+<hr style="width: 100%; height: 2px;">
+<span style="font-weight: bold;"></span>
+<p><span style="font-weight: bold;">Version 1.00.06</span> (September 1, 2011)</p>
+<ul>
+  <li>Reinstated the custom png_set_default_mem_fn, which is needed to allow user-defined memory allocation. It was accidentally omitted in v1.00.05. </li>
+</ul>
+<hr style="width: 100%; height: 2px;">
+<span style="font-weight: bold;"></span>
+<p><span style="font-weight: bold;">Version 1.00.05 </span>(May 4, 2011)</p>
+<ul>
+  <li>Updated to libpng 1.5.2 from the previous 1.2.9. Note that between v1.2.9 and v1.5.2 libpng introduced some breaking API and data struct changes. We have attempted to minimize them to the extent possible, but you could still be affected by them. On the other hand, they are mostly small changes (e.g. rename of jmpbuf to png_jmpbuf). </li>
+  <li>Added codestripper support. </li>
+</ul>
+<hr style="width: 100%; height: 2px;">
+<span style="font-weight: bold;"></span>
+<p><span style="font-weight: bold;">Version 1.00.04 </span>(March 14, 2011)</p>
+<ul>
+  <li>Disabled code in pngconf.h which was causing intentional compile errors due to setjmp.h.
+  </li>
+</ul>
+<hr style="width: 100%; height: 2px;">
+<span style="font-weight: bold;"></span>
+<p><span style="font-weight: bold;">Version 1.00.03 </span>(December 14, 2010)</p>
+<ul>
+  <li>Exposed the EA_USE_XCEEDZIP property globally in nant and set its default to disabled (use zlib). xceedzip is now deprecated and we want to start using zlib henceforth. That's the only difference with this new package version, and so if it breaks users the solution is simply to not use this version. 
+  </li>
+</ul>
+<hr style="width: 100%; height: 2px;">
+<span style="font-weight: bold;"></span>
+<p><span style="font-weight: bold;">Version 1.00.02 </span>(June 1, 2009)</p>
+<ul>
+  <li>Fixed compilation issues for CodeWarrior on Wii:
+    <ul>
+      <li>sys/types.h is not available,</li>
+      <li>define PNGAPI as empty rather than _cdecl.</li>
+    </ul>
+  </li>
+  <li>Tested compiling against pc64-vc eaconfig configurations with VisualStudio 2005.</li>
+</ul>
+<hr style="width: 100%; height: 2px;">
+<span style="font-weight: bold;"></span>
+<p><span style="font-weight: bold;">Version 1.00.01 </span>(December 9, 2008)</p>
+<ul>
+  <li>Fixed compiler warnings due to new compiler behaviour. </li>
+</ul>
+<hr style="width: 100%; height: 2px;">
+<span style="font-weight: bold;"></span>
+<p><span style="font-weight: bold;">Version 1.00.00 </span>(November 19, 2008)</p>
+<p>This is the first release of this package.</p>
+<hr style="width: 100%; height: 2px;">
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+</body>
+</html>

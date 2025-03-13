@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+        2BEA1BDC12A40B1C007E53C3 = {
+            isa = PBXFileReference;
+            lastKnownFileType = wrapper.framework;
+            name = "CoreFoundation.framework";
+            path = "System/Library/Frameworks/CoreFoundation.framework";
+            sourceTree = SDKROOT;
+        };
+        1D530ECE1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Project.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ECF1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Release.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ED01214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Target.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D6058910D05DD3D006BFB54 = {
+            isa = PBXFileReference;
+            includeInIndex = 0;
+            path = "../../../../OSX-common-xcode.template/pixman";
+            sourceTree = SOURCE_ROOT;
+            name = "pixman";
+        };
+        1D60588F0D05DD3D006BFB54 = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D73A7FE12124384005BEE8D = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000021D7BA5E1018,
+            );
+            name = "Packages";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        29B97314FDCFA39411CA2CEA = {
+            isa = PBXGroup;
+            children = (
+                1D73A7FE12124384005BEE8D,
+                2B96D4A71282D3C600ECF477,
+                1D6058910D05DD3D006BFB54,
+                2B96D4A81282D3D700ECF477,
+            );
+            name = "CustomTemplate";
+            sourceTree = "<group>";
+        };
+        2B96D4A71282D3C600ECF477 = {
+            isa = PBXGroup;
+            children = (
+                2BEA1BDB12A40B1C007E53C3,
+            );
+            name = "Frameworks";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        2B96D4A81282D3D700ECF477 = {
+            isa = PBXGroup;
+            children = (
+                1D530ECD1214958100E23731,
+                1D530ECE1214958100E23731,
+                1D530ECF1214958100E23731,
+                1D530ED01214958100E23731,
+                BA5E10180000235FBA5E1018,
+                BA5E101800002361BA5E1018,
+            );
+            name = "Configs";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        1D6058900D05DD3D006BFB54 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 1D6058960D05DD3E006BFB54;
+            buildPhases = (
+                1D60588D0D05DD3D006BFB54,
+                1D60588E0D05DD3D006BFB54,
+                1D60588F0D05DD3D006BFB54,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "pixman";
+            productName = "pixman";
+            productReference = 1D6058910D05DD3D006BFB54;
+            productType = "com.apple.product-type.library.static";
+        };
+        29B97313FDCFA39411CA2CEA = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 0420;
+                ORGANIZATIONNAME = "Electronic Arts";
+            };
+            buildConfigurationList = C01FCF4E08A954540054247B;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = English;
+            hasScannedForEncodings = 1;
+            knownRegions = (
+                English,
+                Japanese,
+                French,
+                German,
+            );
+            mainGroup = 29B97314FDCFA39411CA2CEA;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                1D6058900D05DD3D006BFB54,
+            );
+        };
+        1D60588D0D05DD3D006BFB54 = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2BF7EB841236332B00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt postbuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh postbuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        2BF7EB861236336C00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt prebuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh prebuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        1D60588E0D05DD3D006BFB54 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                BA5E1018000021E7BA5E1018,
+                BA5E1018000021E9BA5E1018,
+                BA5E1018000021EBBA5E1018,
+                BA5E1018000021EDBA5E1018,
+                BA5E1018000021EFBA5E1018,
+                BA5E1018000021F1BA5E1018,
+                BA5E1018000021F3BA5E1018,
+                BA5E1018000021F5BA5E1018,
+                BA5E1018000021F7BA5E1018,
+                BA5E1018000021F9BA5E1018,
+                BA5E1018000021FBBA5E1018,
+                BA5E1018000021FDBA5E1018,
+                BA5E1018000021FFBA5E1018,
+                BA5E101800002201BA5E1018,
+                BA5E101800002203BA5E1018,
+                BA5E101800002205BA5E1018,
+                BA5E101800002207BA5E1018,
+                BA5E101800002209BA5E1018,
+                BA5E10180000220BBA5E1018,
+                BA5E10180000220DBA5E1018,
+                BA5E10180000220FBA5E1018,
+                BA5E101800002211BA5E1018,
+                BA5E101800002213BA5E1018,
+                BA5E101800002215BA5E1018,
+                BA5E101800002217BA5E1018,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D6058950D05DD3E006BFB54 = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ED01214958100E23731;
+            buildSettings = {
+                MACOSX_DEPLOYMENT_TARGET = 10.6;
+                MACH_O_TYPE = staticlib;
+                OBJROOT = "../../../../../pixman/local/osx-gcc-dev-opt/build/pixman";
+                SYMROOT = "../../../../../pixman/local/osx-gcc-dev-opt/lib";
+                CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+                GENERATED_CC_FLAGS_CustomizedLibraryC = "$(GENERATED_CC_FLAGS_CustomizedLibraryC_Release)";
+                GENERATED_LDFLAGS = "$(GENERATED_LDFLAGS_Release)";
+            };
+            name = "Release";
+        };
+        C01FCF5008A954540054247B = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ECF1214958100E23731;
+            buildSettings = {
+                SDKROOT = macosx10.7;
+            };
+            name = "Release";
+        };
+        1D6058960D05DD3E006BFB54 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                1D6058950D05DD3E006BFB54,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        C01FCF4E08A954540054247B = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C01FCF5008A954540054247B,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        BA5E1018000021D7BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000021D8BA5E1018,
+                BA5E1018000021E5BA5E1018,
+            );
+            name = "pixman";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local";
+        };
+        BA5E1018000021D8BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000021D9BA5E1018,
+                BA5E1018000021DABA5E1018,
+                BA5E1018000021DBBA5E1018,
+                BA5E1018000021DCBA5E1018,
+                BA5E1018000021DDBA5E1018,
+                BA5E1018000021DEBA5E1018,
+                BA5E1018000021DFBA5E1018,
+                BA5E1018000021E0BA5E1018,
+                BA5E1018000021E1BA5E1018,
+                BA5E1018000021E2BA5E1018,
+                BA5E1018000021E3BA5E1018,
+                BA5E1018000021E4BA5E1018,
+            );
+            name = "include";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/include";
+        };
+        BA5E1018000021D9BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/include/pixman.h";
+        };
+        BA5E1018000021DABA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-accessor.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/include/pixman-accessor.h";
+        };
+        BA5E1018000021DBBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-arm-common.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/include/pixman-arm-common.h";
+        };
+        BA5E1018000021DCBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-arm-neon-asm.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/include/pixman-arm-neon-asm.h";
+        };
+        BA5E1018000021DDBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-combine32.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/include/pixman-combine32.h";
+        };
+        BA5E1018000021DEBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-combine64.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/include/pixman-combine64.h";
+        };
+        BA5E1018000021DFBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-compiler.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/include/pixman-compiler.h";
+        };
+        BA5E1018000021E0BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-edge-imp.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/include/pixman-edge-imp.h";
+        };
+        BA5E1018000021E1BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-fast-path.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/include/pixman-fast-path.h";
+        };
+        BA5E1018000021E2BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-malloc.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/include/pixman-malloc.h";
+        };
+        BA5E1018000021E3BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/include/pixman-private.h";
+        };
+        BA5E1018000021E4BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-version.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/include/pixman-version.h";
+        };
+        BA5E1018000021E5BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000021E6BA5E1018,
+                BA5E1018000021E8BA5E1018,
+                BA5E1018000021EABA5E1018,
+                BA5E1018000021ECBA5E1018,
+                BA5E1018000021EEBA5E1018,
+                BA5E1018000021F0BA5E1018,
+                BA5E1018000021F2BA5E1018,
+                BA5E1018000021F4BA5E1018,
+                BA5E1018000021F6BA5E1018,
+                BA5E1018000021F8BA5E1018,
+                BA5E1018000021FABA5E1018,
+                BA5E1018000021FCBA5E1018,
+                BA5E1018000021FEBA5E1018,
+                BA5E101800002200BA5E1018,
+                BA5E101800002202BA5E1018,
+                BA5E101800002204BA5E1018,
+                BA5E101800002206BA5E1018,
+                BA5E101800002208BA5E1018,
+                BA5E10180000220ABA5E1018,
+                BA5E10180000220CBA5E1018,
+                BA5E10180000220EBA5E1018,
+                BA5E101800002210BA5E1018,
+                BA5E101800002212BA5E1018,
+                BA5E101800002214BA5E1018,
+                BA5E101800002216BA5E1018,
+            );
+            name = "source";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source";
+        };
+        BA5E1018000021E6BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman.c";
+        };
+        BA5E1018000021E7BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021E6BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021E8BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-access.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-access.c";
+        };
+        BA5E1018000021E9BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021E8BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021EABA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-access-accessors.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-access-accessors.c";
+        };
+        BA5E1018000021EBBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021EABA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021ECBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-bits-image.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-bits-image.c";
+        };
+        BA5E1018000021EDBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021ECBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021EEBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-combine32.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-combine32.c";
+        };
+        BA5E1018000021EFBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021EEBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021F0BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-combine64.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-combine64.c";
+        };
+        BA5E1018000021F1BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021F0BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021F2BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-conical-gradient.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-conical-gradient.c";
+        };
+        BA5E1018000021F3BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021F2BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021F4BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-cpu.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-cpu.c";
+        };
+        BA5E1018000021F5BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021F4BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021F6BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-edge.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-edge.c";
+        };
+        BA5E1018000021F7BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021F6BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021F8BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-edge-accessors.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-edge-accessors.c";
+        };
+        BA5E1018000021F9BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021F8BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021FABA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-fast-path.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-fast-path.c";
+        };
+        BA5E1018000021FBBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021FABA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021FCBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-general.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-general.c";
+        };
+        BA5E1018000021FDBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021FCBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021FEBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-gradient-walker.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-gradient-walker.c";
+        };
+        BA5E1018000021FFBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021FEBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002200BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-image.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-image.c";
+        };
+        BA5E101800002201BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002200BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002202BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-implementation.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-implementation.c";
+        };
+        BA5E101800002203BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002202BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002204BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-linear-gradient.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-linear-gradient.c";
+        };
+        BA5E101800002205BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002204BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002206BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-matrix.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-matrix.c";
+        };
+        BA5E101800002207BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002206BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002208BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-radial-gradient.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-radial-gradient.c";
+        };
+        BA5E101800002209BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002208BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000220ABA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-region16.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-region16.c";
+        };
+        BA5E10180000220BBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000220ABA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000220CBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-region32.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-region32.c";
+        };
+        BA5E10180000220DBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000220CBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000220EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-solid-fill.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-solid-fill.c";
+        };
+        BA5E10180000220FBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000220EBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002210BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-sse2.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-sse2.c";
+        };
+        BA5E101800002211BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002210BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002212BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-timer.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-timer.c";
+        };
+        BA5E101800002213BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002212BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002214BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-trap.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-trap.c";
+        };
+        BA5E101800002215BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002214BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002216BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pixman-utils.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/pixman/local/source/pixman-utils.c";
+        };
+        BA5E101800002217BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002216BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000235FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntGenerated.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntGenerated.xcconfig";
+        };
+        BA5E101800002361BA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntTarget.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntTarget.xcconfig";
+        };
+    };
+    rootObject = 29B97313FDCFA39411CA2CEA;
+}

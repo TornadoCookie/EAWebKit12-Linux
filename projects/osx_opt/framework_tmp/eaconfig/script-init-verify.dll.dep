@@ -1,0 +1,6 @@
+/Users/csidhall/packages/eaconfig/2.10.00/config/tasks/source/script-init-verify.cs
+/Users/csidhall/packages/eaconfig/2.10.00/config/tasks/source/set-public-data.cs
+
+/Users/csidhall/packages/Framework/3.12.00/bin/EA.Tasks.dll
+/Users/csidhall/packages/Framework/3.12.00/bin/NAnt.Core.dll
+/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/mono/4.0/mscorlib.dll

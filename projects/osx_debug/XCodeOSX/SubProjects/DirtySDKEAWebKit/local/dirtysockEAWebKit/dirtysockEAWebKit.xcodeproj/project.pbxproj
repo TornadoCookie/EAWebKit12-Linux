@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+        2BEA1BDC12A40B1C007E53C3 = {
+            isa = PBXFileReference;
+            lastKnownFileType = wrapper.framework;
+            name = "CoreFoundation.framework";
+            path = "System/Library/Frameworks/CoreFoundation.framework";
+            sourceTree = SDKROOT;
+        };
+        1D530ECD1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Debug.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ECE1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Project.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ED01214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Target.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D6058910D05DD3D006BFB54 = {
+            isa = PBXFileReference;
+            includeInIndex = 0;
+            path = "../../../../OSX-common-xcode.template/dirtysockEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            name = "dirtysockEAWebKit";
+        };
+        1D60588F0D05DD3D006BFB54 = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D73A7FE12124384005BEE8D = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000223BBA5E1018,
+            );
+            name = "Packages";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        29B97314FDCFA39411CA2CEA = {
+            isa = PBXGroup;
+            children = (
+                1D73A7FE12124384005BEE8D,
+                2B96D4A71282D3C600ECF477,
+                1D6058910D05DD3D006BFB54,
+                2B96D4A81282D3D700ECF477,
+            );
+            name = "CustomTemplate";
+            sourceTree = "<group>";
+        };
+        2B96D4A71282D3C600ECF477 = {
+            isa = PBXGroup;
+            children = (
+                2BEA1BDB12A40B1C007E53C3,
+            );
+            name = "Frameworks";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        2B96D4A81282D3D700ECF477 = {
+            isa = PBXGroup;
+            children = (
+                1D530ECD1214958100E23731,
+                1D530ECE1214958100E23731,
+                1D530ECF1214958100E23731,
+                1D530ED01214958100E23731,
+                BA5E101800002351BA5E1018,
+                BA5E101800002352BA5E1018,
+            );
+            name = "Configs";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        1D6058900D05DD3D006BFB54 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 1D6058960D05DD3E006BFB54;
+            buildPhases = (
+                1D60588D0D05DD3D006BFB54,
+                1D60588E0D05DD3D006BFB54,
+                1D60588F0D05DD3D006BFB54,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "dirtysockEAWebKit";
+            productName = "dirtysockEAWebKit";
+            productReference = 1D6058910D05DD3D006BFB54;
+            productType = "com.apple.product-type.library.static";
+        };
+        29B97313FDCFA39411CA2CEA = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 0420;
+                ORGANIZATIONNAME = "Electronic Arts";
+            };
+            buildConfigurationList = C01FCF4E08A954540054247B;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = English;
+            hasScannedForEncodings = 1;
+            knownRegions = (
+                English,
+                Japanese,
+                French,
+                German,
+            );
+            mainGroup = 29B97314FDCFA39411CA2CEA;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                1D6058900D05DD3D006BFB54,
+            );
+        };
+        1D60588D0D05DD3D006BFB54 = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2BF7EB841236332B00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt postbuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh postbuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        2BF7EB861236336C00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt prebuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh prebuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        1D60588E0D05DD3D006BFB54 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                BA5E10180000223FBA5E1018,
+                BA5E101800002241BA5E1018,
+                BA5E101800002243BA5E1018,
+                BA5E101800002245BA5E1018,
+                BA5E101800002247BA5E1018,
+                BA5E10180000224ABA5E1018,
+                BA5E101800002253BA5E1018,
+                BA5E10180000224CBA5E1018,
+                BA5E10180000224EBA5E1018,
+                BA5E101800002255BA5E1018,
+                BA5E10180000225FBA5E1018,
+                BA5E101800002250BA5E1018,
+                BA5E101800002262BA5E1018,
+                BA5E101800002264BA5E1018,
+                BA5E101800002258BA5E1018,
+                BA5E10180000225ABA5E1018,
+                BA5E10180000225CBA5E1018,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D6058940D05DD3E006BFB54 = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ED01214958100E23731;
+            buildSettings = {
+                MACOSX_DEPLOYMENT_TARGET = 10.6;
+                MACH_O_TYPE = staticlib;
+                OBJROOT = "../../../../../DirtySDKEAWebKit/local/osx-gcc-dev-debug/build/dirtysockEAWebKit";
+                SYMROOT = "../../../../../DirtySDKEAWebKit/local/osx-gcc-dev-debug/lib";
+                CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+                GENERATED_CC_FLAGS_CLibrary = "$(GENERATED_CC_FLAGS_CLibrary_Debug)";
+                GENERATED_LDFLAGS = "$(GENERATED_LDFLAGS_Debug)";
+            };
+            name = "Debug";
+        };
+        C01FCF4F08A954540054247B = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ECD1214958100E23731;
+            buildSettings = {
+                SDKROOT = macosx10.7;
+            };
+            name = "Debug";
+        };
+        1D6058960D05DD3E006BFB54 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                1D6058940D05DD3E006BFB54,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        C01FCF4E08A954540054247B = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C01FCF4F08A954540054247B,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        BA5E10180000223BBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000223CBA5E1018,
+                BA5E101800002260BA5E1018,
+            );
+            name = "DirtySDKEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local";
+        };
+        BA5E10180000223CBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000223DBA5E1018,
+                BA5E101800002248BA5E1018,
+                BA5E101800002256BA5E1018,
+                BA5E10180000225DBA5E1018,
+            );
+            name = "core";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core";
+        };
+        BA5E10180000223DBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000223EBA5E1018,
+                BA5E101800002240BA5E1018,
+                BA5E101800002242BA5E1018,
+                BA5E101800002244BA5E1018,
+                BA5E101800002246BA5E1018,
+            );
+            name = "crypt";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/crypt";
+        };
+        BA5E10180000223EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cryptarc4.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/crypt/cryptarc4.c";
+        };
+        BA5E10180000223FBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000223EBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002240BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cryptmd2.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/crypt/cryptmd2.c";
+        };
+        BA5E101800002241BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002240BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002242BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cryptmd5.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/crypt/cryptmd5.c";
+        };
+        BA5E101800002243BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002242BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002244BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cryptrsa.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/crypt/cryptrsa.c";
+        };
+        BA5E101800002245BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002244BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002246BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cryptsha1.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/crypt/cryptsha1.c";
+        };
+        BA5E101800002247BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002246BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002248BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002251BA5E1018,
+                BA5E101800002249BA5E1018,
+                BA5E10180000224BBA5E1018,
+                BA5E10180000224DBA5E1018,
+                BA5E10180000224FBA5E1018,
+            );
+            name = "dirtysock";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock";
+        };
+        BA5E101800002249BA5E1018 = {
+            isa = PBXFileReference;
+            name = "dirtylib.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/dirtylib.c";
+        };
+        BA5E10180000224ABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002249BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000224BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "dirtymem.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/dirtymem.c";
+        };
+        BA5E10180000224CBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000224BBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000224DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "dirtynet.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/dirtynet.c";
+        };
+        BA5E10180000224EBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000224DBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000224FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "platformsocketapi.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/platformsocketapi.c";
+        };
+        BA5E101800002250BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000224FBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002251BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002252BA5E1018,
+                BA5E101800002254BA5E1018,
+            );
+            name = "unix";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/unix";
+        };
+        BA5E101800002252BA5E1018 = {
+            isa = PBXFileReference;
+            name = "dirtylibunix.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/unix/dirtylibunix.c";
+        };
+        BA5E101800002253BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002252BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002254BA5E1018 = {
+            isa = PBXFileReference;
+            name = "dirtynetunix.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/unix/dirtynetunix.c";
+        };
+        BA5E101800002255BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002254BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002256BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002257BA5E1018,
+                BA5E101800002259BA5E1018,
+                BA5E10180000225BBA5E1018,
+            );
+            name = "proto";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/proto";
+        };
+        BA5E101800002257BA5E1018 = {
+            isa = PBXFileReference;
+            name = "protohttp.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/proto/protohttp.c";
+        };
+        BA5E101800002258BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002257BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002259BA5E1018 = {
+            isa = PBXFileReference;
+            name = "protohttpmanager.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/proto/protohttpmanager.c";
+        };
+        BA5E10180000225ABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002259BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000225BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "protossl.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/proto/protossl.c";
+        };
+        BA5E10180000225CBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000225BBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000225DBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000225EBA5E1018,
+            );
+            name = "util";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/util";
+        };
+        BA5E10180000225EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "lobbybase64.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/util/lobbybase64.c";
+        };
+        BA5E10180000225FBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000225EBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002260BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002261BA5E1018,
+                BA5E101800002263BA5E1018,
+            );
+            name = "platform";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/platform";
+        };
+        BA5E101800002261BA5E1018 = {
+            isa = PBXFileReference;
+            name = "plat-str.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/platform/plat-str.c";
+        };
+        BA5E101800002262BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002261BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002263BA5E1018 = {
+            isa = PBXFileReference;
+            name = "plat-time.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/platform/plat-time.c";
+        };
+        BA5E101800002264BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002263BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002351BA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntGenerated.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntGenerated.xcconfig";
+        };
+        BA5E101800002352BA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntTarget.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntTarget.xcconfig";
+        };
+    };
+    rootObject = 29B97313FDCFA39411CA2CEA;
+}

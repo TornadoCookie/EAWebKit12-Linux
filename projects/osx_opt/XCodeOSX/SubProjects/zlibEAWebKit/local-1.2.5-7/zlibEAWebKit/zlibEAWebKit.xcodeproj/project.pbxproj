@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+        2BEA1BDC12A40B1C007E53C3 = {
+            isa = PBXFileReference;
+            lastKnownFileType = wrapper.framework;
+            name = "CoreFoundation.framework";
+            path = "System/Library/Frameworks/CoreFoundation.framework";
+            sourceTree = SDKROOT;
+        };
+        1D530ECE1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Project.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ECF1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Release.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ED01214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Target.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D6058910D05DD3D006BFB54 = {
+            isa = PBXFileReference;
+            includeInIndex = 0;
+            path = "../../../../OSX-common-xcode.template/zlibEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            name = "zlibEAWebKit";
+        };
+        1D60588F0D05DD3D006BFB54 = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D73A7FE12124384005BEE8D = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002331BA5E1018,
+            );
+            name = "Packages";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        29B97314FDCFA39411CA2CEA = {
+            isa = PBXGroup;
+            children = (
+                1D73A7FE12124384005BEE8D,
+                2B96D4A71282D3C600ECF477,
+                1D6058910D05DD3D006BFB54,
+                2B96D4A81282D3D700ECF477,
+            );
+            name = "CustomTemplate";
+            sourceTree = "<group>";
+        };
+        2B96D4A71282D3C600ECF477 = {
+            isa = PBXGroup;
+            children = (
+                2BEA1BDB12A40B1C007E53C3,
+            );
+            name = "Frameworks";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        2B96D4A81282D3D700ECF477 = {
+            isa = PBXGroup;
+            children = (
+                1D530ECD1214958100E23731,
+                1D530ECE1214958100E23731,
+                1D530ECF1214958100E23731,
+                1D530ED01214958100E23731,
+                BA5E10180000235BBA5E1018,
+                BA5E10180000235DBA5E1018,
+            );
+            name = "Configs";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        1D6058900D05DD3D006BFB54 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 1D6058960D05DD3E006BFB54;
+            buildPhases = (
+                1D60588D0D05DD3D006BFB54,
+                1D60588E0D05DD3D006BFB54,
+                1D60588F0D05DD3D006BFB54,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "zlibEAWebKit";
+            productName = "zlibEAWebKit";
+            productReference = 1D6058910D05DD3D006BFB54;
+            productType = "com.apple.product-type.library.static";
+        };
+        29B97313FDCFA39411CA2CEA = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 0420;
+                ORGANIZATIONNAME = "Electronic Arts";
+            };
+            buildConfigurationList = C01FCF4E08A954540054247B;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = English;
+            hasScannedForEncodings = 1;
+            knownRegions = (
+                English,
+                Japanese,
+                French,
+                German,
+            );
+            mainGroup = 29B97314FDCFA39411CA2CEA;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                1D6058900D05DD3D006BFB54,
+            );
+        };
+        1D60588D0D05DD3D006BFB54 = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2BF7EB841236332B00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt postbuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh postbuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        2BF7EB861236336C00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt prebuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh prebuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        1D60588E0D05DD3D006BFB54 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                BA5E10180000233CBA5E1018,
+                BA5E10180000233EBA5E1018,
+                BA5E101800002340BA5E1018,
+                BA5E101800002342BA5E1018,
+                BA5E101800002344BA5E1018,
+                BA5E101800002346BA5E1018,
+                BA5E101800002348BA5E1018,
+                BA5E10180000234ABA5E1018,
+                BA5E10180000234CBA5E1018,
+                BA5E10180000234EBA5E1018,
+                BA5E101800002350BA5E1018,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D6058950D05DD3E006BFB54 = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ED01214958100E23731;
+            buildSettings = {
+                MACOSX_DEPLOYMENT_TARGET = 10.6;
+                MACH_O_TYPE = staticlib;
+                OBJROOT = "../../../../../zlibEAWebKit/local-1.2.5-7/osx-gcc-dev-opt/build/zlibEAWebKit";
+                SYMROOT = "../../../../../zlibEAWebKit/local-1.2.5-7/osx-gcc-dev-opt/lib";
+                CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+                GENERATED_CC_FLAGS_CLibrary = "$(GENERATED_CC_FLAGS_CLibrary_Release)";
+                GENERATED_LDFLAGS = "$(GENERATED_LDFLAGS_Release)";
+            };
+            name = "Release";
+        };
+        C01FCF5008A954540054247B = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ECF1214958100E23731;
+            buildSettings = {
+                SDKROOT = macosx10.7;
+            };
+            name = "Release";
+        };
+        1D6058960D05DD3E006BFB54 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                1D6058950D05DD3E006BFB54,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        C01FCF4E08A954540054247B = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C01FCF5008A954540054247B,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        BA5E101800002331BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002332BA5E1018,
+                BA5E10180000233ABA5E1018,
+            );
+            name = "zlibEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7";
+        };
+        BA5E101800002332BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002333BA5E1018,
+                BA5E101800002336BA5E1018,
+            );
+            name = "include";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/include";
+        };
+        BA5E101800002333BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002334BA5E1018,
+                BA5E101800002335BA5E1018,
+            );
+            name = "xceedzip";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/include/xceedzip";
+        };
+        BA5E101800002334BA5E1018 = {
+            isa = PBXFileReference;
+            name = "zconf.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/include/xceedzip/zconf.h";
+        };
+        BA5E101800002335BA5E1018 = {
+            isa = PBXFileReference;
+            name = "zlib.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/include/xceedzip/zlib.h";
+        };
+        BA5E101800002336BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002337BA5E1018,
+                BA5E101800002338BA5E1018,
+                BA5E101800002339BA5E1018,
+            );
+            name = "zlib";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/include/zlib";
+        };
+        BA5E101800002337BA5E1018 = {
+            isa = PBXFileReference;
+            name = "version.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/include/zlib/version.h";
+        };
+        BA5E101800002338BA5E1018 = {
+            isa = PBXFileReference;
+            name = "zconf.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/include/zlib/zconf.h";
+        };
+        BA5E101800002339BA5E1018 = {
+            isa = PBXFileReference;
+            name = "zlib.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/include/zlib/zlib.h";
+        };
+        BA5E10180000233ABA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000233BBA5E1018,
+                BA5E10180000233DBA5E1018,
+                BA5E10180000233FBA5E1018,
+                BA5E101800002341BA5E1018,
+                BA5E101800002343BA5E1018,
+                BA5E101800002345BA5E1018,
+                BA5E101800002347BA5E1018,
+                BA5E101800002349BA5E1018,
+                BA5E10180000234BBA5E1018,
+                BA5E10180000234DBA5E1018,
+                BA5E10180000234FBA5E1018,
+            );
+            name = "install";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/install";
+        };
+        BA5E10180000233BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "adler32.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/install/adler32.c";
+        };
+        BA5E10180000233CBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000233BBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000233DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "compress.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/install/compress.c";
+        };
+        BA5E10180000233EBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000233DBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000233FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "crc32.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/install/crc32.c";
+        };
+        BA5E101800002340BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000233FBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002341BA5E1018 = {
+            isa = PBXFileReference;
+            name = "deflate.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/install/deflate.c";
+        };
+        BA5E101800002342BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002341BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002343BA5E1018 = {
+            isa = PBXFileReference;
+            name = "infback.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/install/infback.c";
+        };
+        BA5E101800002344BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002343BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002345BA5E1018 = {
+            isa = PBXFileReference;
+            name = "inffast.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/install/inffast.c";
+        };
+        BA5E101800002346BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002345BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002347BA5E1018 = {
+            isa = PBXFileReference;
+            name = "inflate.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/install/inflate.c";
+        };
+        BA5E101800002348BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002347BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E101800002349BA5E1018 = {
+            isa = PBXFileReference;
+            name = "inftrees.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/install/inftrees.c";
+        };
+        BA5E10180000234ABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002349BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000234BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "trees.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/install/trees.c";
+        };
+        BA5E10180000234CBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000234BBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000234DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "uncompr.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/install/uncompr.c";
+        };
+        BA5E10180000234EBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000234DBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000234FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "zutil.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/zlibEAWebKit/local-1.2.5-7/install/zutil.c";
+        };
+        BA5E101800002350BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000234FBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibrary)";
+            };
+        };
+        BA5E10180000235BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntGenerated.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntGenerated.xcconfig";
+        };
+        BA5E10180000235DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntTarget.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntTarget.xcconfig";
+        };
+    };
+    rootObject = 29B97313FDCFA39411CA2CEA;
+}

@@ -1,0 +1,10 @@
+GENERATED_CC_FLAGS_LibraryExtra_Debug = -D _DEBUG -D EA_DEBUG -D EA_PLATFORM_OSX=1 -D EATEXT_BITMAP_USE_EAGIMEX=0 -D EATEXT_USE_FREETYPE=1 -D ENABLE_NON_RAM_STREAM=1 -D UTF_USE_EAASSERT=1 -Wall -Wno-deprecated-declarations -fno-rtti -fno-exceptions -Wno-error -O0 -fstrict-aliasing -g3 -c -fno-common -fmessage-length=0 -Wstrict-aliasing=3 -Wextra -Wno-unused-parameter -fshort-wchar -I ../../../../../../../EAWebKitSupportPackages/EATextEAWebKit/local-1.09.01/include -I ../../../../../../../EAWebKitSupportPackages/EATextEAWebKit/local-1.09.01/source -I ../../../../../../../EAWebKitSupportPackages/EABaseEAWebKit/local/include/Common -I ../../../../../../../EAWebKitSupportPackages/coreallocatorEAWebKit/local-1.03.08/include -I ../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include -I ../../../../../../../EAWebKitSupportPackages/PPMallocEAWebKit/local/include -I ../../../../../../../EAWebKitSupportPackages/PPMallocEAWebKit/local/Extras -I ../../../../../../../EAWebKitSupportPackages/EAAssertEAWebKit/local/include -I ../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include -I ../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/Wii -I ../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/include
+GENERATED_LDFLAGS_Debug = 
+INFOPLIST_OUTPUT_FORMAT = same-as-input
+SKIP_INSTALL = YES 
+DEPLOYMENT_POSTPROCESSING = NO 
+GCC_TREAT_WARNINGS_AS_ERRORS = NO 
+GCC_ENABLE_CPP_RTTI = NO 
+INFOPLIST_FILE = ../../../../OSX-common-xcode.template/Info.plist 
+GCC_VERSION = com.apple.compilers.llvmgcc42 
+ARCHS = i386 

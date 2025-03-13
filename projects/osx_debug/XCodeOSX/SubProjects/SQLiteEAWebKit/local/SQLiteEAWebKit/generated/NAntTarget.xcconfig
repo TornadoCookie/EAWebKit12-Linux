@@ -1,0 +1,3 @@
+NANT_MODULENAME = SQLiteEAWebKit
+NANT_EXENAME = libSQLiteEAWebKit.a
+NANT_SYMROOT = build 

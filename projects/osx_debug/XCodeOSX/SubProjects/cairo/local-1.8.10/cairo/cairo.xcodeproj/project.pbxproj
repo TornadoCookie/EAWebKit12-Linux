@@ -1,0 +1,1322 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+        2BEA1BDC12A40B1C007E53C3 = {
+            isa = PBXFileReference;
+            lastKnownFileType = wrapper.framework;
+            name = "CoreFoundation.framework";
+            path = "System/Library/Frameworks/CoreFoundation.framework";
+            sourceTree = SDKROOT;
+        };
+        1D530ECD1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Debug.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ECE1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Project.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ED01214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Target.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D6058910D05DD3D006BFB54 = {
+            isa = PBXFileReference;
+            includeInIndex = 0;
+            path = "../../../../OSX-common-xcode.template/cairo";
+            sourceTree = SOURCE_ROOT;
+            name = "cairo";
+        };
+        1D60588F0D05DD3D006BFB54 = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D73A7FE12124384005BEE8D = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002143BA5E1018,
+            );
+            name = "Packages";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        29B97314FDCFA39411CA2CEA = {
+            isa = PBXGroup;
+            children = (
+                1D73A7FE12124384005BEE8D,
+                2B96D4A71282D3C600ECF477,
+                1D6058910D05DD3D006BFB54,
+                2B96D4A81282D3D700ECF477,
+            );
+            name = "CustomTemplate";
+            sourceTree = "<group>";
+        };
+        2B96D4A71282D3C600ECF477 = {
+            isa = PBXGroup;
+            children = (
+                2BEA1BDB12A40B1C007E53C3,
+            );
+            name = "Frameworks";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        2B96D4A81282D3D700ECF477 = {
+            isa = PBXGroup;
+            children = (
+                1D530ECD1214958100E23731,
+                1D530ECE1214958100E23731,
+                1D530ECF1214958100E23731,
+                1D530ED01214958100E23731,
+                BA5E101800002360BA5E1018,
+                BA5E101800002362BA5E1018,
+            );
+            name = "Configs";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        1D6058900D05DD3D006BFB54 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 1D6058960D05DD3E006BFB54;
+            buildPhases = (
+                1D60588D0D05DD3D006BFB54,
+                1D60588E0D05DD3D006BFB54,
+                1D60588F0D05DD3D006BFB54,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "cairo";
+            productName = "cairo";
+            productReference = 1D6058910D05DD3D006BFB54;
+            productType = "com.apple.product-type.library.static";
+        };
+        29B97313FDCFA39411CA2CEA = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 0420;
+                ORGANIZATIONNAME = "Electronic Arts";
+            };
+            buildConfigurationList = C01FCF4E08A954540054247B;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = English;
+            hasScannedForEncodings = 1;
+            knownRegions = (
+                English,
+                Japanese,
+                French,
+                German,
+            );
+            mainGroup = 29B97314FDCFA39411CA2CEA;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                1D6058900D05DD3D006BFB54,
+            );
+        };
+        1D60588D0D05DD3D006BFB54 = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2BF7EB841236332B00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt postbuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh postbuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        2BF7EB861236336C00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt prebuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh prebuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        1D60588E0D05DD3D006BFB54 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                BA5E10180000214EBA5E1018,
+                BA5E101800002150BA5E1018,
+                BA5E101800002153BA5E1018,
+                BA5E101800002156BA5E1018,
+                BA5E101800002158BA5E1018,
+                BA5E10180000215BBA5E1018,
+                BA5E10180000215DBA5E1018,
+                BA5E10180000215FBA5E1018,
+                BA5E101800002162BA5E1018,
+                BA5E101800002165BA5E1018,
+                BA5E101800002168BA5E1018,
+                BA5E10180000216ABA5E1018,
+                BA5E10180000216EBA5E1018,
+                BA5E101800002170BA5E1018,
+                BA5E101800002172BA5E1018,
+                BA5E101800002174BA5E1018,
+                BA5E101800002176BA5E1018,
+                BA5E101800002179BA5E1018,
+                BA5E10180000217CBA5E1018,
+                BA5E10180000217FBA5E1018,
+                BA5E101800002181BA5E1018,
+                BA5E101800002184BA5E1018,
+                BA5E101800002187BA5E1018,
+                BA5E101800002189BA5E1018,
+                BA5E10180000218CBA5E1018,
+                BA5E10180000218EBA5E1018,
+                BA5E101800002194BA5E1018,
+                BA5E101800002198BA5E1018,
+                BA5E10180000219BBA5E1018,
+                BA5E10180000219DBA5E1018,
+                BA5E10180000219FBA5E1018,
+                BA5E1018000021A1BA5E1018,
+                BA5E1018000021A5BA5E1018,
+                BA5E1018000021A7BA5E1018,
+                BA5E1018000021A9BA5E1018,
+                BA5E1018000021ABBA5E1018,
+                BA5E1018000021ADBA5E1018,
+                BA5E1018000021B0BA5E1018,
+                BA5E1018000021B3BA5E1018,
+                BA5E1018000021B6BA5E1018,
+                BA5E1018000021B9BA5E1018,
+                BA5E1018000021BCBA5E1018,
+                BA5E1018000021BEBA5E1018,
+                BA5E1018000021C0BA5E1018,
+                BA5E1018000021C2BA5E1018,
+                BA5E1018000021C4BA5E1018,
+                BA5E1018000021C8BA5E1018,
+                BA5E1018000021CABA5E1018,
+                BA5E1018000021CDBA5E1018,
+                BA5E1018000021CFBA5E1018,
+                BA5E1018000021D2BA5E1018,
+                BA5E1018000021D4BA5E1018,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D6058940D05DD3E006BFB54 = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ED01214958100E23731;
+            buildSettings = {
+                MACOSX_DEPLOYMENT_TARGET = 10.6;
+                MACH_O_TYPE = staticlib;
+                OBJROOT = "../../../../../cairo/local-1.8.10/osx-gcc-dev-debug/build/cairo";
+                SYMROOT = "../../../../../cairo/local-1.8.10/osx-gcc-dev-debug/lib";
+                CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+                GENERATED_CC_FLAGS_CustomizedLibraryC = "$(GENERATED_CC_FLAGS_CustomizedLibraryC_Debug)";
+                GENERATED_LDFLAGS = "$(GENERATED_LDFLAGS_Debug)";
+            };
+            name = "Debug";
+        };
+        C01FCF4F08A954540054247B = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ECD1214958100E23731;
+            buildSettings = {
+                SDKROOT = macosx10.7;
+            };
+            name = "Debug";
+        };
+        1D6058960D05DD3E006BFB54 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                1D6058940D05DD3E006BFB54,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        C01FCF4E08A954540054247B = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C01FCF4F08A954540054247B,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        BA5E101800002143BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002144BA5E1018,
+                BA5E10180000214CBA5E1018,
+            );
+            name = "cairo";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10";
+        };
+        BA5E101800002144BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002146BA5E1018,
+                BA5E101800002145BA5E1018,
+            );
+            name = "include";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/include";
+        };
+        BA5E101800002145BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-version.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/include/cairo-version.h";
+        };
+        BA5E101800002146BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002147BA5E1018,
+                BA5E101800002148BA5E1018,
+                BA5E101800002149BA5E1018,
+                BA5E10180000214ABA5E1018,
+                BA5E10180000214BBA5E1018,
+            );
+            name = "cairo";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/include/cairo";
+        };
+        BA5E101800002147BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/include/cairo/cairo.h";
+        };
+        BA5E101800002148BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-deprecated.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/include/cairo/cairo-deprecated.h";
+        };
+        BA5E101800002149BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-features.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/include/cairo/cairo-features.h";
+        };
+        BA5E10180000214ABA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-malloc.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/include/cairo/cairo-malloc.h";
+        };
+        BA5E10180000214BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-version.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/include/cairo/cairo-version.h";
+        };
+        BA5E10180000214CBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000214DBA5E1018,
+                BA5E10180000214FBA5E1018,
+                BA5E101800002151BA5E1018,
+                BA5E101800002152BA5E1018,
+                BA5E101800002154BA5E1018,
+                BA5E101800002155BA5E1018,
+                BA5E101800002157BA5E1018,
+                BA5E101800002159BA5E1018,
+                BA5E10180000215ABA5E1018,
+                BA5E10180000215CBA5E1018,
+                BA5E10180000215EBA5E1018,
+                BA5E101800002160BA5E1018,
+                BA5E101800002161BA5E1018,
+                BA5E101800002163BA5E1018,
+                BA5E101800002164BA5E1018,
+                BA5E101800002166BA5E1018,
+                BA5E101800002167BA5E1018,
+                BA5E101800002169BA5E1018,
+                BA5E10180000216BBA5E1018,
+                BA5E10180000216CBA5E1018,
+                BA5E10180000216DBA5E1018,
+                BA5E10180000216FBA5E1018,
+                BA5E101800002171BA5E1018,
+                BA5E101800002173BA5E1018,
+                BA5E101800002175BA5E1018,
+                BA5E101800002177BA5E1018,
+                BA5E101800002178BA5E1018,
+                BA5E10180000217ABA5E1018,
+                BA5E10180000217BBA5E1018,
+                BA5E10180000217DBA5E1018,
+                BA5E10180000217EBA5E1018,
+                BA5E101800002180BA5E1018,
+                BA5E101800002182BA5E1018,
+                BA5E101800002183BA5E1018,
+                BA5E101800002185BA5E1018,
+                BA5E101800002186BA5E1018,
+                BA5E101800002188BA5E1018,
+                BA5E10180000218ABA5E1018,
+                BA5E10180000218BBA5E1018,
+                BA5E10180000218DBA5E1018,
+                BA5E10180000218FBA5E1018,
+                BA5E101800002190BA5E1018,
+                BA5E101800002191BA5E1018,
+                BA5E101800002192BA5E1018,
+                BA5E101800002193BA5E1018,
+                BA5E101800002195BA5E1018,
+                BA5E101800002196BA5E1018,
+                BA5E101800002197BA5E1018,
+                BA5E101800002199BA5E1018,
+                BA5E10180000219ABA5E1018,
+                BA5E10180000219CBA5E1018,
+                BA5E10180000219EBA5E1018,
+                BA5E1018000021A0BA5E1018,
+                BA5E1018000021A2BA5E1018,
+                BA5E1018000021A3BA5E1018,
+                BA5E1018000021A4BA5E1018,
+                BA5E1018000021A6BA5E1018,
+                BA5E1018000021A8BA5E1018,
+                BA5E1018000021AABA5E1018,
+                BA5E1018000021ACBA5E1018,
+                BA5E1018000021AEBA5E1018,
+                BA5E1018000021AFBA5E1018,
+                BA5E1018000021B1BA5E1018,
+                BA5E1018000021B2BA5E1018,
+                BA5E1018000021B4BA5E1018,
+                BA5E1018000021B5BA5E1018,
+                BA5E1018000021B7BA5E1018,
+                BA5E1018000021B8BA5E1018,
+                BA5E1018000021BABA5E1018,
+                BA5E1018000021BBBA5E1018,
+                BA5E1018000021BDBA5E1018,
+                BA5E1018000021BFBA5E1018,
+                BA5E1018000021C1BA5E1018,
+                BA5E1018000021C3BA5E1018,
+                BA5E1018000021C5BA5E1018,
+                BA5E1018000021C6BA5E1018,
+                BA5E1018000021C7BA5E1018,
+                BA5E1018000021C9BA5E1018,
+                BA5E1018000021CBBA5E1018,
+                BA5E1018000021CCBA5E1018,
+                BA5E1018000021CEBA5E1018,
+                BA5E1018000021D0BA5E1018,
+                BA5E1018000021D1BA5E1018,
+                BA5E1018000021D3BA5E1018,
+                BA5E1018000021D5BA5E1018,
+                BA5E1018000021D6BA5E1018,
+            );
+            name = "source";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source";
+        };
+        BA5E10180000214DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo.c";
+        };
+        BA5E10180000214EBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000214DBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000214FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-analysis-surface.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-analysis-surface.c";
+        };
+        BA5E101800002150BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000214FBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002151BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-analysis-surface-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-analysis-surface-private.h";
+        };
+        BA5E101800002152BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-arc.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-arc.c";
+        };
+        BA5E101800002153BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002152BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002154BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-arc-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-arc-private.h";
+        };
+        BA5E101800002155BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-array.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-array.c";
+        };
+        BA5E101800002156BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002155BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002157BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-atomic.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-atomic.c";
+        };
+        BA5E101800002158BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002157BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002159BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-atomic-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-atomic-private.h";
+        };
+        BA5E10180000215ABA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-base85-stream.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-base85-stream.c";
+        };
+        BA5E10180000215BBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000215ABA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000215CBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-bentley-ottmann.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-bentley-ottmann.c";
+        };
+        BA5E10180000215DBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000215CBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000215EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-cache.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-cache.c";
+        };
+        BA5E10180000215FBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000215EBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002160BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-cache-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-cache-private.h";
+        };
+        BA5E101800002161BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-clip.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-clip.c";
+        };
+        BA5E101800002162BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002161BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002163BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-clip-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-clip-private.h";
+        };
+        BA5E101800002164BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-color.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-color.c";
+        };
+        BA5E101800002165BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002164BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002166BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-compiler-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-compiler-private.h";
+        };
+        BA5E101800002167BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-debug.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-debug.c";
+        };
+        BA5E101800002168BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002167BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002169BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-fixed.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-fixed.c";
+        };
+        BA5E10180000216ABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002169BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000216BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-fixed-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-fixed-private.h";
+        };
+        BA5E10180000216CBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-fixed-type-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-fixed-type-private.h";
+        };
+        BA5E10180000216DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-font-face.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-font-face.c";
+        };
+        BA5E10180000216EBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000216DBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000216FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-font-face-twin.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-font-face-twin.c";
+        };
+        BA5E101800002170BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000216FBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002171BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-font-face-twin-data.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-font-face-twin-data.c";
+        };
+        BA5E101800002172BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002171BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002173BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-font-options.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-font-options.c";
+        };
+        BA5E101800002174BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002173BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002175BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-freelist.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-freelist.c";
+        };
+        BA5E101800002176BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002175BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002177BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-freelist-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-freelist-private.h";
+        };
+        BA5E101800002178BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-gstate.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-gstate.c";
+        };
+        BA5E101800002179BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002178BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000217ABA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-gstate-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-gstate-private.h";
+        };
+        BA5E10180000217BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-hash.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-hash.c";
+        };
+        BA5E10180000217CBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000217BBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000217DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-hash-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-hash-private.h";
+        };
+        BA5E10180000217EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-hull.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-hull.c";
+        };
+        BA5E10180000217FBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000217EBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002180BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-image-surface.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-image-surface.c";
+        };
+        BA5E101800002181BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002180BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002182BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairoint.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairoint.h";
+        };
+        BA5E101800002183BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-lzw.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-lzw.c";
+        };
+        BA5E101800002184BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002183BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002185BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-malloc-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-malloc-private.h";
+        };
+        BA5E101800002186BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-matrix.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-matrix.c";
+        };
+        BA5E101800002187BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002186BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002188BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-meta-surface.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-meta-surface.c";
+        };
+        BA5E101800002189BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002188BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000218ABA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-meta-surface-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-meta-surface-private.h";
+        };
+        BA5E10180000218BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-misc.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-misc.c";
+        };
+        BA5E10180000218CBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000218BBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000218DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-mutex.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-mutex.c";
+        };
+        BA5E10180000218EBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000218DBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000218FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-mutex-impl-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-mutex-impl-private.h";
+        };
+        BA5E101800002190BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-mutex-list-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-mutex-list-private.h";
+        };
+        BA5E101800002191BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-mutex-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-mutex-private.h";
+        };
+        BA5E101800002192BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-mutex-type-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-mutex-type-private.h";
+        };
+        BA5E101800002193BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-output-stream.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-output-stream.c";
+        };
+        BA5E101800002194BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002193BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002195BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-output-stream-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-output-stream-private.h";
+        };
+        BA5E101800002196BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-paginated-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-paginated-private.h";
+        };
+        BA5E101800002197BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-paginated-surface.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-paginated-surface.c";
+        };
+        BA5E101800002198BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002197BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E101800002199BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-paginated-surface-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-paginated-surface-private.h";
+        };
+        BA5E10180000219ABA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-path.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-path.c";
+        };
+        BA5E10180000219BBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000219ABA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000219CBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-path-bounds.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-path-bounds.c";
+        };
+        BA5E10180000219DBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000219CBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E10180000219EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-path-fill.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-path-fill.c";
+        };
+        BA5E10180000219FBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000219EBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021A0BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-path-fixed.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-path-fixed.c";
+        };
+        BA5E1018000021A1BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021A0BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021A2BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-path-fixed-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-path-fixed-private.h";
+        };
+        BA5E1018000021A3BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-path-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-path-private.h";
+        };
+        BA5E1018000021A4BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-path-stroke.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-path-stroke.c";
+        };
+        BA5E1018000021A5BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021A4BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021A6BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-pattern.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-pattern.c";
+        };
+        BA5E1018000021A7BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021A6BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021A8BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-pen.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-pen.c";
+        };
+        BA5E1018000021A9BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021A8BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021AABA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-png.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-png.c";
+        };
+        BA5E1018000021ABBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021AABA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021ACBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-polygon.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-polygon.c";
+        };
+        BA5E1018000021ADBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021ACBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021AEBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-private.h";
+        };
+        BA5E1018000021AFBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-rectangle.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-rectangle.c";
+        };
+        BA5E1018000021B0BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021AFBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021B1BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-reference-count-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-reference-count-private.h";
+        };
+        BA5E1018000021B2BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-region.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-region.c";
+        };
+        BA5E1018000021B3BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021B2BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021B4BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-region-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-region-private.h";
+        };
+        BA5E1018000021B5BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-scaled-font.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-scaled-font.c";
+        };
+        BA5E1018000021B6BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021B5BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021B7BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-scaled-font-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-scaled-font-private.h";
+        };
+        BA5E1018000021B8BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-skiplist.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-skiplist.c";
+        };
+        BA5E1018000021B9BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021B8BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021BABA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-skiplist-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-skiplist-private.h";
+        };
+        BA5E1018000021BBBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-slope.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-slope.c";
+        };
+        BA5E1018000021BCBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021BBBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021BDBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-spline.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-spline.c";
+        };
+        BA5E1018000021BEBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021BDBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021BFBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-stroke-style.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-stroke-style.c";
+        };
+        BA5E1018000021C0BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021BFBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021C1BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-surface.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-surface.c";
+        };
+        BA5E1018000021C2BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021C1BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021C3BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-surface-fallback.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-surface-fallback.c";
+        };
+        BA5E1018000021C4BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021C3BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021C5BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-surface-fallback-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-surface-fallback-private.h";
+        };
+        BA5E1018000021C6BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-surface-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-surface-private.h";
+        };
+        BA5E1018000021C7BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-system.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-system.c";
+        };
+        BA5E1018000021C8BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021C7BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021C9BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-traps.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-traps.c";
+        };
+        BA5E1018000021CABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021C9BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021CBBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-types-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-types-private.h";
+        };
+        BA5E1018000021CCBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-unicode.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-unicode.c";
+        };
+        BA5E1018000021CDBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021CCBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021CEBA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-user-font.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-user-font.c";
+        };
+        BA5E1018000021CFBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021CEBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021D0BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-user-font-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-user-font-private.h";
+        };
+        BA5E1018000021D1BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-version.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-version.c";
+        };
+        BA5E1018000021D2BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021D1BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021D3BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-wideint.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-wideint.c";
+        };
+        BA5E1018000021D4BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000021D3BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CustomizedLibraryC)";
+            };
+        };
+        BA5E1018000021D5BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-wideint-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-wideint-private.h";
+        };
+        BA5E1018000021D6BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cairo-wideint-type-private.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/cairo/local-1.8.10/source/cairo-wideint-type-private.h";
+        };
+        BA5E101800002360BA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntGenerated.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntGenerated.xcconfig";
+        };
+        BA5E101800002362BA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntTarget.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntTarget.xcconfig";
+        };
+    };
+    rootObject = 29B97313FDCFA39411CA2CEA;
+}

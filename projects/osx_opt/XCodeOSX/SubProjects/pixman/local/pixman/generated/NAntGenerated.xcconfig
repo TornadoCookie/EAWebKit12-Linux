@@ -1,0 +1,11 @@
+GENERATED_CC_FLAGS_CustomizedLibraryC_Release = -D EA_PLATFORM_OSX=1 -D HAVE_PTHREAD_SETSPECIFIC -D NDEBUG -D PACKAGE_BUGREPORT=\\\"\\\" -D PACKAGE_VERSION=\\\"\\\" -D PACKAGE=pixman -D PIXMAN_NO_TLS -D USE_SSE2 -Wall -Wno-deprecated-declarations -Wno-error -O1 -fno-strict-aliasing -c -fno-common -fmessage-length=0 -fdefer-pop -fguess-branch-probability -fcprop-registers -fif-conversion -fif-conversion2 -ftree-ccp -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-ter -ftree-lrs -ftree-sra -ftree-copyrename -ftree-fre -ftree-ch -funit-at-a-time -fmerge-constants -fthread-jumps -fcrossjumping -foptimize-sibling-calls -fcse-follow-jumps -fcse-skip-blocks -fgcse  -fgcse-lm -fexpensive-optimizations -frerun-cse-after-loop -fcaller-saves -fpeephole2 -fschedule-insns  -fschedule-insns2   -fsched-spec -fregmove  -fstrict-overflow -fdelete-null-pointer-checks -freorder-functions -falign-functions  -falign-jumps -falign-loops  -falign-labels -ftree-vrp -ftree-pre -Wno-multichar -fshort-wchar -I ../../../../../../../EAWebKitSupportPackages/pixman/local/include
+GENERATED_LDFLAGS_Release = 
+INFOPLIST_OUTPUT_FORMAT = same-as-input
+SKIP_INSTALL = YES 
+DEPLOYMENT_POSTPROCESSING = YES 
+STRIP_INSTALLED_PRODUCT = YES 
+GCC_TREAT_WARNINGS_AS_ERRORS = NO 
+GCC_ENABLE_CPP_RTTI = NO 
+INFOPLIST_FILE = ../../../../OSX-common-xcode.template/Info.plist 
+GCC_VERSION = com.apple.compilers.llvmgcc42 
+ARCHS = i386 

@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+        2BEA1BDC12A40B1C007E53C3 = {
+            isa = PBXFileReference;
+            lastKnownFileType = wrapper.framework;
+            name = "CoreFoundation.framework";
+            path = "System/Library/Frameworks/CoreFoundation.framework";
+            sourceTree = SDKROOT;
+        };
+        1D530ECE1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Project.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ECF1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Release.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ED01214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Target.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D6058910D05DD3D006BFB54 = {
+            isa = PBXFileReference;
+            includeInIndex = 0;
+            path = "../../../../OSX-common-xcode.template/UTFXmlEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            name = "UTFXmlEAWebKit";
+        };
+        1D60588F0D05DD3D006BFB54 = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D73A7FE12124384005BEE8D = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002218BA5E1018,
+            );
+            name = "Packages";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        29B97314FDCFA39411CA2CEA = {
+            isa = PBXGroup;
+            children = (
+                1D73A7FE12124384005BEE8D,
+                2B96D4A71282D3C600ECF477,
+                1D6058910D05DD3D006BFB54,
+                2B96D4A81282D3D700ECF477,
+            );
+            name = "CustomTemplate";
+            sourceTree = "<group>";
+        };
+        2B96D4A71282D3C600ECF477 = {
+            isa = PBXGroup;
+            children = (
+                2BEA1BDB12A40B1C007E53C3,
+            );
+            name = "Frameworks";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        2B96D4A81282D3D700ECF477 = {
+            isa = PBXGroup;
+            children = (
+                1D530ECD1214958100E23731,
+                1D530ECE1214958100E23731,
+                1D530ECF1214958100E23731,
+                1D530ED01214958100E23731,
+                BA5E101800002359BA5E1018,
+                BA5E10180000235ABA5E1018,
+            );
+            name = "Configs";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        1D6058900D05DD3D006BFB54 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 1D6058960D05DD3E006BFB54;
+            buildPhases = (
+                1D60588D0D05DD3D006BFB54,
+                1D60588E0D05DD3D006BFB54,
+                1D60588F0D05DD3D006BFB54,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "UTFXmlEAWebKit";
+            productName = "UTFXmlEAWebKit";
+            productReference = 1D6058910D05DD3D006BFB54;
+            productType = "com.apple.product-type.library.static";
+        };
+        29B97313FDCFA39411CA2CEA = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 0420;
+                ORGANIZATIONNAME = "Electronic Arts";
+            };
+            buildConfigurationList = C01FCF4E08A954540054247B;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = English;
+            hasScannedForEncodings = 1;
+            knownRegions = (
+                English,
+                Japanese,
+                French,
+                German,
+            );
+            mainGroup = 29B97314FDCFA39411CA2CEA;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                1D6058900D05DD3D006BFB54,
+            );
+        };
+        1D60588D0D05DD3D006BFB54 = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2BF7EB841236332B00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt postbuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh postbuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        2BF7EB861236336C00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt prebuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh prebuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        1D60588E0D05DD3D006BFB54 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                BA5E101800002233BA5E1018,
+                BA5E101800002224BA5E1018,
+                BA5E101800002226BA5E1018,
+                BA5E101800002228BA5E1018,
+                BA5E10180000222ABA5E1018,
+                BA5E10180000222CBA5E1018,
+                BA5E10180000222EBA5E1018,
+                BA5E101800002230BA5E1018,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D6058950D05DD3E006BFB54 = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ED01214958100E23731;
+            buildSettings = {
+                MACOSX_DEPLOYMENT_TARGET = 10.6;
+                MACH_O_TYPE = staticlib;
+                OBJROOT = "../../../../../UTFXmlEAWebKit/local-3.08.01/osx-gcc-dev-opt/build/UTFXmlEAWebKit";
+                SYMROOT = "../../../../../UTFXmlEAWebKit/local-3.08.01/osx-gcc-dev-opt/lib";
+                CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+                GENERATED_CC_FLAGS_LibraryExtra = "$(GENERATED_CC_FLAGS_LibraryExtra_Release)";
+                GENERATED_LDFLAGS = "$(GENERATED_LDFLAGS_Release)";
+            };
+            name = "Release";
+        };
+        C01FCF5008A954540054247B = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ECF1214958100E23731;
+            buildSettings = {
+                SDKROOT = macosx10.7;
+            };
+            name = "Release";
+        };
+        1D6058960D05DD3E006BFB54 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                1D6058950D05DD3E006BFB54,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        C01FCF4E08A954540054247B = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C01FCF5008A954540054247B,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        BA5E101800002218BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002219BA5E1018,
+                BA5E101800002222BA5E1018,
+            );
+            name = "UTFXmlEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01";
+        };
+        BA5E101800002219BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000221ABA5E1018,
+            );
+            name = "include";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/include";
+        };
+        BA5E10180000221ABA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000221BBA5E1018,
+                BA5E10180000221CBA5E1018,
+                BA5E10180000221DBA5E1018,
+                BA5E10180000221EBA5E1018,
+                BA5E10180000221FBA5E1018,
+                BA5E101800002220BA5E1018,
+                BA5E101800002221BA5E1018,
+            );
+            name = "UTFXml";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/include/UTFXml";
+        };
+        BA5E10180000221BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlCallbackReader.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/include/UTFXml/XmlCallbackReader.h";
+        };
+        BA5E10180000221CBA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlCharClasses.inl";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/include/UTFXml/XmlCharClasses.inl";
+        };
+        BA5E10180000221DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlDomReader.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/include/UTFXml/XmlDomReader.h";
+        };
+        BA5E10180000221EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlEncoding.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/include/UTFXml/XmlEncoding.h";
+        };
+        BA5E10180000221FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlReader.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/include/UTFXml/XmlReader.h";
+        };
+        BA5E101800002220BA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlTokenBuffer.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/include/UTFXml/XmlTokenBuffer.h";
+        };
+        BA5E101800002221BA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlWriter.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/include/UTFXml/XmlWriter.h";
+        };
+        BA5E101800002222BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002231BA5E1018,
+                BA5E101800002223BA5E1018,
+                BA5E101800002225BA5E1018,
+                BA5E101800002227BA5E1018,
+                BA5E101800002229BA5E1018,
+                BA5E10180000222BBA5E1018,
+                BA5E10180000222DBA5E1018,
+                BA5E10180000222FBA5E1018,
+            );
+            name = "source";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/source";
+        };
+        BA5E101800002223BA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlCallbackReader.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/source/XmlCallbackReader.cpp";
+        };
+        BA5E101800002224BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002223BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002225BA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlDomReader.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/source/XmlDomReader.cpp";
+        };
+        BA5E101800002226BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002225BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002227BA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlEncoding.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/source/XmlEncoding.cpp";
+        };
+        BA5E101800002228BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002227BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002229BA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlReader.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/source/XmlReader.cpp";
+        };
+        BA5E10180000222ABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002229BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E10180000222BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlReaderErrors.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/source/XmlReaderErrors.cpp";
+        };
+        BA5E10180000222CBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000222BBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E10180000222DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlTokenBuffer.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/source/XmlTokenBuffer.cpp";
+        };
+        BA5E10180000222EBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000222DBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E10180000222FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "XmlWriter.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/source/XmlWriter.cpp";
+        };
+        BA5E101800002230BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000222FBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002231BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002232BA5E1018,
+            );
+            name = "internal";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/source/internal";
+        };
+        BA5E101800002232BA5E1018 = {
+            isa = PBXFileReference;
+            name = "UTFXmlCoreAllocator.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/UTFXmlEAWebKit/local-3.08.01/source/internal/UTFXmlCoreAllocator.cpp";
+        };
+        BA5E101800002233BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002232BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002359BA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntGenerated.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntGenerated.xcconfig";
+        };
+        BA5E10180000235ABA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntTarget.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntTarget.xcconfig";
+        };
+    };
+    rootObject = 29B97313FDCFA39411CA2CEA;
+}

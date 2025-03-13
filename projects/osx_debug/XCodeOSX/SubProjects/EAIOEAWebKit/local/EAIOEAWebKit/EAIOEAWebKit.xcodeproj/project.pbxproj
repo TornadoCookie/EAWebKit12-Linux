@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+        2BEA1BDC12A40B1C007E53C3 = {
+            isa = PBXFileReference;
+            lastKnownFileType = wrapper.framework;
+            name = "CoreFoundation.framework";
+            path = "System/Library/Frameworks/CoreFoundation.framework";
+            sourceTree = SDKROOT;
+        };
+        1D530ECD1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Debug.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ECE1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Project.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ED01214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Target.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D6058910D05DD3D006BFB54 = {
+            isa = PBXFileReference;
+            includeInIndex = 0;
+            path = "../../../../OSX-common-xcode.template/EAIOEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            name = "EAIOEAWebKit";
+        };
+        1D60588F0D05DD3D006BFB54 = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D73A7FE12124384005BEE8D = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002065BA5E1018,
+            );
+            name = "Packages";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        29B97314FDCFA39411CA2CEA = {
+            isa = PBXGroup;
+            children = (
+                1D73A7FE12124384005BEE8D,
+                2B96D4A71282D3C600ECF477,
+                1D6058910D05DD3D006BFB54,
+                2B96D4A81282D3D700ECF477,
+            );
+            name = "CustomTemplate";
+            sourceTree = "<group>";
+        };
+        2B96D4A71282D3C600ECF477 = {
+            isa = PBXGroup;
+            children = (
+                2BEA1BDB12A40B1C007E53C3,
+            );
+            name = "Frameworks";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        2B96D4A81282D3D700ECF477 = {
+            isa = PBXGroup;
+            children = (
+                1D530ECD1214958100E23731,
+                1D530ECE1214958100E23731,
+                1D530ECF1214958100E23731,
+                1D530ED01214958100E23731,
+                BA5E101800002357BA5E1018,
+                BA5E101800002358BA5E1018,
+            );
+            name = "Configs";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        1D6058900D05DD3D006BFB54 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 1D6058960D05DD3E006BFB54;
+            buildPhases = (
+                1D60588D0D05DD3D006BFB54,
+                1D60588E0D05DD3D006BFB54,
+                1D60588F0D05DD3D006BFB54,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "EAIOEAWebKit";
+            productName = "EAIOEAWebKit";
+            productReference = 1D6058910D05DD3D006BFB54;
+            productType = "com.apple.product-type.library.static";
+        };
+        29B97313FDCFA39411CA2CEA = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 0420;
+                ORGANIZATIONNAME = "Electronic Arts";
+            };
+            buildConfigurationList = C01FCF4E08A954540054247B;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = English;
+            hasScannedForEncodings = 1;
+            knownRegions = (
+                English,
+                Japanese,
+                French,
+                German,
+            );
+            mainGroup = 29B97314FDCFA39411CA2CEA;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                1D6058900D05DD3D006BFB54,
+            );
+        };
+        1D60588D0D05DD3D006BFB54 = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2BF7EB841236332B00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt postbuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh postbuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        2BF7EB861236336C00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt prebuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh prebuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        1D60588E0D05DD3D006BFB54 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                BA5E101800002087BA5E1018,
+                BA5E101800002089BA5E1018,
+                BA5E10180000208BBA5E1018,
+                BA5E10180000208DBA5E1018,
+                BA5E10180000208FBA5E1018,
+                BA5E101800002091BA5E1018,
+                BA5E1018000020A8BA5E1018,
+                BA5E1018000020AABA5E1018,
+                BA5E101800002093BA5E1018,
+                BA5E101800002095BA5E1018,
+                BA5E101800002097BA5E1018,
+                BA5E101800002099BA5E1018,
+                BA5E10180000209BBA5E1018,
+                BA5E10180000209DBA5E1018,
+                BA5E10180000209FBA5E1018,
+                BA5E1018000020A1BA5E1018,
+                BA5E1018000020A3BA5E1018,
+                BA5E1018000020A5BA5E1018,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D6058940D05DD3E006BFB54 = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ED01214958100E23731;
+            buildSettings = {
+                MACOSX_DEPLOYMENT_TARGET = 10.6;
+                MACH_O_TYPE = staticlib;
+                OBJROOT = "../../../../../EAIOEAWebKit/local/osx-gcc-dev-debug/build/EAIOEAWebKit";
+                SYMROOT = "../../../../../EAIOEAWebKit/local/osx-gcc-dev-debug/lib";
+                CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+                GENERATED_CC_FLAGS_LibraryExtra = "$(GENERATED_CC_FLAGS_LibraryExtra_Debug)";
+                GENERATED_LDFLAGS = "$(GENERATED_LDFLAGS_Debug)";
+            };
+            name = "Debug";
+        };
+        C01FCF4F08A954540054247B = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ECD1214958100E23731;
+            buildSettings = {
+                SDKROOT = macosx10.7;
+            };
+            name = "Debug";
+        };
+        1D6058960D05DD3E006BFB54 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                1D6058940D05DD3E006BFB54,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        C01FCF4E08A954540054247B = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C01FCF4F08A954540054247B,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        BA5E101800002065BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002066BA5E1018,
+                BA5E101800002085BA5E1018,
+            );
+            name = "EAIOEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local";
+        };
+        BA5E101800002066BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002067BA5E1018,
+            );
+            name = "include";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include";
+        };
+        BA5E101800002067BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000207ABA5E1018,
+                BA5E10180000207FBA5E1018,
+                BA5E101800002081BA5E1018,
+                BA5E101800002083BA5E1018,
+                BA5E101800002068BA5E1018,
+                BA5E101800002069BA5E1018,
+                BA5E10180000206ABA5E1018,
+                BA5E10180000206BBA5E1018,
+                BA5E10180000206CBA5E1018,
+                BA5E10180000206DBA5E1018,
+                BA5E10180000206EBA5E1018,
+                BA5E10180000206FBA5E1018,
+                BA5E101800002070BA5E1018,
+                BA5E101800002071BA5E1018,
+                BA5E101800002072BA5E1018,
+                BA5E101800002073BA5E1018,
+                BA5E101800002074BA5E1018,
+                BA5E101800002075BA5E1018,
+                BA5E101800002076BA5E1018,
+                BA5E101800002077BA5E1018,
+                BA5E101800002078BA5E1018,
+                BA5E101800002079BA5E1018,
+            );
+            name = "EAIO";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO";
+        };
+        BA5E101800002068BA5E1018 = {
+            isa = PBXFileReference;
+            name = "Allocator.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/Allocator.h";
+        };
+        BA5E101800002069BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAFileBase.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAFileBase.h";
+        };
+        BA5E10180000206ABA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAFileDirectory.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAFileDirectory.h";
+        };
+        BA5E10180000206BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAFileNotification.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAFileNotification.h";
+        };
+        BA5E10180000206CBA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAFileStream.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAFileStream.h";
+        };
+        BA5E10180000206DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAFileUtil.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAFileUtil.h";
+        };
+        BA5E10180000206EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAIniFile.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAIniFile.h";
+        };
+        BA5E10180000206FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStream.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAStream.h";
+        };
+        BA5E101800002070BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamAdapter.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAStreamAdapter.h";
+        };
+        BA5E101800002071BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamBuffer.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAStreamBuffer.h";
+        };
+        BA5E101800002072BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamChild.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAStreamChild.h";
+        };
+        BA5E101800002073BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamCpp.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAStreamCpp.h";
+        };
+        BA5E101800002074BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamFixedMemory.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAStreamFixedMemory.h";
+        };
+        BA5E101800002075BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamMemory.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAStreamMemory.h";
+        };
+        BA5E101800002076BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamNull.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/EAStreamNull.h";
+        };
+        BA5E101800002077BA5E1018 = {
+            isa = PBXFileReference;
+            name = "FnEncode.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/FnEncode.h";
+        };
+        BA5E101800002078BA5E1018 = {
+            isa = PBXFileReference;
+            name = "FnMatch.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/FnMatch.h";
+        };
+        BA5E101800002079BA5E1018 = {
+            isa = PBXFileReference;
+            name = "PathString.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/PathString.h";
+        };
+        BA5E10180000207ABA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E10180000207BBA5E1018,
+                BA5E10180000207CBA5E1018,
+                BA5E10180000207DBA5E1018,
+                BA5E10180000207EBA5E1018,
+            );
+            name = "internal";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/internal";
+        };
+        BA5E10180000207BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "Config.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/internal/Config.h";
+        };
+        BA5E10180000207CBA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAIOEARefCount.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/internal/EAIOEARefCount.h";
+        };
+        BA5E10180000207DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAIOEASTLCoreAllocator.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/internal/EAIOEASTLCoreAllocator.h";
+        };
+        BA5E10180000207EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAIOZoneObject.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/internal/EAIOZoneObject.h";
+        };
+        BA5E10180000207FBA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002080BA5E1018,
+            );
+            name = "StdC";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/StdC";
+        };
+        BA5E101800002080BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAFileStreamStdC.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/StdC/EAFileStreamStdC.h";
+        };
+        BA5E101800002081BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002082BA5E1018,
+            );
+            name = "Unix";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/Unix";
+        };
+        BA5E101800002082BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAFileStreamUnix.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/Unix/EAFileStreamUnix.h";
+        };
+        BA5E101800002083BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002084BA5E1018,
+            );
+            name = "Win32";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/Win32";
+        };
+        BA5E101800002084BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAFileStreamWin32.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/Win32/EAFileStreamWin32.h";
+        };
+        BA5E101800002085BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000020A6BA5E1018,
+                BA5E101800002086BA5E1018,
+                BA5E101800002088BA5E1018,
+                BA5E10180000208ABA5E1018,
+                BA5E10180000208CBA5E1018,
+                BA5E10180000208EBA5E1018,
+                BA5E101800002090BA5E1018,
+                BA5E101800002092BA5E1018,
+                BA5E101800002094BA5E1018,
+                BA5E101800002096BA5E1018,
+                BA5E101800002098BA5E1018,
+                BA5E10180000209ABA5E1018,
+                BA5E10180000209CBA5E1018,
+                BA5E10180000209EBA5E1018,
+                BA5E1018000020A0BA5E1018,
+                BA5E1018000020A2BA5E1018,
+                BA5E1018000020A4BA5E1018,
+            );
+            name = "source";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source";
+        };
+        BA5E101800002086BA5E1018 = {
+            isa = PBXFileReference;
+            name = "Allocator.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/Allocator.cpp";
+        };
+        BA5E101800002087BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002086BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002088BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAFileDirectory.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/EAFileDirectory.cpp";
+        };
+        BA5E101800002089BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002088BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E10180000208ABA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAFileNotification.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/EAFileNotification.cpp";
+        };
+        BA5E10180000208BBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000208ABA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E10180000208CBA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAFileStream.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/EAFileStream.cpp";
+        };
+        BA5E10180000208DBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000208CBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E10180000208EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAFileUtil.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/EAFileUtil.cpp";
+        };
+        BA5E10180000208FBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000208EBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002090BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAIniFile.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/EAIniFile.cpp";
+        };
+        BA5E101800002091BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002090BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002092BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamAdapter.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/EAStreamAdapter.cpp";
+        };
+        BA5E101800002093BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002092BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002094BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamBuffer.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/EAStreamBuffer.cpp";
+        };
+        BA5E101800002095BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002094BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002096BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamChild.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/EAStreamChild.cpp";
+        };
+        BA5E101800002097BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002096BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002098BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamCpp.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/EAStreamCpp.cpp";
+        };
+        BA5E101800002099BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002098BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E10180000209ABA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamFixedMemory.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/EAStreamFixedMemory.cpp";
+        };
+        BA5E10180000209BBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000209ABA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E10180000209CBA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamMemory.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/EAStreamMemory.cpp";
+        };
+        BA5E10180000209DBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000209CBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E10180000209EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAStreamNull.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/EAStreamNull.cpp";
+        };
+        BA5E10180000209FBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000209EBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E1018000020A0BA5E1018 = {
+            isa = PBXFileReference;
+            name = "FnEncode.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/FnEncode.cpp";
+        };
+        BA5E1018000020A1BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020A0BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E1018000020A2BA5E1018 = {
+            isa = PBXFileReference;
+            name = "FnMatch.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/FnMatch.cpp";
+        };
+        BA5E1018000020A3BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020A2BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E1018000020A4BA5E1018 = {
+            isa = PBXFileReference;
+            name = "PathString.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/PathString.cpp";
+        };
+        BA5E1018000020A5BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020A4BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E1018000020A6BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000020A7BA5E1018,
+                BA5E1018000020A9BA5E1018,
+            );
+            name = "internal";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/internal";
+        };
+        BA5E1018000020A7BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAIOCoreAllocator.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/internal/EAIOCoreAllocator.cpp";
+        };
+        BA5E1018000020A8BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020A7BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E1018000020A9BA5E1018 = {
+            isa = PBXFileReference;
+            name = "EAIOZoneObject.cpp";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/internal/EAIOZoneObject.cpp";
+        };
+        BA5E1018000020AABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020A9BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_LibraryExtra)";
+            };
+        };
+        BA5E101800002357BA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntGenerated.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntGenerated.xcconfig";
+        };
+        BA5E101800002358BA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntTarget.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntTarget.xcconfig";
+        };
+    };
+    rootObject = 29B97313FDCFA39411CA2CEA;
+}

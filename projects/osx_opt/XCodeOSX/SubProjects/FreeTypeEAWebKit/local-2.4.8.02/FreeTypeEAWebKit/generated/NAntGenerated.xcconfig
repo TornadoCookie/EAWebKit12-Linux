@@ -1,0 +1,11 @@
+GENERATED_CC_FLAGS_CLibrary_Release = -D EA_PLATFORM_OSX=1 -D FT2_BUILD_LIBRARY -D NDEBUG -Wall -Wno-deprecated-declarations -Wno-error -O2 -fno-strict-aliasing -g3 -c -fno-common -fmessage-length=0 -fno-strict-aliasing -Wextra -fshort-wchar -I ../../../../../../../EAWebKitSupportPackages/FreeTypeEAWebKit/local-2.4.8.02/freetype-2.4.8/include
+GENERATED_LDFLAGS_Release = 
+INFOPLIST_OUTPUT_FORMAT = same-as-input
+SKIP_INSTALL = YES 
+DEPLOYMENT_POSTPROCESSING = YES 
+STRIP_INSTALLED_PRODUCT = YES 
+GCC_TREAT_WARNINGS_AS_ERRORS = NO 
+GCC_ENABLE_CPP_RTTI = NO 
+INFOPLIST_FILE = ../../../../OSX-common-xcode.template/Info.plist 
+GCC_VERSION = com.apple.compilers.llvmgcc42 
+ARCHS = i386 

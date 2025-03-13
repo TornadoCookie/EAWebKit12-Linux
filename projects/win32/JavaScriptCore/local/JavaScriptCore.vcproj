@@ -1,0 +1,2625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioProject ProjectGUID="{542B5B54-052E-85D6-49DA-280D6D6A90D1}" Name="JavaScriptCore" Keyword="Win32Proj" Version="9.00" ProjectType="Visual C++" TargetFrameworkVersion="196613">
+  <Platforms>
+    <Platform Name="Win32" />
+  </Platforms>
+  <ToolFiles>
+    <DefaultToolFile FileName="masm.rules" />
+  </ToolFiles>
+  <Configurations>
+    <Configuration Name="pc-vc-dev-debug|Win32" OutputDirectory="pc-vc-dev-debug\build\JavaScriptCore" IntermediateDirectory="pc-vc-dev-debug\build\JavaScriptCore\vcproj" CharacterSet="1" ConfigurationType="4">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="MASM" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" PreprocessorDefinitions="_DEBUG;_HAS_TR1=0;_SECURE_SCL=1;_WIN32_IE=0x0501;_WIN32_WINNT=0x0501;_WINDOWS;BUILDING_EA__;BUILDING_EA__=1;BUILDING_JavaScriptCore;BUILDING_WTF;EA_DEBUG;EASTL_NOMINMAX=0;EAWEBKIT_PLATFORM_HEADER=&lt;windows.h&gt;;JS_NO_EXPORT;UNICODE;USE_SYSTEM_MALLOC=1;WIN32;WIN32;WINVER=0x0501" BufferSecurityCheck="FALSE" ProgramDataBaseFileName="pc-vc-dev-debug\lib\JavaScriptCore.pdb" WarningLevel="0" DebugInformationFormat="3" CompileOnly="TRUE" SuppressStartupBanner="TRUE" DisableSpecificWarnings="4275; 4061; 4062; 4100; 4324; 4619; 4514; 4640; 4668; 4710; 4711; 4738; 4820; 4826; 4819; 4826; 4692; 4996; " CompileAs="0" MinimalRebuild="FALSE" ForceConformanceInForLoopScope="TRUE" RuntimeTypeInfo="FALSE" ExceptionHandling="0" UsePrecompiledHeader="0" RuntimeLibrary="3" BasicRuntimeChecks="3" AdditionalIncludeDirectories="&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecompiler&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\debugger&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\interpreter&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\profiler&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\gobject&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\unicode&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\yarr&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\os-win32&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\EABaseEAWebKit\local\include\Common&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\coreallocatorEAWebKit\local-1.03.08\include&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\EASTLEAWebKit\local\include&quot;;&quot;$(VSInstallDir)\VC\ATLMFC\INCLUDE&quot;;&quot;$(VSInstallDir)\VC\INCLUDE&quot;;&quot;$(WindowsSDKDir)\include&quot;;&quot;$(VSInstallDir)\SDK\v2.0\include&quot;;&quot;$(VSInstallDir)\INCLUDE&quot;" Optimization="0" AdditionalOptions="/MP -MP8 " />
+      <Tool Name="VCLibrarianTool" OutputFile="pc-vc-dev-debug\lib\JavaScriptCore.lib" SuppressStartupBanner="TRUE" AdditionalDependencies="" />
+      <Tool Name="VCManifestTool" OutputManifestFile="&quot;pc-vc-dev-debug\JavaScriptCore.embed.manifest&quot;" ManifestResourceFile="&quot;pc-vc-dev-debug\JavaScriptCore.embed.manifest.res&quot;" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="&quot;$(VSInstallDir)\VC\atlmfc\include&quot;;&quot;$(WindowsSDKDir)\Include&quot;;&quot;$(VSInstallDir)\VC\Include&quot;" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+    <Configuration Name="pc-vc-dev-opt|Win32" OutputDirectory="pc-vc-dev-opt\build\JavaScriptCore" IntermediateDirectory="pc-vc-dev-opt\build\JavaScriptCore\vcproj" CharacterSet="1" ConfigurationType="4">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="MASM" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" PreprocessorDefinitions="_HAS_TR1=0;_SECURE_SCL=0;_WIN32_IE=0x0501;_WIN32_WINNT=0x0501;_WINDOWS;BUILDING_EA__;BUILDING_EA__=1;BUILDING_JavaScriptCore;BUILDING_WTF;EASTL_NOMINMAX=0;EAWEBKIT_PLATFORM_HEADER=&lt;windows.h&gt;;JS_NO_EXPORT;NDEBUG;NDEBUG;UNICODE;USE_SYSTEM_MALLOC=1;WIN32;WIN32;WINVER=0x0501" BufferSecurityCheck="FALSE" ProgramDataBaseFileName="pc-vc-dev-opt\lib\JavaScriptCore.pdb" WarningLevel="0" DebugInformationFormat="3" CompileOnly="TRUE" SuppressStartupBanner="TRUE" DisableSpecificWarnings="4275; 4061; 4062; 4100; 4324; 4619; 4514; 4640; 4668; 4710; 4711; 4738; 4820; 4826; 4819; 4826; 4692; 4996; " CompileAs="0" MinimalRebuild="FALSE" ForceConformanceInForLoopScope="TRUE" RuntimeTypeInfo="FALSE" ExceptionHandling="0" UsePrecompiledHeader="0" RuntimeLibrary="2" AdditionalIncludeDirectories="&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecompiler&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\debugger&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\interpreter&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\profiler&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\gobject&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\unicode&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\yarr&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\os-win32&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\EABaseEAWebKit\local\include\Common&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\coreallocatorEAWebKit\local-1.03.08\include&quot;;&quot;..\..\..\..\EAWebKitSupportPackages\EASTLEAWebKit\local\include&quot;;&quot;$(VSInstallDir)\VC\ATLMFC\INCLUDE&quot;;&quot;$(VSInstallDir)\VC\INCLUDE&quot;;&quot;$(WindowsSDKDir)\include&quot;;&quot;$(VSInstallDir)\SDK\v2.0\include&quot;;&quot;$(VSInstallDir)\INCLUDE&quot;" Optimization="2" AdditionalOptions="/MP -MP8 " />
+      <Tool Name="VCLibrarianTool" OutputFile="pc-vc-dev-opt\lib\JavaScriptCore.lib" SuppressStartupBanner="TRUE" AdditionalDependencies="" />
+      <Tool Name="VCManifestTool" OutputManifestFile="&quot;pc-vc-dev-opt\JavaScriptCore.embed.manifest&quot;" ManifestResourceFile="&quot;pc-vc-dev-opt\JavaScriptCore.embed.manifest.res&quot;" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="&quot;$(VSInstallDir)\VC\atlmfc\include&quot;;&quot;$(WindowsSDKDir)\Include&quot;;&quot;$(VSInstallDir)\VC\Include&quot;" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+  </Configurations>
+  <References>
+  </References>
+  <Files>
+    <Filter Name="JavaScriptCore" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\config.h">
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\JavaScriptCorePrefix.h">
+      </File>
+      <Filter Name="API" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\APICast.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\APIShims.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JavaScript.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JavaScriptCore.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSBase.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSBase.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSBasePrivate.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSCallbackConstructor.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSCallbackConstructor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSCallbackFunction.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSCallbackFunction.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSCallbackObject.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSCallbackObject.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSCallbackObjectFunctions.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSClassRef.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSClassRef.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSContextRef.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSContextRef.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSContextRefPrivate.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSObjectRef.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSObjectRef.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSObjectRefPrivate.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSProfilerPrivate.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSRetainPtr.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSSettingsEA.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSSettingsEA.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSStringRef.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSStringRef.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSStringRefBSTR.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSStringRefCF.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSTextInterface.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSTextInterface.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSValueRef.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSValueRef.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSWeakObjectMapRefInternal.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\JSWeakObjectMapRefPrivate.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\OpaqueJSString.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\API\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\OpaqueJSString.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\WebKitAvailability.h">
+        </File>
+        <Filter Name="tests" Filter="">
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\tests\JSNode.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\tests\JSNodeList.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\tests\Node.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\API\tests\NodeList.h">
+          </File>
+        </Filter>
+      </Filter>
+      <Filter Name="assembler" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\AbstractMacroAssembler.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\ARMAssembler.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\assembler\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\assembler\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\ARMAssembler.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\ARMv7Assembler.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\assembler\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\assembler\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\ARMv7Assembler.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\AssemblerBuffer.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\AssemblerBufferWithConstantPool.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\CodeLocation.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\LinkBuffer.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\MacroAssembler.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\MacroAssemblerARM.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\assembler\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\assembler\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\MacroAssemblerARM.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\MacroAssemblerARMv7.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\MacroAssemblerCodeRef.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\MacroAssemblerMIPS.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\MacroAssemblerSH4.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\assembler\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\assembler\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\MacroAssemblerSH4.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\MacroAssemblerX86.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\MacroAssemblerX86_64.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\MacroAssemblerX86Common.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\MIPSAssembler.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\RepatchBuffer.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\SH4Assembler.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\assembler\X86Assembler.h">
+        </File>
+      </Filter>
+      <Filter Name="bytecode" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\CodeBlock.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\CodeBlock.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\EvalCodeCache.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\Instruction.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\JumpTable.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\JumpTable.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\Opcode.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\Opcode.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\PredictedType.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\PredictedType.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\PredictionTracker.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\SamplingTool.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\SamplingTool.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\StructureStubInfo.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\StructureStubInfo.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\ValueProfile.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\bytecode\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecode\ValueProfile.h">
+        </File>
+      </Filter>
+      <Filter Name="bytecompiler" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecompiler\BytecodeGenerator.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\bytecompiler\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\bytecompiler\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecompiler\BytecodeGenerator.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecompiler\Label.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecompiler\LabelScope.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecompiler\NodesCodegen.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\bytecompiler\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\bytecompiler\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\bytecompiler\RegisterID.h">
+        </File>
+      </Filter>
+      <Filter Name="debugger" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\debugger\Debugger.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\debugger\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\debugger\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\debugger\Debugger.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\debugger\DebuggerActivation.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\debugger\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\debugger\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\debugger\DebuggerActivation.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\debugger\DebuggerCallFrame.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\debugger\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\debugger\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\debugger\DebuggerCallFrame.h">
+        </File>
+      </Filter>
+      <Filter Name="dfg" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGAliasTracker.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGByteCodeParser.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGByteCodeParser.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGCapabilities.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGDriver.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGFPRInfo.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGGenerationInfo.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGGPRInfo.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGGraph.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGGraph.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGJITCodeGenerator.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGJITCodeGenerator.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGJITCompiler.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGJITCompiler.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGNode.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGNonSpeculativeJIT.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGNonSpeculativeJIT.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGOperations.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGOperations.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGOSREntry.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGPropagator.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGRegisterBank.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGRepatch.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGScoreBoard.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGSpeculativeJIT.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\dfg\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\dfg\DFGSpeculativeJIT.h">
+        </File>
+      </Filter>
+      <Filter Name="ForwardingHeaders" Filter="">
+        <Filter Name="JavaScriptCore" Filter="">
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders\JavaScriptCore\APICast.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders\JavaScriptCore\APIShims.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JavaScript.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JavaScriptCore.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSBase.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSContextRef.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSObjectRef.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSRetainPtr.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSStringRef.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSStringRefCF.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSValueRef.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders\JavaScriptCore\OpaqueJSString.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\ForwardingHeaders\JavaScriptCore\WebKitAvailability.h">
+          </File>
+        </Filter>
+      </Filter>
+      <Filter Name="generated" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\ArrayConstructor.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\ArrayPrototype.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\BooleanPrototype.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\DateConstructor.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\DatePrototype.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\ErrorPrototype.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\GeneratedJITStubs_RVCT.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\JSGlobalObject.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\JSONObject.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\KeywordLookup.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\Lexer.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\MathObject.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\NumberConstructor.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\NumberPrototype.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\ObjectConstructor.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\ObjectPrototype.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\RegExpConstructor.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\RegExpJitTables.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\RegExpObject.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\RegExpPrototype.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\StringConstructor.lut.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\generated\StringPrototype.lut.h">
+        </File>
+      </Filter>
+      <Filter Name="heap" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\ConservativeRoots.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\ConservativeRoots.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\Handle.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\HandleHeap.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\HandleHeap.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\HandleStack.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\HandleStack.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\HandleTypes.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\Heap.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\Heap.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\HeapRootVisitor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\Local.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\LocalScope.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\MachineStackMarker.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\MachineStackMarker.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\MarkedBlock.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\MarkedBlock.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\MarkedBlockSet.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\MarkStack.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\MarkStack.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\NewSpace.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\NewSpace.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\SlotVisitor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\Strong.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\TinyBloomFilter.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\VTableSpectrum.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\VTableSpectrum.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\Weak.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\WeakReferenceHarvester.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\WriteBarrierSupport.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\heap\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\heap\WriteBarrierSupport.h">
+        </File>
+      </Filter>
+      <Filter Name="interpreter" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\interpreter\CachedCall.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\interpreter\CallFrame.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\interpreter\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\interpreter\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\interpreter\CallFrame.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\interpreter\CallFrameClosure.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\interpreter\Interpreter.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\interpreter\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\interpreter\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\interpreter\Interpreter.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\interpreter\Register.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\interpreter\RegisterFile.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\interpreter\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\interpreter\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\interpreter\RegisterFile.h">
+        </File>
+      </Filter>
+      <Filter Name="jit" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\CompactJITCodeMap.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\ExecutableAllocator.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\ExecutableAllocator.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\ExecutableAllocatorFixedVMPool.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JIT.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JIT.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITArithmetic.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITArithmetic32_64.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITCall.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITCall32_64.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITCode.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITInlineMethods.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITOpcodes.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITOpcodes32_64.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITPropertyAccess.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITPropertyAccess32_64.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITStubCall.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITStubs.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITStubs.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JITWriteBarrier.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\JSInterfaceJIT.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\SpecializedThunkJIT.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\ThunkGenerators.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\jit\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\jit\ThunkGenerators.h">
+        </File>
+      </Filter>
+      <Filter Name="os-win32" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\os-win32\inttypes.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\os-win32\stdbool.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\os-win32\stdint.h">
+        </File>
+      </Filter>
+      <Filter Name="parser" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\ASTBuilder.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\JSParser.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\parser\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\parser\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\JSParser.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\Lexer.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\parser\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\parser\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\Lexer.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\NodeConstructors.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\NodeInfo.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\Nodes.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\parser\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\parser\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\Nodes.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\Parser.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\parser\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\parser\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\Parser.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\ParserArena.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\parser\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\parser\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\ParserArena.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\ResultType.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\SourceCode.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\SourceProvider.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\SourceProviderCache.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\parser\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\parser\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\SourceProviderCache.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\SourceProviderCacheItem.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\parser\SyntaxChecker.h">
+        </File>
+      </Filter>
+      <Filter Name="profiler" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\profiler\CallIdentifier.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\profiler\Profile.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\profiler\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\profiler\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\profiler\Profile.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\profiler\ProfileGenerator.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\profiler\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\profiler\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\profiler\ProfileGenerator.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\profiler\ProfileNode.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\profiler\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\profiler\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\profiler\ProfileNode.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\profiler\Profiler.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\profiler\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\profiler\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\profiler\Profiler.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\profiler\ProfilerServer.h">
+        </File>
+      </Filter>
+      <Filter Name="runtime" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ArgList.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ArgList.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Arguments.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Arguments.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ArrayConstructor.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ArrayConstructor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ArrayPrototype.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ArrayPrototype.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\BatchedTransitionOptimizer.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\BigInteger.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\BooleanConstructor.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\BooleanConstructor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\BooleanObject.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\BooleanObject.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\BooleanPrototype.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\BooleanPrototype.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\CachedTranscendentalFunction.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\CallData.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\CallData.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ClassInfo.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\CommonIdentifiers.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\CommonIdentifiers.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Completion.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Completion.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ConstructData.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ConstructData.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\DateConstructor.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\DateConstructor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\DateConversion.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\DateConversion.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\DateInstance.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\DateInstance.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\DateInstanceCache.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\DatePrototype.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\DatePrototype.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Error.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Error.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ErrorConstructor.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ErrorConstructor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ErrorInstance.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ErrorInstance.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ErrorPrototype.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ErrorPrototype.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ExceptionHelpers.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ExceptionHelpers.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Executable.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Executable.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\FunctionConstructor.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\FunctionConstructor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\FunctionPrototype.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\FunctionPrototype.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\GCActivityCallback.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\GCActivityCallback.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\GetterSetter.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\GetterSetter.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Identifier.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Identifier.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\InitializeThreading.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\InitializeThreading.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\InternalFunction.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\InternalFunction.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSActivation.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSActivation.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSAPIValueWrapper.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSAPIValueWrapper.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSArray.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSArray.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSByteArray.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSByteArray.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSCell.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSCell.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSChunk.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSFunction.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSFunction.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSGlobalData.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSGlobalData.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSGlobalObject.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSGlobalObject.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSGlobalObjectFunctions.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSGlobalObjectFunctions.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSLock.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSLock.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSNotAnObject.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSNotAnObject.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSObject.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSObject.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSONObject.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSONObject.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSPropertyNameIterator.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSPropertyNameIterator.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSStaticScopeObject.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSStaticScopeObject.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSString.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSString.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSStringBuilder.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSType.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSTypeInfo.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSValue.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSValue.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSValueInlineMethods.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSVariableObject.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSVariableObject.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSWrapperObject.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\JSWrapperObject.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\LiteralParser.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\LiteralParser.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Lookup.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Lookup.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\MathObject.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\MathObject.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\MemoryStatistics.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\NativeErrorConstructor.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\NativeErrorConstructor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\NativeErrorPrototype.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\NativeErrorPrototype.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\NumberConstructor.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\NumberConstructor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\NumberObject.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\NumberObject.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\NumberPrototype.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\NumberPrototype.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\NumericStrings.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ObjectConstructor.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ObjectConstructor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ObjectPrototype.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ObjectPrototype.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Operations.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Operations.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\PropertyDescriptor.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\PropertyDescriptor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\PropertyMapHashTable.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\PropertyNameArray.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\PropertyNameArray.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\PropertySlot.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\PropertySlot.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Protect.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\PutPropertySlot.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RegExp.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RegExp.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RegExpCache.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RegExpCache.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RegExpConstructor.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RegExpConstructor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RegExpKey.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RegExpMatchesArray.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RegExpObject.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RegExpObject.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RegExpPrototype.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RegExpPrototype.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RopeImpl.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\RopeImpl.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\SamplingCounter.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\SamplingCounter.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ScopeChain.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ScopeChain.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\ScopeChainMark.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\SmallStrings.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\SmallStrings.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StorageBarrier.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StrictEvalActivation.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StrictEvalActivation.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StringConstructor.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StringConstructor.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StringObject.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StringObject.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StringObjectThatMasqueradesAsUndefined.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StringPrototype.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StringPrototype.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StringRecursionChecker.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StringRecursionChecker.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Structure.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Structure.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StructureChain.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StructureChain.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\StructureTransitionTable.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\SymbolTable.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Terminator.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\TimeoutChecker.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\TimeoutChecker.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Tracing.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\Uint16WithFraction.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\UString.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\runtime\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\UString.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\UStringBuilder.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\UStringConcatenate.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\WeakGCMap.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\WeakRandom.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\runtime\WriteBarrier.h">
+        </File>
+      </Filter>
+      <Filter Name="wtf" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Alignment.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\AlwaysInline.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ASCIICType.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Assertions.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Assertions.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Atomics.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\AVLTree.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Bitmap.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\BlockStack.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\BloomFilter.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\BoundsCheckedPointer.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\BumpPointerAllocator.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ByteArray.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ByteArray.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\CheckedArithmetic.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Compiler.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Complex.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\CrossThreadRefCounted.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\CryptographicallyRandomNumber.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\CryptographicallyRandomNumber.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\CurrentTime.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\CurrentTime.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\DateMath.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\DateMath.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\DecimalNumber.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\DecimalNumber.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Decoder.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Deque.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\DisallowCType.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\DoublyLinkedList.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\DynamicAnnotations.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Encoder.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ExportMacros.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\FastAllocBase.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\FastMalloc.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\FastMalloc.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\FixedArray.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Forward.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\GetPtr.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\HashCountedSet.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\HashFunctions.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\HashIterators.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\HashMap.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\HashSet.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\HashTable.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\HashTable.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\HashTraits.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\HexNumber.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ListHashSet.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ListRefPtr.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Locker.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\MainThread.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\MainThread.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\MallocZoneSupport.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\MathExtras.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\MD5.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\MD5.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\MessageQueue.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\MetaAllocator.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\MetaAllocator.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\MetaAllocatorHandle.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Noncopyable.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\NonCopyingSort.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\NotFound.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\NullPtr.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\NullPtr.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\OSAllocator.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\OSRandomSource.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\OSRandomSource.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\OwnArrayPtr.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\OwnFastMallocPtr.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\OwnPtr.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\OwnPtrCommon.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\PageAllocation.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\PageAllocationAligned.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\PageAllocationAligned.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\PageAllocatorSymbian.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\PageBlock.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\PageBlock.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\PageReservation.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ParallelJobs.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ParallelJobsGeneric.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ParallelJobsGeneric.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ParallelJobsLibdispatch.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ParallelJobsOpenMP.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\PassOwnArrayPtr.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\PassOwnPtr.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\PassRefPtr.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\PassTraits.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Platform.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\PossiblyNull.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\RandomNumber.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\RandomNumber.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\RandomNumberSeed.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\RedBlackTree.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\RefCounted.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\RefCountedLeakCounter.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\RefCountedLeakCounter.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\RefPtr.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\RefPtrHashMap.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\RetainPtr.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\SegmentedVector.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\SentinelLinkedList.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\SHA1.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\SHA1.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\SinglyLinkedList.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\StackBounds.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\StackBounds.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\StaticConstructors.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\StdLibExtras.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\StringExtras.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\StringHasher.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\TCPackedCache.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\TCPageMap.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\TCSpinLock.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\TCSystemAlloc.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\TCSystemAlloc.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ThreadFunctionInvocation.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ThreadIdentifierDataPthreads.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Threading.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Threading.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ThreadingPrimitives.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ThreadRestrictionVerifier.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ThreadSafeRefCounted.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ThreadSpecific.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\TypeTraits.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\TypeTraits.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\UnusedParam.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ValueCheck.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\Vector.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\VectorTraits.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\VMTags.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\WTFThreadData.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\WTFThreadData.h">
+        </File>
+        <Filter Name="dtoa" Filter="">
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\bignum.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\bignum.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\bignum-dtoa.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\bignum-dtoa.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\cached-powers.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\cached-powers.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\diy-fp.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\diy-fp.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\double.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\double-conversion.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\double-conversion.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\fast-dtoa.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\fast-dtoa.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\fixed-dtoa.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\fixed-dtoa.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\strtod.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\dtoa\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\strtod.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\dtoa\utils.h">
+          </File>
+        </Filter>
+        <Filter Name="ea" Filter="">
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ea\MainThreadEA.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\ea\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\ea\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ea\OSAllocatorEA.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\ea\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\ea\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\ea\ThreadingEA.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\ea\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\ea\" />
+            </FileConfiguration>
+          </File>
+        </Filter>
+        <Filter Name="gobject" Filter="">
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\gobject\GOwnPtr.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\gobject\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\gobject\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\gobject\GOwnPtr.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\gobject\GRefPtr.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\gobject\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\gobject\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\gobject\GRefPtr.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\gobject\GTypedefs.h">
+          </File>
+        </Filter>
+        <Filter Name="text" Filter="">
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\AtomicString.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\text\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\text\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\AtomicString.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\AtomicStringHash.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\AtomicStringImpl.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\CString.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\text\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\text\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\CString.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\StringBuffer.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\StringBuilder.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\text\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\text\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\StringBuilder.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\StringConcatenate.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\StringHash.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\StringImpl.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\text\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\text\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\StringImpl.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\StringImplBase.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\StringOperators.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\StringStatics.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\text\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\text\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\TextPosition.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\WTFString.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\text\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\text\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\text\WTFString.h">
+          </File>
+        </Filter>
+        <Filter Name="threads" Filter="">
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\threads\BinarySemaphore.h">
+          </File>
+        </Filter>
+        <Filter Name="unicode" Filter="">
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\unicode\CharacterNames.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\unicode\Collator.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\unicode\ScriptCodesFromICU.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\unicode\Unicode.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\unicode\UnicodeMacrosFromICU.h">
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\unicode\UTF8.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\unicode\" />
+            </FileConfiguration>
+            <FileConfiguration Name="pc-vc-dev-opt|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\unicode\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\unicode\UTF8.h">
+          </File>
+          <Filter Name="ea" Filter="">
+            <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\unicode\ea\CollatorEA.cpp">
+              <FileConfiguration Name="pc-vc-dev-debug|Win32">
+                <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\unicode\ea\" />
+              </FileConfiguration>
+              <FileConfiguration Name="pc-vc-dev-opt|Win32">
+                <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\unicode\ea\" />
+              </FileConfiguration>
+            </File>
+            <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\unicode\ea\UnicodeEA.cpp">
+              <FileConfiguration Name="pc-vc-dev-debug|Win32">
+                <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\wtf\unicode\ea\" />
+              </FileConfiguration>
+              <FileConfiguration Name="pc-vc-dev-opt|Win32">
+                <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\wtf\unicode\ea\" />
+              </FileConfiguration>
+            </File>
+            <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\unicode\ea\UnicodeEA.h">
+            </File>
+          </Filter>
+          <Filter Name="glib" Filter="">
+            <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\wtf\unicode\glib\UnicodeGLib.h">
+            </File>
+          </Filter>
+        </Filter>
+      </Filter>
+      <Filter Name="yarr" Filter="">
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\yarr\Yarr.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\yarr\YarrInterpreter.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\yarr\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\yarr\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\yarr\YarrInterpreter.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\yarr\YarrJIT.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\yarr\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\yarr\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\yarr\YarrJIT.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\yarr\YarrParser.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\yarr\YarrPattern.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\yarr\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\yarr\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\yarr\YarrPattern.h">
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\yarr\YarrSyntaxChecker.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\JavaScriptCore\vcproj\yarr\" />
+          </FileConfiguration>
+          <FileConfiguration Name="pc-vc-dev-opt|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\JavaScriptCore\vcproj\yarr\" />
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\..\..\EAWebKitSupportPackages\JavaScriptCore\local\JavaScriptCore\yarr\YarrSyntaxChecker.h">
+        </File>
+      </Filter>
+    </Filter>
+  </Files>
+  <Globals>
+    <Global Name="$(DXSDK_DIR)" Value="C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)" />
+    <Global Name="$(VSInstallDir)" Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0" />
+    <Global Name="$(WindowsSDKDir)" Value="C:\packages\WindowsSDK\6.1.6001.18000\installed" />
+    <Global Name="build.env.PATH" Value="$(VSInstallDir)\Common7\IDE" />
+    <Global Name="platform" Value="vc" />
+    <Global Name="platform_pc-vc-dev-debug_Win32" Value="vc" />
+    <Global Name="platform_pc-vc-dev-opt_Win32" Value="vc" />
+    <Global Name="vc-asm" Value="$(VSInstallDir)\VC\BIN\ml.exe" />
+    <Global Name="vc-compiler" Value="$(VSInstallDir)\VC\BIN\cl.exe" />
+    <Global Name="vc-compiler_clang" Value="" />
+    <Global Name="vc-librarian" Value="$(VSInstallDir)\VC\BIN\lib.exe" />
+    <Global Name="vc-linker" Value="$(VSInstallDir)\VC\BIN\link.exe" />
+    <Global Name="vc-postlink.program" Value="$(WindowsSDKDir)\BIN\mt.exe" />
+    <Global Name="vc-rccompiler" Value="$(WindowsSDKDir)\BIN\rc.exe" />
+  </Globals>
+</VisualStudioProject>

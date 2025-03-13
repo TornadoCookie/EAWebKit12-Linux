@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioProject ProjectGUID="{5D41722B-AD9D-070B-6A83-FC7612921224}" Name="FreeTypeEAWebKit" Keyword="Win32Proj" Version="9.00" ProjectType="Visual C++" TargetFrameworkVersion="196613">
+  <Platforms>
+    <Platform Name="Win32" />
+  </Platforms>
+  <ToolFiles>
+    <DefaultToolFile FileName="masm.rules" />
+  </ToolFiles>
+  <Configurations>
+    <Configuration Name="pc-vc-dev-debug|Win32" OutputDirectory="pc-vc-dev-debug\build\FreeTypeEAWebKit" IntermediateDirectory="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj" CharacterSet="2" ConfigurationType="4">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="MASM" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" PreprocessorDefinitions="_DEBUG;_SECURE_SCL=1;_WIN32_IE=0x0501;_WIN32_WINNT=0x0501;EA_DEBUG;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;FT2_BUILD_LIBRARY;WIN32;WINVER=0x0501" BufferSecurityCheck="FALSE" ProgramDataBaseFileName="pc-vc-dev-debug\lib\FreeTypeEAWebKit.pdb" UsePrecompiledHeader="0" DebugInformationFormat="3" CompileOnly="TRUE" DisableSpecificWarnings="4701; 4255; 4244; 4242; 4061; 4062; 4100; 4324; 4619; 4514; 4640; 4668; 4710; 4711; 4738; 4820; 4826; 4819; 4826; 4692; 4996; " CompileAs="0" MinimalRebuild="FALSE" ForceConformanceInForLoopScope="TRUE" WarnAsError="FALSE" RuntimeTypeInfo="FALSE" ExceptionHandling="0" SuppressStartupBanner="TRUE" RuntimeLibrary="3" BasicRuntimeChecks="3" AdditionalIncludeDirectories="&quot;..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\include&quot;;&quot;$(VSInstallDir)\VC\ATLMFC\INCLUDE&quot;;&quot;$(VSInstallDir)\VC\INCLUDE&quot;;&quot;$(WindowsSDKDir)\include&quot;;&quot;$(VSInstallDir)\SDK\v2.0\include&quot;;&quot;$(VSInstallDir)\INCLUDE&quot;" Optimization="0" AdditionalOptions="-MP8 -Wall " />
+      <Tool Name="VCLibrarianTool" OutputFile="pc-vc-dev-debug\lib\FreeTypeEAWebKit.lib" SuppressStartupBanner="TRUE" AdditionalDependencies="" />
+      <Tool Name="VCManifestTool" OutputManifestFile="&quot;pc-vc-dev-debug\FreeTypeEAWebKit.embed.manifest&quot;" ManifestResourceFile="&quot;pc-vc-dev-debug\FreeTypeEAWebKit.embed.manifest.res&quot;" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="&quot;$(VSInstallDir)\VC\atlmfc\include&quot;;&quot;$(WindowsSDKDir)\Include&quot;;&quot;$(VSInstallDir)\VC\Include&quot;" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+    <Configuration Name="pc-vc-dev-opt|Win32" OutputDirectory="pc-vc-dev-opt\build\FreeTypeEAWebKit" IntermediateDirectory="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj" CharacterSet="2" ConfigurationType="4">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="MASM" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" PreprocessorDefinitions="_SECURE_SCL=0;_WIN32_IE=0x0501;_WIN32_WINNT=0x0501;FT2_BUILD_LIBRARY;NDEBUG;WIN32;WINVER=0x0501" BufferSecurityCheck="FALSE" ProgramDataBaseFileName="pc-vc-dev-opt\lib\FreeTypeEAWebKit.pdb" UsePrecompiledHeader="0" DebugInformationFormat="3" CompileOnly="TRUE" DisableSpecificWarnings="4701; 4255; 4244; 4242; 4061; 4062; 4100; 4324; 4619; 4514; 4640; 4668; 4710; 4711; 4738; 4820; 4826; 4819; 4826; 4692; 4996; " CompileAs="0" MinimalRebuild="FALSE" ForceConformanceInForLoopScope="TRUE" WarnAsError="FALSE" RuntimeTypeInfo="FALSE" ExceptionHandling="0" SuppressStartupBanner="TRUE" RuntimeLibrary="2" AdditionalIncludeDirectories="&quot;..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\include&quot;;&quot;$(VSInstallDir)\VC\ATLMFC\INCLUDE&quot;;&quot;$(VSInstallDir)\VC\INCLUDE&quot;;&quot;$(WindowsSDKDir)\include&quot;;&quot;$(VSInstallDir)\SDK\v2.0\include&quot;;&quot;$(VSInstallDir)\INCLUDE&quot;" Optimization="2" AdditionalOptions="-MP8 -Wall " />
+      <Tool Name="VCLibrarianTool" OutputFile="pc-vc-dev-opt\lib\FreeTypeEAWebKit.lib" SuppressStartupBanner="TRUE" AdditionalDependencies="" />
+      <Tool Name="VCManifestTool" OutputManifestFile="&quot;pc-vc-dev-opt\FreeTypeEAWebKit.embed.manifest&quot;" ManifestResourceFile="&quot;pc-vc-dev-opt\FreeTypeEAWebKit.embed.manifest.res&quot;" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" AdditionalIncludeDirectories="&quot;$(VSInstallDir)\VC\atlmfc\include&quot;;&quot;$(WindowsSDKDir)\Include&quot;;&quot;$(VSInstallDir)\VC\Include&quot;" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+  </Configurations>
+  <References>
+  </References>
+  <Files>
+    <Filter Name="autofit" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\autofit\autofit.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\autofit\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\autofit\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="base" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftbase.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftbbox.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftbitmap.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftdebug.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftfstype.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftgasp.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftglyph.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftinit.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftmm.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftpfr.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftstroke.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftsynth.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftsystem.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\fttype1.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\base\ftwinfnt.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\base\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="bdf" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\bdf\bdf.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\bdf\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\bdf\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="cache" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\cache\ftcache.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\cache\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\cache\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="cff" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\cff\cff.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\cff\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\cff\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="cid" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\cid\type1cid.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\cid\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\cid\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="gzip" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\gzip\ftgzip.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\gzip\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\gzip\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="lzw" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\lzw\ftlzw.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\lzw\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\lzw\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="pcf" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\pcf\pcf.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\pcf\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\pcf\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="pfr" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\pfr\pfr.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\pfr\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\pfr\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="psaux" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\psaux\psaux.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\psaux\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\psaux\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="pshinter" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\pshinter\pshinter.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\pshinter\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\pshinter\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="psnames" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\psnames\psnames.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\psnames\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\psnames\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="raster" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\raster\raster.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\raster\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\raster\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="sfnt" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\sfnt\sfnt.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\sfnt\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\sfnt\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="smooth" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\smooth\smooth.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\smooth\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\smooth\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="truetype" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\truetype\truetype.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\truetype\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\truetype\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="type1" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\type1\type1.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\type1\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\type1\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="type42" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\type42\type42.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\type42\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\type42\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+    <Filter Name="winfonts" Filter="">
+      <File RelativePath="..\..\..\..\EAWebKitSupportPackages\FreeTypeEAWebKit\local-2.4.8.02\freetype-2.4.8\src\winfonts\winfnt.c">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-debug\build\FreeTypeEAWebKit\vcproj\winfonts\" />
+        </FileConfiguration>
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile="pc-vc-dev-opt\build\FreeTypeEAWebKit\vcproj\winfonts\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+  </Files>
+  <Globals>
+    <Global Name="$(DXSDK_DIR)" Value="C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)" />
+    <Global Name="$(VSInstallDir)" Value="C:\Program Files (x86)\Microsoft Visual Studio 9.0" />
+    <Global Name="$(WindowsSDKDir)" Value="C:\packages\WindowsSDK\6.1.6001.18000\installed" />
+    <Global Name="build.env.PATH" Value="$(VSInstallDir)\Common7\IDE" />
+    <Global Name="platform" Value="vc" />
+    <Global Name="platform_pc-vc-dev-debug_Win32" Value="vc" />
+    <Global Name="platform_pc-vc-dev-opt_Win32" Value="vc" />
+    <Global Name="vc-asm" Value="$(VSInstallDir)\VC\BIN\ml.exe" />
+    <Global Name="vc-compiler" Value="$(VSInstallDir)\VC\BIN\cl.exe" />
+    <Global Name="vc-compiler_clang" Value="" />
+    <Global Name="vc-librarian" Value="$(VSInstallDir)\VC\BIN\lib.exe" />
+    <Global Name="vc-linker" Value="$(VSInstallDir)\VC\BIN\link.exe" />
+    <Global Name="vc-postlink.program" Value="$(WindowsSDKDir)\BIN\mt.exe" />
+    <Global Name="vc-rccompiler" Value="$(WindowsSDKDir)\BIN\rc.exe" />
+  </Globals>
+</VisualStudioProject>

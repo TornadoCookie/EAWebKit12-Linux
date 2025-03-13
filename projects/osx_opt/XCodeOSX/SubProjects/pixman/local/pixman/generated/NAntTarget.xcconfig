@@ -1,0 +1,3 @@
+NANT_MODULENAME = pixman
+NANT_EXENAME = libpixman.a
+NANT_SYMROOT = build 

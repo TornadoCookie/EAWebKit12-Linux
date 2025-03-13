@@ -1,0 +1,8 @@
+#include "Project.xcconfig"
+
+GCC_PREPROCESSOR_DEFINITIONS =		// Prefix your DEBUG macro to avoid collisions.
+ONLY_ACTIVE_ARCH = YES				// Don't build universal.
+GCC_OPTIMIZATION_LEVEL = 0			// Don't optimize.
+COPY_PHASE_STRIP = NO				// Don't strip if we install (we don't usually).
+GCC_DYNAMIC_NO_PIC = NO;
+GCC_ENABLE_OBJC_EXCEPTIONS = YES;

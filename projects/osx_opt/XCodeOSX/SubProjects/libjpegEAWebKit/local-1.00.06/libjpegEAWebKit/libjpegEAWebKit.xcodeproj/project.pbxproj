@@ -1,0 +1,985 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+        2BEA1BDC12A40B1C007E53C3 = {
+            isa = PBXFileReference;
+            lastKnownFileType = wrapper.framework;
+            name = "CoreFoundation.framework";
+            path = "System/Library/Frameworks/CoreFoundation.framework";
+            sourceTree = SDKROOT;
+        };
+        1D530ECE1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Project.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ECF1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Release.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ED01214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Target.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D6058910D05DD3D006BFB54 = {
+            isa = PBXFileReference;
+            includeInIndex = 0;
+            path = "../../../../OSX-common-xcode.template/libjpegEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            name = "libjpegEAWebKit";
+        };
+        1D60588F0D05DD3D006BFB54 = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D73A7FE12124384005BEE8D = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000020B2BA5E1018,
+            );
+            name = "Packages";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        29B97314FDCFA39411CA2CEA = {
+            isa = PBXGroup;
+            children = (
+                1D73A7FE12124384005BEE8D,
+                2B96D4A71282D3C600ECF477,
+                1D6058910D05DD3D006BFB54,
+                2B96D4A81282D3D700ECF477,
+            );
+            name = "CustomTemplate";
+            sourceTree = "<group>";
+        };
+        2B96D4A71282D3C600ECF477 = {
+            isa = PBXGroup;
+            children = (
+                2BEA1BDB12A40B1C007E53C3,
+            );
+            name = "Frameworks";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        2B96D4A81282D3D700ECF477 = {
+            isa = PBXGroup;
+            children = (
+                1D530ECD1214958100E23731,
+                1D530ECE1214958100E23731,
+                1D530ECF1214958100E23731,
+                1D530ED01214958100E23731,
+                BA5E1018000023DEBA5E1018,
+                BA5E1018000023DFBA5E1018,
+            );
+            name = "Configs";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        1D6058900D05DD3D006BFB54 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 1D6058960D05DD3E006BFB54;
+            buildPhases = (
+                1D60588D0D05DD3D006BFB54,
+                1D60588E0D05DD3D006BFB54,
+                1D60588F0D05DD3D006BFB54,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "libjpegEAWebKit";
+            productName = "libjpegEAWebKit";
+            productReference = 1D6058910D05DD3D006BFB54;
+            productType = "com.apple.product-type.library.static";
+        };
+        29B97313FDCFA39411CA2CEA = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 0420;
+                ORGANIZATIONNAME = "Electronic Arts";
+            };
+            buildConfigurationList = C01FCF4E08A954540054247B;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = English;
+            hasScannedForEncodings = 1;
+            knownRegions = (
+                English,
+                Japanese,
+                French,
+                German,
+            );
+            mainGroup = 29B97314FDCFA39411CA2CEA;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                1D6058900D05DD3D006BFB54,
+            );
+        };
+        1D60588D0D05DD3D006BFB54 = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2BF7EB841236332B00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt postbuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh postbuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        2BF7EB861236336C00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt prebuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh prebuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        1D60588E0D05DD3D006BFB54 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                BA5E1018000020BCBA5E1018,
+                BA5E1018000020BEBA5E1018,
+                BA5E1018000020C0BA5E1018,
+                BA5E1018000020C2BA5E1018,
+                BA5E1018000020C4BA5E1018,
+                BA5E1018000020C6BA5E1018,
+                BA5E1018000020C8BA5E1018,
+                BA5E1018000020CABA5E1018,
+                BA5E1018000020CCBA5E1018,
+                BA5E1018000020CEBA5E1018,
+                BA5E1018000020D0BA5E1018,
+                BA5E1018000020D2BA5E1018,
+                BA5E1018000020D4BA5E1018,
+                BA5E1018000020D6BA5E1018,
+                BA5E1018000020D8BA5E1018,
+                BA5E1018000020DABA5E1018,
+                BA5E1018000020DCBA5E1018,
+                BA5E1018000020DEBA5E1018,
+                BA5E1018000020E0BA5E1018,
+                BA5E1018000020E2BA5E1018,
+                BA5E1018000020E4BA5E1018,
+                BA5E1018000020E6BA5E1018,
+                BA5E1018000020E8BA5E1018,
+                BA5E1018000020EABA5E1018,
+                BA5E1018000020ECBA5E1018,
+                BA5E1018000020EEBA5E1018,
+                BA5E1018000020F0BA5E1018,
+                BA5E1018000020F2BA5E1018,
+                BA5E1018000020F4BA5E1018,
+                BA5E1018000020F6BA5E1018,
+                BA5E1018000020F8BA5E1018,
+                BA5E1018000020FABA5E1018,
+                BA5E1018000020FCBA5E1018,
+                BA5E1018000020FEBA5E1018,
+                BA5E101800002100BA5E1018,
+                BA5E101800002102BA5E1018,
+                BA5E101800002104BA5E1018,
+                BA5E101800002106BA5E1018,
+                BA5E101800002108BA5E1018,
+                BA5E10180000210ABA5E1018,
+                BA5E10180000210CBA5E1018,
+                BA5E10180000210EBA5E1018,
+                BA5E101800002110BA5E1018,
+                BA5E101800002112BA5E1018,
+                BA5E101800002114BA5E1018,
+                BA5E101800002116BA5E1018,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D6058950D05DD3E006BFB54 = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ED01214958100E23731;
+            buildSettings = {
+                MACOSX_DEPLOYMENT_TARGET = 10.6;
+                MACH_O_TYPE = staticlib;
+                OBJROOT = "../../../../../libjpegEAWebKit/local-1.00.06/osx-gcc-dev-opt/build/libjpegEAWebKit";
+                SYMROOT = "../../../../../libjpegEAWebKit/local-1.00.06/osx-gcc-dev-opt/lib";
+                CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+                GENERATED_CC_FLAGS_CLibraryMod = "$(GENERATED_CC_FLAGS_CLibraryMod_Release)";
+                GENERATED_LDFLAGS = "$(GENERATED_LDFLAGS_Release)";
+            };
+            name = "Release";
+        };
+        C01FCF5008A954540054247B = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ECF1214958100E23731;
+            buildSettings = {
+                SDKROOT = macosx10.7;
+            };
+            name = "Release";
+        };
+        1D6058960D05DD3E006BFB54 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                1D6058950D05DD3E006BFB54,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        C01FCF4E08A954540054247B = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C01FCF5008A954540054247B,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        BA5E1018000020B2BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000020B3BA5E1018,
+                BA5E1018000020BABA5E1018,
+            );
+            name = "libjpegEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06";
+        };
+        BA5E1018000020B3BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000020B4BA5E1018,
+                BA5E1018000020B5BA5E1018,
+                BA5E1018000020B6BA5E1018,
+                BA5E1018000020B7BA5E1018,
+                BA5E1018000020B8BA5E1018,
+                BA5E1018000020B9BA5E1018,
+            );
+            name = "include";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/include";
+        };
+        BA5E1018000020B4BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jconfig.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/include/jconfig.h";
+        };
+        BA5E1018000020B5BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jerror.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/include/jerror.h";
+        };
+        BA5E1018000020B6BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jmemsys.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/include/jmemsys.h";
+        };
+        BA5E1018000020B7BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jmorecfg.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/include/jmorecfg.h";
+        };
+        BA5E1018000020B8BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jpeglib.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/include/jpeglib.h";
+        };
+        BA5E1018000020B9BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jsupport_ea.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/include/jsupport_ea.h";
+        };
+        BA5E1018000020BABA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E1018000020BBBA5E1018,
+                BA5E1018000020BDBA5E1018,
+                BA5E1018000020BFBA5E1018,
+                BA5E1018000020C1BA5E1018,
+                BA5E1018000020C3BA5E1018,
+                BA5E1018000020C5BA5E1018,
+                BA5E1018000020C7BA5E1018,
+                BA5E1018000020C9BA5E1018,
+                BA5E1018000020CBBA5E1018,
+                BA5E1018000020CDBA5E1018,
+                BA5E1018000020CFBA5E1018,
+                BA5E1018000020D1BA5E1018,
+                BA5E1018000020D3BA5E1018,
+                BA5E1018000020D5BA5E1018,
+                BA5E1018000020D7BA5E1018,
+                BA5E1018000020D9BA5E1018,
+                BA5E1018000020DBBA5E1018,
+                BA5E1018000020DDBA5E1018,
+                BA5E1018000020DFBA5E1018,
+                BA5E1018000020E1BA5E1018,
+                BA5E1018000020E3BA5E1018,
+                BA5E1018000020E5BA5E1018,
+                BA5E1018000020E7BA5E1018,
+                BA5E1018000020E9BA5E1018,
+                BA5E1018000020EBBA5E1018,
+                BA5E1018000020EDBA5E1018,
+                BA5E1018000020EFBA5E1018,
+                BA5E1018000020F1BA5E1018,
+                BA5E1018000020F3BA5E1018,
+                BA5E1018000020F5BA5E1018,
+                BA5E1018000020F7BA5E1018,
+                BA5E1018000020F9BA5E1018,
+                BA5E1018000020FBBA5E1018,
+                BA5E1018000020FDBA5E1018,
+                BA5E1018000020FFBA5E1018,
+                BA5E101800002101BA5E1018,
+                BA5E101800002103BA5E1018,
+                BA5E101800002105BA5E1018,
+                BA5E101800002107BA5E1018,
+                BA5E101800002109BA5E1018,
+                BA5E10180000210BBA5E1018,
+                BA5E10180000210DBA5E1018,
+                BA5E10180000210FBA5E1018,
+                BA5E101800002111BA5E1018,
+                BA5E101800002113BA5E1018,
+                BA5E101800002115BA5E1018,
+            );
+            name = "source";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source";
+        };
+        BA5E1018000020BBBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jcapimin.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jcapimin.c";
+        };
+        BA5E1018000020BCBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020BBBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020BDBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jcapistd.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jcapistd.c";
+        };
+        BA5E1018000020BEBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020BDBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020BFBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jccoefct.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jccoefct.c";
+        };
+        BA5E1018000020C0BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020BFBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020C1BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jccolor.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jccolor.c";
+        };
+        BA5E1018000020C2BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020C1BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020C3BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jcdctmgr.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jcdctmgr.c";
+        };
+        BA5E1018000020C4BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020C3BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020C5BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jchuff.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jchuff.c";
+        };
+        BA5E1018000020C6BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020C5BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020C7BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jcinit.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jcinit.c";
+        };
+        BA5E1018000020C8BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020C7BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020C9BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jcmainct.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jcmainct.c";
+        };
+        BA5E1018000020CABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020C9BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020CBBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jcmarker.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jcmarker.c";
+        };
+        BA5E1018000020CCBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020CBBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020CDBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jcmaster.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jcmaster.c";
+        };
+        BA5E1018000020CEBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020CDBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020CFBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jcomapi.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jcomapi.c";
+        };
+        BA5E1018000020D0BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020CFBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020D1BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jcparam.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jcparam.c";
+        };
+        BA5E1018000020D2BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020D1BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020D3BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jcphuff.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jcphuff.c";
+        };
+        BA5E1018000020D4BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020D3BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020D5BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jcprepct.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jcprepct.c";
+        };
+        BA5E1018000020D6BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020D5BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020D7BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jcsample.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jcsample.c";
+        };
+        BA5E1018000020D8BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020D7BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020D9BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jctrans.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jctrans.c";
+        };
+        BA5E1018000020DABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020D9BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020DBBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdapimin.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdapimin.c";
+        };
+        BA5E1018000020DCBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020DBBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020DDBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdapistd.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdapistd.c";
+        };
+        BA5E1018000020DEBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020DDBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020DFBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdatadst.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdatadst.c";
+        };
+        BA5E1018000020E0BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020DFBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020E1BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdatasrc.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdatasrc.c";
+        };
+        BA5E1018000020E2BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020E1BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020E3BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdcoefct.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdcoefct.c";
+        };
+        BA5E1018000020E4BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020E3BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020E5BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdcolor.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdcolor.c";
+        };
+        BA5E1018000020E6BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020E5BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020E7BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jddctmgr.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jddctmgr.c";
+        };
+        BA5E1018000020E8BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020E7BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020E9BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdhuff.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdhuff.c";
+        };
+        BA5E1018000020EABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020E9BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020EBBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdinput.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdinput.c";
+        };
+        BA5E1018000020ECBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020EBBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020EDBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdmainct.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdmainct.c";
+        };
+        BA5E1018000020EEBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020EDBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020EFBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdmarker.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdmarker.c";
+        };
+        BA5E1018000020F0BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020EFBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020F1BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdmaster.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdmaster.c";
+        };
+        BA5E1018000020F2BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020F1BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020F3BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdmerge.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdmerge.c";
+        };
+        BA5E1018000020F4BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020F3BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020F5BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdphuff.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdphuff.c";
+        };
+        BA5E1018000020F6BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020F5BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020F7BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdpostct.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdpostct.c";
+        };
+        BA5E1018000020F8BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020F7BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020F9BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdsample.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdsample.c";
+        };
+        BA5E1018000020FABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020F9BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020FBBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jdtrans.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jdtrans.c";
+        };
+        BA5E1018000020FCBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020FBBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020FDBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jerror.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jerror.c";
+        };
+        BA5E1018000020FEBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020FDBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000020FFBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jfdctflt.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jfdctflt.c";
+        };
+        BA5E101800002100BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E1018000020FFBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002101BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jfdctfst.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jfdctfst.c";
+        };
+        BA5E101800002102BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002101BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002103BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jfdctint.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jfdctint.c";
+        };
+        BA5E101800002104BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002103BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002105BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jidctflt.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jidctflt.c";
+        };
+        BA5E101800002106BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002105BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002107BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jidctfst.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jidctfst.c";
+        };
+        BA5E101800002108BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002107BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002109BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jidctint.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jidctint.c";
+        };
+        BA5E10180000210ABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002109BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E10180000210BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jidctred.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jidctred.c";
+        };
+        BA5E10180000210CBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000210BBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E10180000210DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jmemmgr.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jmemmgr.c";
+        };
+        BA5E10180000210EBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000210DBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E10180000210FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "jquant1.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jquant1.c";
+        };
+        BA5E101800002110BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000210FBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002111BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jquant2.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jquant2.c";
+        };
+        BA5E101800002112BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002111BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002113BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jsupport_ea.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jsupport_ea.c";
+        };
+        BA5E101800002114BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002113BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002115BA5E1018 = {
+            isa = PBXFileReference;
+            name = "jutils.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libjpegEAWebKit/local-1.00.06/source/jutils.c";
+        };
+        BA5E101800002116BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002115BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000023DEBA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntGenerated.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntGenerated.xcconfig";
+        };
+        BA5E1018000023DFBA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntTarget.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntTarget.xcconfig";
+        };
+    };
+    rootObject = 29B97313FDCFA39411CA2CEA;
+}

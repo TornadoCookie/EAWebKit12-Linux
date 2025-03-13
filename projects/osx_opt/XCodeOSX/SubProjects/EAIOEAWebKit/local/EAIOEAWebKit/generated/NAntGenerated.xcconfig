@@ -1,0 +1,11 @@
+GENERATED_CC_FLAGS_LibraryExtra_Release = -D EA_PLATFORM_OSX=1 -D EAIO_INIFILE_ENABLED=0 -D NDEBUG -D UTF_USE_EAASSERT=1 -Wall -Wno-deprecated-declarations -fno-rtti -fno-exceptions -Wno-error -O2 -fno-strict-aliasing -g3 -c -fno-common -fmessage-length=0 -Wextra -fshort-wchar -I ../../../../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include -I ../../../../../../../EAWebKitSupportPackages/EABaseEAWebKit/local/include/Common -I ../../../../../../../EAWebKitSupportPackages/coreallocatorEAWebKit/local-1.03.08/include -I ../../../../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include -I ../../../../../../../EAWebKitSupportPackages/EAAssertEAWebKit/local/include
+GENERATED_LDFLAGS_Release = 
+INFOPLIST_OUTPUT_FORMAT = same-as-input
+SKIP_INSTALL = YES 
+DEPLOYMENT_POSTPROCESSING = YES 
+STRIP_INSTALLED_PRODUCT = YES 
+GCC_TREAT_WARNINGS_AS_ERRORS = NO 
+GCC_ENABLE_CPP_RTTI = NO 
+INFOPLIST_FILE = ../../../../OSX-common-xcode.template/Info.plist 
+GCC_VERSION = com.apple.compilers.llvmgcc42 
+ARCHS = i386 

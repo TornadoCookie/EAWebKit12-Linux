@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+        2BEA1BDC12A40B1C007E53C3 = {
+            isa = PBXFileReference;
+            lastKnownFileType = wrapper.framework;
+            name = "CoreFoundation.framework";
+            path = "System/Library/Frameworks/CoreFoundation.framework";
+            sourceTree = SDKROOT;
+        };
+        1D530ECD1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Debug.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ECE1214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Project.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D530ED01214958100E23731 = {
+            isa = PBXFileReference;
+            fileEncoding = 4;
+            lastKnownFileType = text.xcconfig;
+            path = "Target.xcconfig";
+            sourceTree = "<group>";
+        };
+        1D6058910D05DD3D006BFB54 = {
+            isa = PBXFileReference;
+            includeInIndex = 0;
+            path = "../../../../OSX-common-xcode.template/libpngEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            name = "libpngEAWebKit";
+        };
+        1D60588F0D05DD3D006BFB54 = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D73A7FE12124384005BEE8D = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002117BA5E1018,
+            );
+            name = "Packages";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        29B97314FDCFA39411CA2CEA = {
+            isa = PBXGroup;
+            children = (
+                1D73A7FE12124384005BEE8D,
+                2B96D4A71282D3C600ECF477,
+                1D6058910D05DD3D006BFB54,
+                2B96D4A81282D3D700ECF477,
+            );
+            name = "CustomTemplate";
+            sourceTree = "<group>";
+        };
+        2B96D4A71282D3C600ECF477 = {
+            isa = PBXGroup;
+            children = (
+                2BEA1BDB12A40B1C007E53C3,
+            );
+            name = "Frameworks";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        2B96D4A81282D3D700ECF477 = {
+            isa = PBXGroup;
+            children = (
+                1D530ECD1214958100E23731,
+                1D530ECE1214958100E23731,
+                1D530ECF1214958100E23731,
+                1D530ED01214958100E23731,
+                BA5E1018000023DCBA5E1018,
+                BA5E1018000023DDBA5E1018,
+            );
+            name = "Configs";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../OSX-common-xcode.template";
+        };
+        1D6058900D05DD3D006BFB54 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 1D6058960D05DD3E006BFB54;
+            buildPhases = (
+                1D60588D0D05DD3D006BFB54,
+                1D60588E0D05DD3D006BFB54,
+                1D60588F0D05DD3D006BFB54,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "libpngEAWebKit";
+            productName = "libpngEAWebKit";
+            productReference = 1D6058910D05DD3D006BFB54;
+            productType = "com.apple.product-type.library.static";
+        };
+        29B97313FDCFA39411CA2CEA = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 0420;
+                ORGANIZATIONNAME = "Electronic Arts";
+            };
+            buildConfigurationList = C01FCF4E08A954540054247B;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = English;
+            hasScannedForEncodings = 1;
+            knownRegions = (
+                English,
+                Japanese,
+                French,
+                German,
+            );
+            mainGroup = 29B97314FDCFA39411CA2CEA;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                1D6058900D05DD3D006BFB54,
+            );
+        };
+        1D60588D0D05DD3D006BFB54 = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2BF7EB841236332B00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt postbuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh postbuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        2BF7EB861236336C00DFC29A = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "NAnt prebuildtarget";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "bash ${SRCROOT}/generated/NAntBuildPhases.sh prebuildstep ${ARCHS} ${CONFIGURATION}";
+        };
+        1D60588E0D05DD3D006BFB54 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                BA5E101800002126BA5E1018,
+                BA5E101800002128BA5E1018,
+                BA5E10180000212ABA5E1018,
+                BA5E10180000212CBA5E1018,
+                BA5E10180000212EBA5E1018,
+                BA5E101800002130BA5E1018,
+                BA5E101800002132BA5E1018,
+                BA5E101800002134BA5E1018,
+                BA5E101800002136BA5E1018,
+                BA5E101800002138BA5E1018,
+                BA5E10180000213ABA5E1018,
+                BA5E10180000213CBA5E1018,
+                BA5E10180000213EBA5E1018,
+                BA5E101800002140BA5E1018,
+                BA5E101800002142BA5E1018,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        1D6058940D05DD3E006BFB54 = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ED01214958100E23731;
+            buildSettings = {
+                MACOSX_DEPLOYMENT_TARGET = 10.6;
+                MACH_O_TYPE = staticlib;
+                OBJROOT = "../../../../../libpngEAWebKit/local-1.01.00/osx-gcc-dev-debug/build/libpngEAWebKit";
+                SYMROOT = "../../../../../libpngEAWebKit/local-1.01.00/osx-gcc-dev-debug/lib";
+                CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+                GENERATED_CC_FLAGS_CLibraryMod = "$(GENERATED_CC_FLAGS_CLibraryMod_Debug)";
+                GENERATED_LDFLAGS = "$(GENERATED_LDFLAGS_Debug)";
+            };
+            name = "Debug";
+        };
+        C01FCF4F08A954540054247B = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1D530ECD1214958100E23731;
+            buildSettings = {
+                SDKROOT = macosx10.7;
+            };
+            name = "Debug";
+        };
+        1D6058960D05DD3E006BFB54 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                1D6058940D05DD3E006BFB54,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        C01FCF4E08A954540054247B = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C01FCF4F08A954540054247B,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        BA5E101800002117BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002118BA5E1018,
+                BA5E101800002124BA5E1018,
+            );
+            name = "libpngEAWebKit";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00";
+        };
+        BA5E101800002118BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002119BA5E1018,
+            );
+            name = "include";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/include";
+        };
+        BA5E101800002119BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002121BA5E1018,
+                BA5E10180000211ABA5E1018,
+                BA5E10180000211BBA5E1018,
+                BA5E10180000211CBA5E1018,
+                BA5E10180000211DBA5E1018,
+                BA5E10180000211EBA5E1018,
+                BA5E10180000211FBA5E1018,
+                BA5E101800002120BA5E1018,
+            );
+            name = "libpng";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/include/libpng";
+        };
+        BA5E10180000211ABA5E1018 = {
+            isa = PBXFileReference;
+            name = "png.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/include/libpng/png.h";
+        };
+        BA5E10180000211BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngconf.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/include/libpng/pngconf.h";
+        };
+        BA5E10180000211CBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngdebug.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/include/libpng/pngdebug.h";
+        };
+        BA5E10180000211DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pnginfo.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/include/libpng/pnginfo.h";
+        };
+        BA5E10180000211EBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pnglibconf.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/include/libpng/pnglibconf.h";
+        };
+        BA5E10180000211FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngpriv.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/include/libpng/pngpriv.h";
+        };
+        BA5E101800002120BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngstruct.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/include/libpng/pngstruct.h";
+        };
+        BA5E101800002121BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002122BA5E1018,
+            );
+            name = "contrib";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/include/libpng/contrib";
+        };
+        BA5E101800002122BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002123BA5E1018,
+            );
+            name = "visupng";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/include/libpng/contrib/visupng";
+        };
+        BA5E101800002123BA5E1018 = {
+            isa = PBXFileReference;
+            name = "cexcept.h";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/include/libpng/contrib/visupng/cexcept.h";
+        };
+        BA5E101800002124BA5E1018 = {
+            isa = PBXGroup;
+            children = (
+                BA5E101800002125BA5E1018,
+                BA5E101800002127BA5E1018,
+                BA5E101800002129BA5E1018,
+                BA5E10180000212BBA5E1018,
+                BA5E10180000212DBA5E1018,
+                BA5E10180000212FBA5E1018,
+                BA5E101800002131BA5E1018,
+                BA5E101800002133BA5E1018,
+                BA5E101800002135BA5E1018,
+                BA5E101800002137BA5E1018,
+                BA5E101800002139BA5E1018,
+                BA5E10180000213BBA5E1018,
+                BA5E10180000213DBA5E1018,
+                BA5E10180000213FBA5E1018,
+                BA5E101800002141BA5E1018,
+            );
+            name = "source";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source";
+        };
+        BA5E101800002125BA5E1018 = {
+            isa = PBXFileReference;
+            name = "png.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/png.c";
+        };
+        BA5E101800002126BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002125BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002127BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngerror.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngerror.c";
+        };
+        BA5E101800002128BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002127BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002129BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngget.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngget.c";
+        };
+        BA5E10180000212ABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002129BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E10180000212BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngmem.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngmem.c";
+        };
+        BA5E10180000212CBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000212BBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E10180000212DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngpread.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngpread.c";
+        };
+        BA5E10180000212EBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000212DBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E10180000212FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngread.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngread.c";
+        };
+        BA5E101800002130BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000212FBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002131BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngrio.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngrio.c";
+        };
+        BA5E101800002132BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002131BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002133BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngrtran.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngrtran.c";
+        };
+        BA5E101800002134BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002133BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002135BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngrutil.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngrutil.c";
+        };
+        BA5E101800002136BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002135BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002137BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngset.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngset.c";
+        };
+        BA5E101800002138BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002137BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002139BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngtrans.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngtrans.c";
+        };
+        BA5E10180000213ABA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002139BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E10180000213BBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngwio.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngwio.c";
+        };
+        BA5E10180000213CBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000213BBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E10180000213DBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngwrite.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngwrite.c";
+        };
+        BA5E10180000213EBA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000213DBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E10180000213FBA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngwtran.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngwtran.c";
+        };
+        BA5E101800002140BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E10180000213FBA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E101800002141BA5E1018 = {
+            isa = PBXFileReference;
+            name = "pngwutil.c";
+            sourceTree = SOURCE_ROOT;
+            path = "../../../../../../../EAWebKitSupportPackages/libpngEAWebKit/local-1.01.00/source/pngwutil.c";
+        };
+        BA5E101800002142BA5E1018 = {
+            isa = PBXBuildFile;
+            fileRef = BA5E101800002141BA5E1018;
+            settings = {
+                COMPILER_FLAGS = "$(GENERATED_CC_FLAGS_CLibraryMod)";
+            };
+        };
+        BA5E1018000023DCBA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntGenerated.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntGenerated.xcconfig";
+        };
+        BA5E1018000023DDBA5E1018 = {
+            isa = PBXFileReference;
+            name = "NAntTarget.xcconfig";
+            sourceTree = SOURCE_ROOT;
+            path = "generated/NAntTarget.xcconfig";
+        };
+    };
+    rootObject = 29B97313FDCFA39411CA2CEA;
+}
