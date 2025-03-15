@@ -1,6 +1,5 @@
 Building EA WebKit
 ------------------
-
 This version supports Linux platforms
 Requirements:
 Meson, Ninja
