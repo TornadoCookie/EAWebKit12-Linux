@@ -176,7 +176,7 @@ namespace WTF {
     }
 	//+EAWebKitChange
 	//10/02/2012 - Fix for VS 2012 compilation from QtWebKit discussion list - http://qt-project.org/forums/viewthread/17771 
-#if (defined(_MSC_VER) && (_MSC_VER >= 1700)) || (defined(CS_UNDEFINED_STRING) && !defined(CS_UNDEFINED_STRING))
+#if (defined(_MSC_VER) && (_MSC_VER >= 1700)) || defined(__GNUC__) || (defined(CS_UNDEFINED_STRING) && !defined(CS_UNDEFINED_STRING))
 	template<typename T, typename U, typename V>
     pair<typename HashSet<T, U, V>::iterator, bool> HashSet<T, U, V>::add(const ValueType& value)
     {

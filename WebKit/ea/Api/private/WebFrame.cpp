@@ -92,7 +92,7 @@
 #if USE(JSC)
 #include "runtime_object.h"
 #include "runtime_root.h"
-#include "interpreter.h"
+#include "Interpreter.h"
 #endif
 #if USE(ACCELERATED_COMPOSITING)
 #include "texmap/TextureMapper.h"
@@ -103,7 +103,7 @@
 #include "ea_utility.h"
 #include "ea_instance.h"
 #include <EAWebKit/EAWebKit.h>
-#include <EAWebkit/EAWebkitClient.h>
+#include <EAWebKit/EAWebKitClient.h>
 #include "PageClientEA.h"
 
 #include "ScrollTypes.h"

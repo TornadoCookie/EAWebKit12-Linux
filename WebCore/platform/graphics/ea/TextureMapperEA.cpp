@@ -32,12 +32,12 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "TextureMapperEA.h"
 #include "PlatformContextCairo.h"
 
-#include <eastl/string.h>
+#include <EASTL/string.h>
 
-#include "FloatPoint3d.h"
+#include "FloatPoint3D.h"
 #include <EAWebKit/EAWebKitView.h>
 #include <EAWebKit/EAWebKitHardwareRenderer.h>
-#include <EAWebkit/EAWebKitSurface.h>
+#include <EAWebKit/EAWebKitSurface.h>
 
 namespace WebCore {
 

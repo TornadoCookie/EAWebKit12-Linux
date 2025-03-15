@@ -25,7 +25,7 @@
 #include "runtime_root.h"
 #include "ea_class.h"
 #include "ea_utility.h"
-#include <EAWebkit/EAWebkitJavascriptValue.h>
+#include <EAWebKit/EAWebkitJavascriptValue.h>
 #include <EASTL/fixed_string.h>
 #include <EASTL/fixed_vector.h>
 

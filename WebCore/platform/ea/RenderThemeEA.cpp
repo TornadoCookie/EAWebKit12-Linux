@@ -57,7 +57,7 @@
 #include "TimeRanges.h"
 #include "UserAgentStyleSheets.h"
 #include <EAWebKit/EAWebKit.h>
-#include <internal/include/EAWebkit_p.h>
+#include <internal/include/EAWebKit_p.h>
 #include "PaintInfo.h"
 #include "MediaControlElements.h"
 
@@ -125,7 +125,7 @@ RenderThemeEA::RenderThemeEA(Page* page)
 {
 	using namespace EA::WebKit;
 	const Parameters& params = GetParameters();
-    m_buttonFontFamily = params.mFontFamilyStandard;    
+    m_buttonFontFamily = (UChar *)params.mFontFamilyStandard;    
 }
 
 RenderThemeEA::~RenderThemeEA()

@@ -40,13 +40,13 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "DateEA.h"
 #include "KURL.h"
 
-#include <EAWebkit/EAWebKitTransport.h>
+#include <EAWebKit/EAWebKitTransport.h>
 #include <EAWebKit/EAWebKitFileSystem.h>
 #include <internal/include/EAWebKitAssert.h>
 #include <internal/include/EAWebKitString.h>
 #include <internal/include/EAWebKitNewDelete.h>
 #include <EASTL/sort.h>
-#include <eastl/fixed_vector.h>
+#include <EASTL/fixed_vector.h>
 
 #include <EAIO/PathString.h>
 

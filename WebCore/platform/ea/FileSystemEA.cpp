@@ -291,7 +291,7 @@ Vector<String> listDirectory(const String& path, const String& filter)
 	di.Read((pathDup.charactersWithNullTermination()), entryList, (filterDup.charactersWithNullTermination()), EA::IO::kDirectoryEntryFile, 1000);
 	for(DirectoryIterator::EntryList::const_iterator iter = entryList.begin(); iter != entryList.end(); ++iter)
 	{
-		entries.append((iter->msName.c_str()));
+		entries.append((UChar*)(iter->msName.c_str()));
 	}
 		
 	return entries;
@@ -313,7 +313,7 @@ String pathByAppendingComponent(const String& path, const String& component)
 		return path + component;
 
 	String pathResult(path);
-	pathResult.append(kDirectorySeparator);
+	pathResult.append((char)kDirectorySeparator);
 	pathResult.append(component);
 
 	return pathResult;
@@ -323,7 +323,7 @@ String pathGetFileName(const String& path)
 {
 	String name(path);
     const char16_t* pFileName = GetFileName(name.charactersWithNullTermination());  // GetFileName is a local function.
-	return String(pFileName);
+	return String((UChar*)pFileName);
 }
 
 String directoryName(const String& path)

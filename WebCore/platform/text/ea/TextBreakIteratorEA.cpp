@@ -23,7 +23,7 @@
 #include "TextBreakIterator.h"
 #include <EAWebKit/EAWebKit.h>
 #include <EAWebKit/EAWebKitTextInterface.h>
-#include <internal/include/EAWebkit_p.h>
+#include <internal/include/EAWebKit_p.h>
 #include <internal/include/EAWebKitAssert.h>
 
 namespace WebCore {

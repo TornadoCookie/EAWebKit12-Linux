@@ -192,7 +192,7 @@ DriveInfo8::DriveInfo8(const char8_t* pName, DriveType driveType)
 //
 EAIO_API bool File::Create(const char16_t* pPath, bool bTruncate)
 {
-    #if defined(EA_PLATFORM_WINDOWS) || defined(CS_UNDEFINED_STRING)
+    #if defined(EA_PLATFORM_WINDOWS)
 
         #if defined(EA_PLATFORM_WINDOWS)
 
@@ -208,7 +208,7 @@ EAIO_API bool File::Create(const char16_t* pPath, bool bTruncate)
             HANDLE hFile = CreateFileW(pPath, GENERIC_READ, FILE_SHARE_READ | FILE_SHARE_WRITE, 
                                         &tempSECURITY_ATTRIBUTES, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
 
-        #else // defined(CS_UNDEFINED_STRING)
+        #elif defined(CS_UNDEFINED_STRING)
 
             char8_t path8[kMaxPathLength];
             StrlcpyUTF16ToUTF8(path8, kMaxPathLength, pPath);
@@ -1787,13 +1787,13 @@ EAIO_API bool MakeTempPathName(char16_t* pPath, const char16_t* pDirectory, cons
         return false;
     #else
         if(!pDirectory)
-            pDirectory = L"/tmp";
+            pDirectory = (char16_t*)L"/tmp";
 
         if(!pFileName)
-            pFileName = L"temp";
+            pFileName = (char16_t*)L"temp";
 
         if(!pExtension)
-            pExtension = L"";
+            pExtension = (char16_t*)L"";
 
         char8_t path8[kMaxPathLength];
         if(snprintf(path8, kMaxPathLength, "%ls%lsXXXXX%ls", pDirectory, pFileName, pExtension) >= kMaxPathLength)
@@ -3152,7 +3152,7 @@ EAIO_API int GetSpecialDirectory(SpecialDirectory specialDirectory, char8_t* pDi
 }
 
 
-
+#if defined(EA_PLATFORM_WINDOWS)
 ///////////////////////////////////////////////////////////////////////////////
 // Reserved Windows path names
 //
@@ -3164,7 +3164,7 @@ static const char16_t* pReservedNamesWin32[] =
     L"lpt2", L"lpt3", L"lpt4", L"lpt5",   L"lpt6",   // be able to test Win32 paths while running under Unix, etc.
     L"lpt7", L"lpt8", L"lpt9"
 };
-
+#endif
 
 // Returns a string (sCurrentComponent) of the characters from current position up to but not including the next path separator char.
 // If there is no '/' (or platform-appropriate path separator), returns the rest of the string.
@@ -3272,12 +3272,13 @@ bool IsFileNameStringValid(const char16_t* pName, FileSystem fileSystemType)
 
 			// Also trim off any spaces at the end because those are insignificant to Windows when testing reserved words.
 			sCurrentComponentLowerCaseMinusExtension.rtrim();
-
+#if defined(EA_PLATFORM_WINDOWS)
 			for(eastl_size_t i(0); i < (sizeof(pReservedNamesWin32) / sizeof(pReservedNamesWin32[0])); i++)
 			{
 				if(sCurrentComponentLowerCaseMinusExtension == pReservedNamesWin32[i])
 					return false;
 			}
+#endif
 		}
 
 		// Components that consist of just '.' and/or ' ' chars are illegal.
@@ -3325,10 +3326,11 @@ bool IsFilePathStringValid(const char16_t* pPath, FileSystem fileSystemType)
 
     bool                bReturnValue = false;
     PathString16  sPath(pPath);
-    const char16_t      pReservedCharactersWin32[] = L"<>:\"|*?"; // We don't include '/' and '\' because we deal with them separately.
+    
 
     // Do path length tests
     #if defined(EA_PLATFORM_WINDOWS)
+        const char16_t      pReservedCharactersWin32[] = L"<>:\"|*?"; // We don't include '/' and '\' because we deal with them separately.
         if(sPath.length() < 3)                  // A length less than 3 chars cannot be a full path, as Windows requires at least a drive or UNC prefix.
             return false;
 
@@ -3376,7 +3378,7 @@ bool IsFilePathStringValid(const char16_t* pPath, FileSystem fileSystemType)
             {
                 const PathString16 sServer(sPath, nPosition2 + 1, nPosition3 - nPosition2);
                 const PathString16 sVolume(sPath, nPosition3 + 1, nPosition4 - nPosition3);
-
+#if defined(EA_PLATFORM_WINDOWS)
                 // We're a little conservative with the server and volume name checks here.
                 // Their limitations don't appear to be well documented, so we err on acceptance.
                 if(sServer.find_first_of(pReservedCharactersWin32) != PathString16::npos)
@@ -3384,6 +3386,7 @@ bool IsFilePathStringValid(const char16_t* pPath, FileSystem fileSystemType)
                 else if(sVolume.find_first_of(pReservedCharactersWin32) != PathString16::npos)
                     bReturnValue = false;
                 else
+#endif
                 {
                     PathString16 sServerLowerCaseMinusExtension(sServer);
                     PathString16 sVolumeLowerCaseMinusExtension(sVolume);
@@ -3397,7 +3400,7 @@ bool IsFilePathStringValid(const char16_t* pPath, FileSystem fileSystemType)
                     const eastl_size_t nVolumeDotPosition(sVolumeLowerCaseMinusExtension.find('.'));    
                     if(nVolumeDotPosition != PathString16::npos)
                         sVolumeLowerCaseMinusExtension.erase(nVolumeDotPosition);
-
+#if defined(EA_PLATFORM_WINDOWS)
                     for(size_t i(0); i < sizeof(pReservedNamesWin32) / sizeof(pReservedNamesWin32[0]); i++)
                     {
                         if(sServerLowerCaseMinusExtension == pReservedNamesWin32[i])
@@ -3412,6 +3415,7 @@ bool IsFilePathStringValid(const char16_t* pPath, FileSystem fileSystemType)
                             break;
                         }
                     }
+#endif
                     nPosition = nPosition4 + 1;
                 }
             }
@@ -3456,7 +3460,7 @@ bool IsFilePathStringValid(const char16_t* pPath, FileSystem fileSystemType)
 
                     if(nDotPosition != PathString16::npos)
                         sCurrentComponentLowerCaseMinusExtension.erase(nDotPosition);
-
+#if defined(EA_PLATFORM_WINDOWS)
                     for(size_t i(0); i < sizeof(pReservedNamesWin32) / sizeof(pReservedNamesWin32[0]); i++)
                     {
                         if(sCurrentComponentLowerCaseMinusExtension == pReservedNamesWin32[i])
@@ -3465,7 +3469,7 @@ bool IsFilePathStringValid(const char16_t* pPath, FileSystem fileSystemType)
                             break;
                         }
                     }
-
+#endif
                     if(bReturnValue)
                     {
                         // Components that consist of just '.' and/or ' ' chars are illegal.
@@ -3490,12 +3494,13 @@ bool IsFilePathStringValid(const char16_t* pPath, FileSystem fileSystemType)
                         if(sCurrentComponent.find(c) != PathString16::npos)
                             bReturnValue = false;
                     }
-
+#if defined(EA_PLATFORM_WINDOWS)
                     if(bReturnValue)
                     {
                         if(sCurrentComponent.find_first_of(pReservedCharactersWin32) != PathString16::npos)
                             bReturnValue = false;
                     }
+#endif
                 }
             }
         }

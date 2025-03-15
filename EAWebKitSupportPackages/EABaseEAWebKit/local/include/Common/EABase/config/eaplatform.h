@@ -183,7 +183,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // __powerpc__ is defined by the GCC compiler.
 #elif defined(CS_UNDEFINED_STRING) || (defined(__linux) || defined(__linux__))
     #undef  CS_UNDEFINED_STRING
-    #define CS_UNDEFINED_STRING 1
+    //#define CS_UNDEFINED_STRING 1
     #define EA_PLATFORM_UNIX 1
     #define EA_PLATFORM_NAME "Linux"
     #if defined(__i386__) || defined(__intel__) || defined(_M_IX86)

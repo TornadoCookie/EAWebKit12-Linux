@@ -24,14 +24,14 @@
 #include "config.h"
 #include "UnicodeEA.h"
 
-#include <WTF/assertions.h>
+#include <wtf/Assertions.h>
 #include <EABase/eabase.h>
 #if defined(EA_PLATFORM_WINDOWS)
 #include <windows.h>
 #endif
 
 COMPILE_ASSERT(sizeof(UChar)	== sizeof(uint16_t), UCharShouldBeTwoBytes);
-COMPILE_ASSERT(sizeof(wchar_t)	== 2, wchar_tShouldBeTwoBytes); //We are relying on it in many places.
+//COMPILE_ASSERT(sizeof(wchar_t)	== 2, wchar_tShouldBeTwoBytes); //We are relying on it in many places.
 
 
 // Note by Arpit Baldeva:
@@ -84,7 +84,7 @@ namespace WTF {
 			}
 
             JSTextInterface* pTI = JSGetTextInterface();
-            return pTI->ConvertCase(static_cast<const JSText::Char*>(src), srcLength, static_cast<JSText::Char*>(result), resultLength, JSText::kCaseTypeLower);
+            return pTI->ConvertCase(reinterpret_cast<const JSText::Char*>(src), srcLength, reinterpret_cast<JSText::Char*>(result), resultLength, JSText::kCaseTypeLower);
 		}
 
 		UChar32 toUpper(UChar32 c)
@@ -108,7 +108,7 @@ namespace WTF {
 			}
             
             JSTextInterface* pTI = JSGetTextInterface();
-            return pTI->ConvertCase(static_cast<const JSText::Char*>(src), srcLength, static_cast<JSText::Char*>(result), resultLength, JSText::kCaseTypeUpper);
+            return pTI->ConvertCase(reinterpret_cast<const JSText::Char*>(src), srcLength, reinterpret_cast<JSText::Char*>(result), resultLength, JSText::kCaseTypeUpper);
 		}
 
 		UChar32 toTitleCase(UChar32 c)

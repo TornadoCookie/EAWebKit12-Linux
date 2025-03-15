@@ -31,8 +31,8 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define JSSettingsEA_h
 
 #include "JSBase.h"
-#include <eastl/string.h>
-#include <eastl/vector.h>
+#include <EASTL/string.h>
+#include <EASTL/vector.h>
 
 /* Javascript configurable settings */
 

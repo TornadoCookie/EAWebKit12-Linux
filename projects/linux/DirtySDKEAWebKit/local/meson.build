@@ -6,7 +6,7 @@ project('dirtysockEAWebKit', ['c', 'cpp'], version : 'local')
 includes = include_directories(
     '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/platform',
     '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/include',
-    #    '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/include/pc',
+    #'../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/include/pc',
     #    '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/voip'
 )
 
@@ -23,8 +23,8 @@ sources = [
     '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/dirtymem.c',
     '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/dirtynet.c',
     '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/platformsocketapi.c',
-    '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/pc/dirtylibwin.c',
-    '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/pc/dirtynetwin.c',
+    '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/unix/dirtylibunix.c',
+    '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/dirtysock/unix/dirtynetunix.c',
     '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/proto/protohttp.c',
     '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/proto/protohttpmanager.c',
     '../../../../EAWebKitSupportPackages/DirtySDKEAWebKit/local/core/source/proto/protossl.c',
@@ -37,7 +37,7 @@ cflags = [
   '-D_GNU_SOURCE',
   '-Wno-multichar',
   '-DDS_PLATFORM',
-  '-DDIRTYCODE_PLATFORM=3',
+  '-DDIRTYCODE_PLATFORM=13',
 ]
 
 libn = meson.project_name()

@@ -27,7 +27,7 @@
 #include "FontDescription.h"
 #include "FontOrientation.h"
 #include <EAWebKit/EAWebKitTextInterface.h>
-#include <internal/include/EAWebkitAssert.h>
+#include <internal/include/EAWebKitAssert.h>
 
 namespace WebCore {
 

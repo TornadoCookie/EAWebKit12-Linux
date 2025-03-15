@@ -105,7 +105,7 @@ includes = include_directories(
     '../../../../EAWebKitSupportPackages/JavaScriptCore/local/JavaScriptCore/API',
     '../../../../EAWebKitSupportPackages/JavaScriptCore/local/JavaScriptCore/ForwardingHeaders',
     '../../../../EAWebKitSupportPackages/JavaScriptCore/local/JavaScriptCore/generated',
-    '../../../../EAWebKitSupportPackages/JavaScriptCore/local/JavaScriptCore/os-win32',
+#    '../../../../EAWebKitSupportPackages/JavaScriptCore/local/JavaScriptCore/os-win32',
     '../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include',
     '../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include',
     '../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/include/EAIO/Unix',
@@ -2217,7 +2217,13 @@ cxxflags = [
   '-DWTF_USE_ACCELERATED_COMPOSITING=1',
   '-DWTF_USE_CAIRO=1',
   '-DWTF_USE_USE_TEXTURE_MAPPER=1',
-  '-DWTF_USE_UTFXML=1'
+  '-DWTF_USE_UTFXML=1',
+  '-Wno-unused-local-typedefs',
+  '-Wno-class-memaccess',
+  '-Wno-nonnull-compare',
+  '-Wno-c++20-compat',
+  '-std=c++11',
+  '-fpermissive',
 ]
 
 libn = meson.project_name()

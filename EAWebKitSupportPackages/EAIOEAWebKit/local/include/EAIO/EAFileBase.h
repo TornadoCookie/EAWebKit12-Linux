@@ -285,10 +285,10 @@ namespace EA
             #define EA_DIRECTORY_PARENT_16  L"..\\"
         #else
             #define EA_DIRECTORY_CURRENT_8    "./"
-            #define EA_DIRECTORY_CURRENT_16  L"./"
+            #define EA_DIRECTORY_CURRENT_16 ((char16_t*)L"./")
 
             #define EA_DIRECTORY_PARENT_8    "../"
-            #define EA_DIRECTORY_PARENT_16  L"../"
+            #define EA_DIRECTORY_PARENT_16  ((char16_t*)L"../")
         #endif
 
 

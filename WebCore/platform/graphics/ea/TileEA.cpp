@@ -41,8 +41,8 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "WebPage.h"
 #include "WebFrame_p.h"
 
-#include <EAWebkit/EAWebKitHardwareRenderer.h>
-#include <EAWebkit/EAWebKitSurface.h>
+#include <EAWebKit/EAWebKitHardwareRenderer.h>
+#include <EAWebKit/EAWebKitSurface.h>
 
 #include "RefPtrCairo.h"
 #include "PlatformContextCairo.h"

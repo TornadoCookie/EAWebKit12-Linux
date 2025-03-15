@@ -34,7 +34,7 @@
 #include <wtf/text/StringHash.h>
 
 #include <internal/include/EAWebKit_p.h>
-#include <EAWebkit/EAWebKitTextInterface.h>
+#include <EAWebKit/EAWebKitTextInterface.h>
 
 using namespace WTF;
 

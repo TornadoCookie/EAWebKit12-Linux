@@ -42,13 +42,13 @@
 #include "Page.h"
 #include "PlatformString.h"
 #include "ScriptDebugServer.h"
-#include "webinspector.h"
-#include "webpage.h"
-#include "webpage_p.h"
+#include "WebInspector.h"
+#include "WebPage.h"
+#include "WebPage_p.h"
 
-#include <EAWebkit/EAWebkitView.h>
+#include <EAWebKit/EAWebKitView.h>
 #include <internal/include/EAWebKit_p.h>
-#include <EAWebkit/EAWebKitClient.h>
+#include <EAWebKit/EAWebKitClient.h>
 #include <EAWebKit/EAWebKitFileSystem.h>
 #include <internal/include/EAWebKitAssert.h>
 

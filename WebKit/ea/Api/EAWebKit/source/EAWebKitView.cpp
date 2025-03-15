@@ -28,7 +28,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "config.h"
 #include <EAWebKit/EAWebKitView.h>
-#include <EAWebKit/EAWebkitClient.h> 
+#include <EAWebKit/EAWebKitClient.h> 
  
 #include "Page.h" 
 #include "SharedTimer.h"
@@ -1276,7 +1276,7 @@ bool View::EvaluateJavaScript(const char16_t *source, JavascriptValue *resultOut
 
     if (d->page && d->page->mainFrame())
     {
-        WTF::String scriptSource(source);
+        WTF::String scriptSource((UChar*)source);
         return d->page->mainFrame()->evaluateJavaScript(scriptSource, resultOut);
     }
 

@@ -58,7 +58,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <EAIO/EAFileDirectory.h>
 #include <internal/include/EAWebKitString.h>
 #include <internal/include/EAWebKitAssert.h>
-#include <internal/include/EAWebKitEASTLHelpers.h>
+#include <internal/include/EAWebkitEASTLHelpers.h>
 #include <internal/include/EAWebKitNewDelete.h>
 #include <stdio.h>
 #include <time.h>
@@ -67,7 +67,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <EAIO/FnEncode.h>
 #include "SystemTime.h"
 #include <EAWebKit/EAWebKitFileSystem.h>
-#include <internal/include/EAWebkit_p.h>
+#include <internal/include/EAWebKit_p.h>
 
 
 namespace EA

@@ -51,8 +51,8 @@
 #include "WindowsKeyboardCodes.h"
 #include "SpatialNavigation.h"
 
-#include "webpage.h"
-#include "webpage_p.h"
+#include "WebPage.h"
+#include "WebPage_p.h"
 
 #include <EAWebKit/EAWebKitInput.h>
 #include <EAWebKit/EAWebKitClient.h>
@@ -599,7 +599,7 @@ void EditorClientEA::setInputMethodState(bool active)
 	bool onConsole = true;
 #elif defined(EA_PLATFORM_WINDOWS)
 	bool onConsole = pView->IsEmulatingConsoleOnPC();
-#elif defined(EA_PLATFORM_OSX)
+#elif defined(EA_PLATFORM_UNIX)
 	bool onConsole = false;
 #endif
 	

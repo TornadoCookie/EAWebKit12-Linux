@@ -30,7 +30,7 @@
 #include "ClipboardEA.h"
 #include "Frame.h"
 #include "PlatformMouseEvent.h"
-#include "webpage.h"
+#include "WebPage.h"
 
 
 namespace WebCore {

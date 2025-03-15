@@ -43,7 +43,7 @@
     #include "ImageCompressionEA.h"
     #include "ImageDecoder.h"
     #include <EAWebKit/EAWebKit.h>
-    #include <internal/include/EAWebkit_p.h>
+    #include <internal/include/EAWebKit_p.h>
 #endif
 //-EAWebKitChange
 

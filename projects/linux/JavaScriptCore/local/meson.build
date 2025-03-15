@@ -24,7 +24,7 @@ includes_list = [
   '../../../../EAWebKitSupportPackages/JavaScriptCore/local/JavaScriptCore/API',
   '../../../../EAWebKitSupportPackages/JavaScriptCore/local/JavaScriptCore/ForwardingHeaders',
   '../../../../EAWebKitSupportPackages/JavaScriptCore/local/JavaScriptCore/generated',
-  '../../../../EAWebKitSupportPackages/JavaScriptCore/local/JavaScriptCore/os-win32',
+  #'../../../../EAWebKitSupportPackages/JavaScriptCore/local/JavaScriptCore/os-win32',
   '../../../../EAWebKitSupportPackages/EABaseEAWebKit/local/include/Common',
   '../../../../EAWebKitSupportPackages/coreallocatorEAWebKit/local-1.03.08/include',
   '../../../../EAWebKitSupportPackages/EASTLEAWebKit/local/include',
@@ -33,9 +33,6 @@ includes_list = [
 includes = include_directories(includes_list)
 
 headers = [
-    '../../../../EAWebKitSupportPackages/JavaScriptCore/local',
-    '../../../../EAWebKitSupportPackages/JavaScriptCore/local/JavaScriptCore',
-    '../../../../EAWebKitSupportPackages/JavaScriptCore/local/JavaScriptCore/API'
 ]
 
 sources =[
@@ -221,12 +218,13 @@ cxxflags = [
   '-DUNICODE',
   '-DWTF_USE_DIRTYSDK=0',
   '-DWTF_USE_EATEXT=0',
-  '-std=c++17',
+  '-std=c++11',
   '-Og',
   '-Wno-class-memaccess',
   '-Wno-changes-meaning',
   '-Wno-deprecated-declarations',
-  '-Wno-c++20-compat'
+  '-Wno-c++20-compat',
+  '-fpermissive'
 ]
 
 

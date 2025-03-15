@@ -142,7 +142,7 @@ namespace EA
 
         inline size_t Strlen(const char16_t* pString)
         {
-            return wcslen(pString);
+            return wcslen((wchar_t*)pString);
         }
 
 
@@ -153,7 +153,7 @@ namespace EA
 
         inline char16_t* Strcpy(char16_t* pDestination, const char16_t* pSource)
         {
-            return wcscpy(pDestination, pSource);
+            return (char16_t*)wcscpy((wchar_t*)pDestination, (wchar_t*)pSource);
         }
 
 
@@ -164,7 +164,7 @@ namespace EA
 
         inline char16_t* Strncpy(char16_t* pDestination, const char16_t* pSource, size_t n)
         {
-            return wcsncpy(pDestination, pSource, n);
+            return (char16_t*)wcsncpy((wchar_t*)pDestination, (wchar_t*)pSource, n);
         }
 
 
@@ -175,7 +175,7 @@ namespace EA
 
         inline int Strcmp(const char16_t* pString1, const char16_t* pString2)
         {
-            return wcscmp(pString1, pString2);
+            return wcscmp((wchar_t*)pString1, (wchar_t*)pString2);
         }
 
 
@@ -186,7 +186,7 @@ namespace EA
 
         inline char16_t* Strcat(char16_t* pDestination, const char16_t* pSource)
         {
-            return wcscat(pDestination, pSource);
+            return (char16_t*)wcscat((wchar_t*)pDestination, (wchar_t*)pSource);
         }
 
 
@@ -197,7 +197,7 @@ namespace EA
 
         inline const char16_t* Strchr(const char16_t* pString, char16_t c)
         {
-            return wcschr(pString, c);
+            return (char16_t*)wcschr((wchar_t*)pString, c);
         }
 
 
@@ -210,7 +210,7 @@ namespace EA
         #if !defined(__CYGWIN__)
             inline uint32_t AtoU32(const char16_t* pString)
             {
-                return (uint32_t)wcstoul(pString, NULL, 10);
+                return (uint32_t)wcstoul((wchar_t*)pString, NULL, 10);
             }
         #endif
 
@@ -224,7 +224,7 @@ namespace EA
         #if !defined(__CYGWIN__)
             inline int32_t AtoI32(const char16_t* pString)
             {
-                return (int32_t)wcstol(pString, NULL, 10);
+                return (int32_t)wcstol((wchar_t*)pString, NULL, 10);
             }
         #endif
 
@@ -238,7 +238,7 @@ namespace EA
         #if !defined(__CYGWIN__)
             inline uint32_t StrtoU32(const char16_t* pString, char16_t** ppStringEnd, int nBase)
             {
-                return (uint32_t)wcstoul(pString, ppStringEnd, nBase);
+                return (uint32_t)wcstoul((wchar_t*)pString, (wchar_t**)ppStringEnd, nBase);
             }
         #endif
 
@@ -252,7 +252,7 @@ namespace EA
         #if !defined(__CYGWIN__)
             inline double Strtod(const char16_t* pString, char16_t** ppStringEnd)
             {
-                return wcstod(pString, ppStringEnd);
+                return wcstod((wchar_t*)pString, (wchar_t**)ppStringEnd);
             }
         #endif
 
@@ -266,7 +266,7 @@ namespace EA
         #if !defined(__CYGWIN__)
             inline double Atof(const char16_t* pString)
             {
-                return wcstod(pString, NULL);
+                return wcstod((wchar_t*)pString, NULL);
             }
         #endif
 

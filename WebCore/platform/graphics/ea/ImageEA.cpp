@@ -35,7 +35,7 @@ namespace WebCore {
 // Inline 16x16 "?" missing image icon binary. 
 static const int kBrokenImageWidth = 16; 
 static const int kBrokenImageHeight = 16; 
-static const int brokenImageBin[] =
+static const unsigned int brokenImageBin[] =
 {
  0xff94b1d4, 0xff94b1d4, 0xff94b1d4, 0xff94b1d4, 0xff94b1d4, 0xff94b1d4, 0xff94b1d4, 0xff94b1d4, 0xff94b1d4, 0xff94b1d4, 0xff94b1d4, 0xff94b1d4, 0xff94b1d4, 0xff94b1d4, 0xff94b1d4, 0xff94b1d4
 ,0xff92afd4, 0xffffffff, 0xffffffff, 0xffffffff, 0xffffffff, 0xffffffff, 0xffffffff, 0xffffffff, 0xffffffff, 0xffffffff, 0xffffffff, 0xffffffff, 0xffffffff, 0xffffffff, 0xffffffff, 0xff92afd4

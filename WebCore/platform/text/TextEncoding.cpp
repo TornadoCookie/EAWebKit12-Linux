@@ -39,7 +39,7 @@
 //+EAWebKitChange
 //10/17/2011
 #elif USE(EA_UNICODE)
-#include <eastl/string.h>
+#include <EASTL/string.h>
 //-EAWebKitChange
 #elif USE(GLIB_UNICODE)
 #include <glib.h>

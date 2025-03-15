@@ -93,7 +93,7 @@
 //+EAWebKitChange
 //1/29/2013
 #include <EAWebKit/EAWebKit.h>
-#include <internal/include/EAWebkit_p.h>
+#include <internal/include/EAWebKit_p.h>
 //-EAWebKitChange
 
 

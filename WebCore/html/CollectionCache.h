@@ -25,6 +25,8 @@
 #include <wtf/HashMap.h>
 #include <wtf/Vector.h>
 
+#include <cstdint>
+
 namespace WebCore {
 
 class Element;

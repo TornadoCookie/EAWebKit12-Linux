@@ -42,8 +42,8 @@
 //+EAWebKitChange
 //11/14/2011
 #if PLATFORM(EA)
-#include <eastl/vector.h>
-#include <eastl/string.h>
+#include <EASTL/vector.h>
+#include <EASTL/string.h>
 #endif
 //-EAWebKitChange
 

@@ -86,7 +86,7 @@
 #include <internal/include/EAWebKitAssert.h>
 #include <EAIO/FnEncode.h>          // For Strlcpy and friends.
 #include <EASTL/fixed_substring.h>
-#include <internal/include/EAWebkit_p.h>
+#include <internal/include/EAWebKit_p.h>
 
 namespace Local
 {
@@ -911,8 +911,8 @@ bool ResourceHandleManager::HeadersReceived(EA::WebKit::TransportInfo* pTInfo)
 		const EA::WebKit::HeaderMap::mapped_type& sValue	= it->second;
 
         // Translate EA::WebKit::FixedString16_256 to WTF::String (both are 16 bit string types).
-        const WTF::String sWKey  (sKey.data(),   sKey.length());
-        const WTF::String sWValue(sValue.data(), sValue.length());
+        const WTF::String sWKey  ((UChar*)sKey.data(),   sKey.length());
+        const WTF::String sWValue((UChar*)sValue.data(), sValue.length());
 
         pRHI->m_response.setHTTPHeaderField(sWKey, sWValue);            
     }

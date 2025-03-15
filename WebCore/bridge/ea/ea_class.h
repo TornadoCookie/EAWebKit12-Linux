@@ -23,7 +23,7 @@
 
 #include "Bridge.h"
 #include "BridgeJSC.h"
-#include <EAWebkit/EAWebkitJavascriptValue.h>
+#include <EAWebKit/EAWebkitJavascriptValue.h>
 
 namespace JSC { namespace Bindings {
 

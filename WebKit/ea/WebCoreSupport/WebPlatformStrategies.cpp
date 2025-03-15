@@ -38,7 +38,7 @@
 #include <Page.h>
 #include <PageGroup.h>
 #include <PluginDatabase.h>
-#include <webpage.h>
+#include <WebPage.h>
 #include <wtf/MathExtras.h>
 
 #include <EAWebKit/EAWebKitClient.h>
@@ -141,7 +141,7 @@ String getLocalizedString(EA::WebKit::LocalizedStringType type)
 		pClient->GetLocalizedString(si);
 
 		if(si.mString16[0])
-			return String(si.mString16);
+			return String((UChar*)si.mString16);
 		else if(si.mString16[8])
 			return String::fromUTF8(si.mString8);
 	}

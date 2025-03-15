@@ -58,11 +58,19 @@ inline DWORD protection(bool writable, bool executable)
 }
 #endif
 
-#if defined(EA_PLATFORM_OSX)
+#if defined(EA_PLATFORM_UNIX)
 #include <unistd.h>
 #include <sys/mman.h>
+
+#if defined(EA_PLATFORM_LINUX)
+#include <malloc.h>
+#endif
+
+#if defined(EA_PLATFORM_OSX)
 #include <mach/mach_init.h>
 #include <mach/vm_map.h>
+#endif
+
 #endif
 namespace EA
 {

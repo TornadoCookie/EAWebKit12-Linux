@@ -31,7 +31,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <EAWebKit/EAWebKit.h>
 #include <EAWebKit/EAWebKitTextInterface.h> 
 #include <internal/include/EAWebKitAssert.h>
-#include <internal/include/EAWebkit_p.h>
+#include <internal/include/EAWebKit_p.h>
 
 COMPILE_ASSERT(sizeof(JSText::Char)			== sizeof(EA::WebKit::Char),		TextCharMismatch );
 COMPILE_ASSERT((int)JSText::kCCOtherSymbol	== (int)EA::WebKit::kCCOtherSymbol, TextCharCategoryEnumMismatch );

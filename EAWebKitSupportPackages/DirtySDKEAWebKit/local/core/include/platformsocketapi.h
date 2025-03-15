@@ -41,7 +41,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 //Note by Arpit Baldeva - I am not using platform.h provided in DirtySDK to figure out the platform because "platform.h" is a very general name.
 //This can cause lot of weird dependencies. DirtySDK should probably move to using EABase.
-#if   defined(__APPLE__)
+#if   defined(__APPLE__) || defined(__linux__)
 #include <sys/socket.h>
 typedef size_t platform_ssize_t;
 #elif defined(_WIN32)

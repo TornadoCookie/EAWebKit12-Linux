@@ -49,7 +49,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "protossl.h"
 
 #if !BUILDING_EAWEBKIT_DLL
-#include "netconn.h"
+#include "NetConn.h"
 #endif
 
 #if (BUILDING_EAWEBKIT_DLL)

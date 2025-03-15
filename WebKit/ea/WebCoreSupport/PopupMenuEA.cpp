@@ -32,20 +32,20 @@
 #include "PopupMenuClient.h"
 #include "PlatformScreen.h"
 #include "PageClientEA.h"
-#include "page.h"
-#include "chrome.h"
-#include "webframe.h"
+#include "Page.h"
+#include "Chrome.h"
+#include "WebFrame.h"
 #include "IntRect.h"
 #include "RenderText.h"
 #include "GraphicsContext.h"
 #include "RenderThemeEA.h"
-#include "ScrollBar.h"
+#include "Scrollbar.h"
 #include "RefPtrCairo.h"
 #include <EAWebKit/EAWebKit.h>
 #include <EAWebKit/EAWebKitView.h>
 #include <EAWebKit/EAWebKitSurface.h>
 #include <EAWebKit/EAWebKitInput.h>
-#include <internal/include/EAWebkit_p.h>
+#include <internal/include/EAWebKit_p.h>
 #include "TextRun.h"
 
 namespace ThemeEA
@@ -801,7 +801,7 @@ void PopupMenuEA::OnMouseButtonEvent(const EA::WebKit::MouseButtonEvent& mouseBu
 			bool onConsole = true;
 		#elif defined(EA_PLATFORM_WINDOWS)
 			bool onConsole = m_viewEA->IsEmulatingConsoleOnPC();
-		#elif defined(EA_PLATFORM_OSX)
+		#elif defined(EA_PLATFORM_OSX) || defined(EA_PLATFORM_LINUX)
 			bool onConsole = false;
 		#endif
 			if(onConsole)

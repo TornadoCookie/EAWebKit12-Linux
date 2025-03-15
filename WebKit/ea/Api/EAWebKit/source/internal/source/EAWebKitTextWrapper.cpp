@@ -28,11 +28,11 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "config.h"
 #include <internal/include/EAWebKitTextWrapper.h>
-#include <internal/include/EAWebkit_p.h>
+#include <internal/include/EAWebKit_p.h>
 #include EA_ASSERT_HEADER
-#include <CoreAllocator/icoreallocator_interface.h>
+#include <coreallocator/icoreallocator_interface.h>
 #include <EAWebKit/EAWebKit.h>
-#include <EATExt/EATextCache.h>
+#include <EAText/EATextCache.h>
 #include <EAIO/EAStreamMemory.h>
 #include <internal/include/EAWebKitAssert.h>
 #include <EAText/EATextOutlineFont.h>

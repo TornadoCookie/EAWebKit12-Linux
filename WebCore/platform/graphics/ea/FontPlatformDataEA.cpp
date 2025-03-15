@@ -32,7 +32,7 @@
 #include <internal/include/EAWebKitString.h>
 #include <internal/include/EAWebkitEASTLHelpers.h>
 #include <EASTL/algorithm.h>
-#include <internal/include/EAWebkit_p.h>
+#include <internal/include/EAWebKit_p.h>
 
 namespace WebCore {
 

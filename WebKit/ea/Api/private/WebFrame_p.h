@@ -22,8 +22,8 @@
 #ifndef WEBFRAME_P_H
 #define WEBFRAME_P_H
 
-#include "webframe.h"
-#include "webpage_p.h"
+#include "WebFrame.h"
+#include "WebPage_p.h"
 
 #include "EventHandler.h"
 #include "GraphicsContext.h"
@@ -37,7 +37,7 @@
 #if USE(ACCELERATED_COMPOSITING)
 #include "texmap/TextureMapper.h"
 #include "texmap/TextureMapperNode.h"
-#include <EAWebkit/EAWebKitHardwareRenderer.h>
+#include <EAWebKit/EAWebKitHardwareRenderer.h>
 #endif
 
 namespace WebCore 

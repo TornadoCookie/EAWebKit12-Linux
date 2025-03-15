@@ -21,7 +21,7 @@
 #define DnsPrefetchHelper_h
 
 #include <EABase/eabase.h>
-#include <eastl/fixed_list.h>
+#include <EASTL/fixed_list.h>
 #include <EAWebKit/EAWebkitAllocator.h>
 
 struct HostentT;

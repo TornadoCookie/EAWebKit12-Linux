@@ -35,7 +35,7 @@
 #include <EAWebKit/EAWebkitAllocator.h>
 #include <internal/include/EAWebKitAssert.h>
 #include <EASTL/fixed_vector.h>
-#include <internal/include/EAWebkit_p.h>
+#include <internal/include/EAWebKit_p.h>
 #include <wtf/MathExtras.h>
 #include "PlatformContextCairo.h"
 

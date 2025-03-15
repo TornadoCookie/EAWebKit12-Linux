@@ -28,10 +28,10 @@
 #include "WebPageClientEA.h"
 #include "TiledBackingStore.h"
 #include "Timer.h"
-#include "webframe.h"
-#include "webframe_p.h"
-#include "webpage.h"
-#include "webpage_p.h"
+#include "WebFrame.h"
+#include "WebFrame_p.h"
+#include "WebPage.h"
+#include "WebPage_p.h"
 
 #include <Settings.h>
 

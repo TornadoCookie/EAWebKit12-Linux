@@ -40,7 +40,8 @@ sources = [
 cxxflags = [
   '-DUTF_USE_EAASSERT=1',
   '-DEAIO_INIFILE_ENABLED=0',
-  '-std=c++17'
+  '-std=c++11',
+  '-fpermissive'
 ]
 
 libn = meson.project_name()

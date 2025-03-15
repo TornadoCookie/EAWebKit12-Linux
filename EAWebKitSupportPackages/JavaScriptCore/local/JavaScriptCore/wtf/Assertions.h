@@ -193,6 +193,11 @@ WTF_EXPORT_PRIVATE void WTFLogVerbose(const char* file, int line, const char* fu
     *(int *)(uintptr_t)0xbbadbeef = 0; \
     __builtin_trap(); \
 } while (false)
+#elif COMPILER(GCC)
+#define CRASH() do { \
+    WTFReportBacktrace(); \
+    ((void(*)())0)(); /* More reliable, but doesn't say BBADBEEF */ \
+} while (false)
 #else
 #define CRASH() do { \
     WTFReportBacktrace(); \

@@ -58,6 +58,8 @@ typedef uint16             AECHAR;
 #endif
 #endif
 
+#include <stdint.h>
+
 namespace WTF {
 
 class CString;
@@ -91,6 +93,7 @@ public:
 
     // Construct a string with UTF-16 data.
     WTF_EXPORT_PRIVATE String(const UChar* characters, unsigned length);
+    WTF_EXPORT_PRIVATE String(const char16_t* characters, unsigned length);
 
     // Construct a string by copying the contents of a vector.  To avoid
     // copying, consider using String::adopt instead.
