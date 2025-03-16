@@ -61,6 +61,11 @@ String::String(const UChar* str)
     m_impl = StringImpl::create(str, len);
 }
 
+String::String(const char16_t *str, unsigned length)
+{
+    String((const UChar*)str, length);
+}
+
 // Construct a string with latin1 data.
 String::String(const char* characters, unsigned length)
     : m_impl(characters ? StringImpl::create(characters, length) : 0)
