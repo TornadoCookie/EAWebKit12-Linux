@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: install packages
+      run: apt-get install -y meson ninja-build
     - name: configure
       run: meson setup projects/linux/build projects/linux --buildtype=debug
     - name: make
