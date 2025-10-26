@@ -1,0 +1,22 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: configure
+      run: meson setup projects/linux/build projects/linux --buildtype=debug
+    - name: make
+      run: ninja -C projects/linux/build
+    - uses: actions/upload-artifact@v5.0.0
+      with:
+        path: projects/linux/build/libEAWebKitd.so
