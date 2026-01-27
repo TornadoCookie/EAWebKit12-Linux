@@ -109,6 +109,8 @@ public:
     // Construct a string with latin1 data, from a null-terminated source.
     WTF_EXPORT_PRIVATE String(const char* characters);
 
+    String& operator=(const char16_t *);
+
     // Construct a string referencing an existing StringImpl.
     WTF_EXPORT_PRIVATE String(StringImpl* impl) : m_impl(impl) { }
     WTF_EXPORT_PRIVATE String(PassRefPtr<StringImpl> impl) : m_impl(impl) { }

@@ -213,7 +213,8 @@ static void printCallSite(const char* file, int line, const char* function, bool
     // using Visual Studio can double-click the file/line number in the Output Window to have the
     // editor navigate to that line of code. It seems fine for other developers, too.
 
-	printf_stderr_common(shouldAssert, "%s(%d) : %s\n", file, line, function);
+    printf_stderr_common(shouldAssert, "[printCallSite]\n");
+	//printf_stderr_common(shouldAssert, "%s(%d) : %s\n", file, line, function);
 #endif
 }
 

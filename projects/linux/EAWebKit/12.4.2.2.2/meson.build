@@ -2223,6 +2223,7 @@ cxxflags = [
   '-Wno-class-memaccess',
   '-Wno-nonnull-compare',
   '-Wno-c++20-compat',
+  '-Wno-unknown-pragmas',
   '-std=c++11',
   '-fpermissive',
 ]

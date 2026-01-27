@@ -78,6 +78,15 @@ String::String(const char* characters)
 {
 }
 
+// operator= from x
+String& String::operator=(const char16_t *characters)
+{
+    // Convert the input to WTF::String correctly
+    m_impl = String(reinterpret_cast<const UChar*>(characters)).impl();
+
+    return *this;
+}
+
 void String::append(const String& str)
 {
     if (str.isEmpty())

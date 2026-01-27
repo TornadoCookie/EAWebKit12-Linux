@@ -563,7 +563,7 @@ void View::SetURI(const char16_t* pUrl)
 	if(pUrl && pUrl[0])
 	{
 		d->OverlayChangeNotify();
-		WebCore::KURL kurl(WebCore::KURL(), pUrl);
+		WebCore::KURL kurl(WebCore::KURL(), reinterpret_cast<const UChar *>(pUrl));
 		Page()->mainFrame()->load(kurl);
 	}
 }
@@ -619,7 +619,7 @@ const char16_t *View::GetEncodedURI(const char16_t *url)
         return NULL;
     }
 
-    WebCore::KURL kurl(WebCore::KURL(), url);
+    WebCore::KURL kurl(WebCore::KURL(), reinterpret_cast<const UChar *>(url));
     d->mEncodedURICache.assign(kurl.string().characters(), kurl.string().length());
 
     return d->mEncodedURICache.c_str();
@@ -967,7 +967,7 @@ void View::SetTextIntoSelectedInput(const char16_t* text, bool textWasAccepted)
 
 				if(textWasAccepted && pInputElement->isTextField())
 				{
-					pInputElement->setValue(text);                   
+					pInputElement->setValue(reinterpret_cast<const UChar *>(text));                   
 				}
 				pInputElement->blur();//We want to blur even if the text was not accepted and only if the element was an editable field.
 			}
@@ -977,7 +977,7 @@ void View::SetTextIntoSelectedInput(const char16_t* text, bool textWasAccepted)
 
 				if(textWasAccepted)
 				{
-					pTextAreaElement->setValue(text);                   
+					pTextAreaElement->setValue(reinterpret_cast<const UChar *>(text));                   
 				}
 				pTextAreaElement->blur();//We want to blur even if the text was not accepted and only if the element was an editable field.
 			}

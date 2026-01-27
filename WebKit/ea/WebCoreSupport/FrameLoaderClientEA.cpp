@@ -1020,7 +1020,7 @@ void FrameLoaderClientEA::dispatchWillSendRequest(WebCore::DocumentLoader*, unsi
 		// Application modified something and wants us to tackle the rest.
 		if(!GetFixedString(lni.mModifiedURI)->empty())// If modified URL
 		{
-			WebCore::KURL newURL(WebCore::KURL(), GetFixedString(lni.mModifiedURI)->c_str());
+			WebCore::KURL newURL(WebCore::KURL(), reinterpret_cast<const UChar *>(GetFixedString(lni.mModifiedURI)->c_str()));
 			newRequest.setURL(newURL);
 		}
 

@@ -1006,7 +1006,7 @@ bool ResourceHandleManager::DataReceived(EA::WebKit::TransportInfo* pTInfo, cons
     // This code here is similar to the Curl version of this code.
     if(!pRHI->m_response.responseFired())
     {
-		const KURL url(WebCore::KURL(), GetFixedString(pTInfo->mEffectiveURI)->c_str());
+		const KURL url(WebCore::KURL(), reinterpret_cast<const UChar*>(GetFixedString(pTInfo->mEffectiveURI)->c_str()));
         pRHI->m_response.setURL(url);
    
 		if(pRHI->client())
