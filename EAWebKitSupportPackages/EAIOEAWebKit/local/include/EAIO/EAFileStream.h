@@ -65,7 +65,7 @@ namespace EA
         /// These represent the most common file system errors. However, there are additional errors 
         /// which may be returned by the system APIs which are different from these. You should be 
         /// prepared to receive any value for an error code. 
-        #if !defined(CS_UNDEFINED_STRING) && !defined(CS_UNDEFINED_STRING) && !defined(EA_PLATFORM_WINDOWS)
+        /*#if !defined(CS_UNDEFINED_STRING) && !defined(CS_UNDEFINED_STRING) && !defined(EA_PLATFORM_WINDOWS)
             enum IOResultCode
             {
                 kFSErrorBase              =   0, /// Error code base for this module
@@ -84,7 +84,7 @@ namespace EA
                 kFSErrorDeviceNotReady    = -13, /// Attempt to access a hardware device that isn't ready
                 kFSErrorDataCRCError      = -14  /// The data read off of the disk was corrupted in some way
             };
-        #endif
+        #endif*/
 
         /// FileOperation
         /// Defines an operation that can be done on a file.
@@ -190,8 +190,8 @@ namespace EA
 #if defined(EA_PLATFORM_WINDOWS) || defined(CS_UNDEFINED_STRING)
    #include <EAIO/Win32/EAFileStreamWin32.h>
 
-#elif defined(EA_PLATFORM_UNIX) 
-   #include <EAIO/Unix/EAFileStreamUnix.h>
+//#elif defined(EA_PLATFORM_UNIX) 
+//   #include <EAIO/Unix/EAFileStreamUnix.h>
 #else
    #include <EAIO/StdC/EAFileStreamStdC.h>
 #endif

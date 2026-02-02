@@ -40,6 +40,8 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #if defined(EA_PLATFORM_WINDOWS) || defined(CS_UNDEFINED_STRING)
    #include "Win32/EAFileStreamWin32.cpp"
+//#elif defined(EA_PLATFORM_UNIX)
+//    #include "Unix/EAFileStreamUnix.cpp"
 #else
    #include "StdC/EAFileStreamStdC.cpp"
 #endif

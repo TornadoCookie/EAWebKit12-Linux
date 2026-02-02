@@ -34,7 +34,6 @@ sources = [
     '../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/PathString.cpp',
     '../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/internal/EAIOCoreAllocator.cpp',
     '../../../../EAWebKitSupportPackages/EAIOEAWebKit/local/source/internal/EAIOZoneObject.cpp',
-
 ]
 
 cxxflags = [

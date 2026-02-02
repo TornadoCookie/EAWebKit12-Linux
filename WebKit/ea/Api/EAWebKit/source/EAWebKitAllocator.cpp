@@ -146,7 +146,7 @@ class DefaultAllocator : public Allocator
 	// OS memory management API.
 	bool SupportsOSMemoryManagement()
 	{
-#if defined(EA_PLATFORM_WINDOWS) || defined(EA_PLATFORM_OSX)
+#if defined(EA_PLATFORM_WINDOWS) || defined(EA_PLATFORM_OSX) || defined(EA_PLATFORM_LINUX)
 		return true;
 #else
 		return false;
@@ -161,7 +161,7 @@ class DefaultAllocator : public Allocator
 		GetSystemInfo(&system_info);
 		size = system_info.dwPageSize;
 		return size;
-#elif defined(EA_PLATFORM_OSX)
+#elif defined(EA_PLATFORM_OSX) || defined(EA_PLATFORM_LINUX)
         return (size_t)getpagesize();
 #else
 		return 4096;
@@ -174,7 +174,7 @@ class DefaultAllocator : public Allocator
 		void* result = VirtualAlloc(0, bytes, MEM_RESERVE, protection(writable, executable));
  		EAW_ASSERT_MSG(result, "VirtualAlloc failed");
 		return result;
-#elif defined(EA_PLATFORM_OSX)
+#elif defined(EA_PLATFORM_OSX) || defined(EA_PLATFORM_LINUX)
         int protection = PROT_READ;
         if (writable)
             protection |= PROT_WRITE;
@@ -201,7 +201,7 @@ class DefaultAllocator : public Allocator
 		void* result = VirtualAlloc(0, bytes, MEM_RESERVE | MEM_COMMIT, protection(writable, executable));
 		EAW_ASSERT_MSG(result, "VirtualAlloc failed");
 		return result;
-#elif defined(EA_PLATFORM_OSX)
+#elif defined(EA_PLATFORM_OSX) || defined(EA_PLATFORM_LINUX)
         int protection = PROT_READ;
         if (writable)
             protection |= PROT_WRITE;
@@ -228,7 +228,7 @@ class DefaultAllocator : public Allocator
 		bool result = VirtualFree(address, 0, MEM_RELEASE);
 		(void)result;
 		EAW_ASSERT_MSG(result, "VirtualFree failed");
-#elif defined(EA_PLATFORM_OSX)
+#elif defined(EA_PLATFORM_OSX) || defined(EA_PLATFORM_LINUX)
 		int result = munmap(address, bytes);
 		(void)result;
 		EAW_ASSERT_MSG(result == 0, "munmap failed");
@@ -268,6 +268,37 @@ class DefaultAllocator : public Allocator
 		reserveBase = reinterpret_cast<void*>(address);
 		reserveSize = bytes;
 		return reserveBase;
+#elif defined(EA_PLATFORM_LINUX)
+        int protection = PROT_READ;
+        if (writable)
+            protection |= PROT_WRITE;
+        if (executable)
+            protection |= PROT_EXEC;
+        
+        int flags = MAP_PRIVATE | MAP_ANON;
+
+        size_t reserveBytes = bytes + alignment;
+        
+        void* base = mmap(0, reserveBytes, protection, flags, -1, 0);
+        if (base == MAP_FAILED)
+            return 0;
+
+        reserveBase = (void*)((uintptr_t)(base + alignment - 1) & ~alignmentMask);
+
+        size_t leadingSlop = reserveBase - (uintptr_t)base;
+        size_t trailingSlop = reserveBytes - leadingSlop - bytes;
+
+        if (leadingSlop > 0)
+        {
+            munmap(base, leadingSlop);
+        }
+        if (trailingSlop > 0)
+        {
+            munmap(reserveBase + bytes, trailingSlop);
+        }
+
+        reserveSize = bytes;
+        return reserveBase;
 #else
 		EAW_ASSERT_MSG(false, "ReserveAndCommitAligned not supported");
 		return 0;
@@ -285,6 +316,8 @@ class DefaultAllocator : public Allocator
 		EAW_ASSERT_MSG(result, "VirtualFree failed");
 #elif defined(EA_PLATFORM_OSX)
 		vm_deallocate(current_task(), reinterpret_cast<vm_address_t>(reserveBase), reserveSize);
+#elif defined(EA_PLATFORM_LINUX)
+        munmap(reserveBase, reserveSize);
 #else
 		EAW_ASSERT_MSG(false, "ReleaseDecommittedAligned not supported");
 #endif
@@ -296,7 +329,7 @@ class DefaultAllocator : public Allocator
 		void* result = VirtualAlloc(address, bytes, MEM_COMMIT, protection(writable, executable));
 		(void) result;
 		EAW_ASSERT_MSG(result, "VirtualAlloc failed");
-#elif defined(EA_PLATFORM_OSX)
+#elif defined(EA_PLATFORM_OSX) || defined(EA_PLATFORM_LINUX)
         // Nothing to do here. All the memory through mmap is already committed.
 #else
 		EAW_ASSERT_MSG(false, "commit not supported");
@@ -309,7 +342,7 @@ class DefaultAllocator : public Allocator
 		bool result = VirtualFree(address, bytes, MEM_DECOMMIT);
 		(void) result;
 		EAW_ASSERT_MSG(result, "VirtualFree failed");
-#elif defined(EA_PLATFORM_OSX)
+#elif defined(EA_PLATFORM_OSX) || defined(EA_PLATFORM_LINUX)
         // Nothing to do here. All the memory is decommitted through munmap.
 #else
 		EAW_ASSERT_MSG(false, "decommit not supported");

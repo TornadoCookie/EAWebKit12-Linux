@@ -17,8 +17,9 @@ sources = [
 
 cflags = [
   '-DSQLITE_ENABLE_MEMORY_MANAGEMENT',
-  '-DSQLITE_OS_MYWIN',
-  '-DSQLITE_OS_OTHER'
+  #  '-DSQLITE_OS_MYWIN',
+  #  '-DSQLITE_OS_OTHER',
+  '-DSQLITE_OS_UNIX'
 ]
 
 libn = meson.project_name()
