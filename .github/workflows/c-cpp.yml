@@ -16,7 +16,7 @@ jobs:
     - name: install packages
       run: sudo apt-get install -y meson ninja-build
     - name: configure
-      run: meson setup projects/linux/build projects/linux --buildtype=debug
+      run: cd projects/linux && meson setup build . --buildtype=debug
     - name: make
       run: ninja -C projects/linux/build
     - uses: actions/upload-artifact@v5.0.0
